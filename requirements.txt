@@ -25,6 +25,7 @@ google-api-core==2.24.2
 google-auth==2.38.0
 google-generativeai==0.8.4
 googleapis-common-protos==1.69.2
+groq==0.22.0
 hdbscan==0.8.40
 huggingface-hub==0.30.2
 importlib_metadata==8.6.1
