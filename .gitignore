@@ -8,6 +8,10 @@ env/
 
 .ipynb_checkpoints/
 
+output/debug/
+output/checkpoints/
+output/cache/
+
 # Python
 __pycache__/
 *.py[cod]

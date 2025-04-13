@@ -1,0 +1,2384 @@
+[
+  {
+    "topic_data": {
+      "name": "Farcaster User Tips",
+      "explanation": "Announcement and discussion around a new feature, Tips, which allows users to send $1 USDC to each other, creating engagement and discussion.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Tips",
+          "frequency": 2
+        },
+        {
+          "term": "USDC",
+          "frequency": 1
+        },
+        {
+          "term": "tipping",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Warpcast Team",
+          "type": "Project",
+          "relevance": "High"
+        },
+        {
+          "name": "Farcaster",
+          "type": "Platform",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 9,
+        "timeliness": 9,
+        "engagement_potential": 8,
+        "viewer_appeal": 6,
+        "overall": 8,
+        "reasoning": "Highly specific (new Tips feature, $1 USDC), novel (new core functionality), and timely (feature launch). Represents platform evolution by introducing a new interaction mechanic (tipping), driving direct user engagement. Scores highly due to platform evolution priority.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Monitor adoption rate and user sentiment around the Tips feature.",
+          "Track if tipping becomes a sustained behavior pattern.",
+          "Analyze the impact of tipping on content quality or engagement metrics."
+        ]
+      }
+    },
+    "score": 8,
+    "score_category": "good",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 9,
+      "timeliness": 9,
+      "engagement_potential": 8,
+      "viewer_appeal": 6
+    },
+    "reasoning": "Highly specific (new Tips feature, $1 USDC), novel (new core functionality), and timely (feature launch). Represents platform evolution by introducing a new interaction mechanic (tipping), driving direct user engagement. Scores highly due to platform evolution priority.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Farcaster Development Updates",
+      "explanation": "A post from the Farcaster team about the recent growth in users, development, and new features.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "developer UX",
+          "frequency": 1
+        },
+        {
+          "term": "mini apps",
+          "frequency": 1
+        },
+        {
+          "term": "Snapchain",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Farcaster",
+          "type": "Platform",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 9,
+        "timeliness": 9,
+        "engagement_potential": 8,
+        "viewer_appeal": 6,
+        "overall": 8,
+        "reasoning": "Core platform update directly from the team regarding specific developments (developer UX, mini apps, Snapchain). High specificity, novelty, and timeliness. Prioritized due to focus on platform evolution and future direction.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Track community reactions and follow-up discussions on the specific features mentioned.",
+          "Monitor developer activity or sentiment following UX improvement announcements.",
+          "Analyze impact on user growth metrics mentioned."
+        ]
+      }
+    },
+    "score": 8,
+    "score_category": "good",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 9,
+      "timeliness": 9,
+      "engagement_potential": 8,
+      "viewer_appeal": 6
+    },
+    "reasoning": "Core platform update directly from the team regarding specific developments (developer UX, mini apps, Snapchain). High specificity, novelty, and timeliness. Prioritized due to focus on platform evolution and future direction.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Ghibli Art Trend",
+      "explanation": "Posts referencing Ghibli-style art, a popular art style. High engagement. Frequent mentions of creating Ghibli-inspired images.",
+      "estimated_percentage": "12%",
+      "key_terms": [
+        {
+          "term": "Ghibli",
+          "frequency": 35
+        },
+        {
+          "term": "Ghiblify",
+          "frequency": 3
+        },
+        {
+          "term": "anime",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Ghibli",
+          "type": "Art Style",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 6,
+        "timeliness": 8,
+        "engagement_potential": 8,
+        "viewer_appeal": 8,
+        "overall": 7,
+        "reasoning": "Duplicate theme, similar to Topic 23 but with higher frequency indicated (35 vs 20). Strong visual trend ('Ghibli', 'Ghiblify', 'anime') with high engagement and appeal. Assessed as Ephemeral Trend (moderate novelty). High overall score due to volume and engagement.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Merge with other Ghibli topics ('Ghiblify PFP's', 'Ghibli themed content').",
+          "Analyze the tools or methods users employ for 'Ghiblifying' or creating Ghibli-style art.",
+          "Track the trend's peak and duration."
+        ]
+      }
+    },
+    "score": 7,
+    "score_category": "good",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 6,
+      "timeliness": 8,
+      "engagement_potential": 8,
+      "viewer_appeal": 8
+    },
+    "reasoning": "Duplicate theme, similar to Topic 23 but with higher frequency indicated (35 vs 20). Strong visual trend ('Ghibli', 'Ghiblify', 'anime') with high engagement and appeal. Assessed as Ephemeral Trend (moderate novelty). High overall score due to volume and engagement.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Farcaster Tipping",
+      "explanation": "Users sharing that they have tipped, or are receiving tips, in their posts. This suggests an increase in the use of tipping features on the platform.",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "tip",
+          "frequency": 15
+        },
+        {
+          "term": "tipped",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 8,
+        "timeliness": 8,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 7,
+        "reasoning": "Duplicate theme, similar to Topic 1. Reflects user activity around the core platform mechanic of tipping, likely boosted by the new feature (Topic 1). High novelty and timeliness due to platform evolution aspect. High frequency of 'tip'/'tipped' suggests significant activity.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Correlate discussion volume with the launch of the 'Farcaster User Tips' feature.",
+          "Analyze the context of tipping mentions (giving, receiving, amount, reason).",
+          "Merge with Topic 1 unless the focus is clearly different (e.g., user behavior vs. feature announcement)."
+        ]
+      }
+    },
+    "score": 7,
+    "score_category": "good",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 7,
+      "novelty": 8,
+      "timeliness": 8,
+      "engagement_potential": 6,
+      "viewer_appeal": 5
+    },
+    "reasoning": "Duplicate theme, similar to Topic 1. Reflects user activity around the core platform mechanic of tipping, likely boosted by the new feature (Topic 1). High novelty and timeliness due to platform evolution aspect. High frequency of 'tip'/'tipped' suggests significant activity.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Farcaster Tipping Bug",
+      "explanation": "A user reporting a bug related to tipping and warpcast.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "tipping",
+          "frequency": 3
+        },
+        {
+          "term": "bug",
+          "frequency": 3
+        },
+        {
+          "term": "Warpcast",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 8,
+        "timeliness": 9,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 7,
+        "reasoning": "Highly specific report of a potential bug in a core feature (tipping) on a major client (Warpcast). High novelty and timeliness. Important for platform health and user experience, reflecting platform evolution (issue identification). Limited appeal but high relevance.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Track if other users confirm experiencing the same bug.",
+          "Monitor for responses or fixes from the Warpcast/Farcaster team.",
+          "Link to broader discussions about the tipping feature's reliability."
+        ]
+      }
+    },
+    "score": 7,
+    "score_category": "good",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 9,
+      "novelty": 8,
+      "timeliness": 9,
+      "engagement_potential": 6,
+      "viewer_appeal": 4
+    },
+    "reasoning": "Highly specific report of a potential bug in a core feature (tipping) on a major client (Warpcast). High novelty and timeliness. Important for platform health and user experience, reflecting platform evolution (issue identification). Limited appeal but high relevance.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Ghiblify PFP's",
+      "explanation": "Users sharing and enjoying the results of \"ghiblifying\" their profile pictures, showing community interest in a fun creative trend",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "ghiblify",
+          "frequency": 3
+        },
+        {
+          "term": "PFP",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 6,
+        "timeliness": 8,
+        "engagement_potential": 6,
+        "viewer_appeal": 7,
+        "overall": 6,
+        "reasoning": "Highly specific visual trend ('ghiblify' PFPs). Assessed as an Ephemeral Trend: high timeliness and visual appeal, but moderate novelty as PFP fads are common social media phenomena. Drives sharing but perhaps limited deep conversation.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Combine with other Ghibli-related topics for a broader 'Ghibli Trend' analysis.",
+          "Track the duration, peak, and decline of this specific PFP style.",
+          "Identify tools or methods being used."
+        ]
+      }
+    },
+    "score": 6,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 6,
+      "timeliness": 8,
+      "engagement_potential": 6,
+      "viewer_appeal": 7
+    },
+    "reasoning": "Highly specific visual trend ('ghiblify' PFPs). Assessed as an Ephemeral Trend: high timeliness and visual appeal, but moderate novelty as PFP fads are common social media phenomena. Drives sharing but perhaps limited deep conversation.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Bonsai Meme Collection",
+      "explanation": "Multiple posts referencing a Bonsai meme collection and encouraging users to engage with it.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "Bonsai",
+          "frequency": 8
+        },
+        {
+          "term": "meme",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 7,
+        "viewer_appeal": 5,
+        "overall": 6,
+        "reasoning": "Specific reference to a 'Bonsai' meme collection driving high engagement. Novelty is moderate; could be an organic meme or potentially tied to a specific project/token (possible Third-Party Tool/Promotion aspect). High frequency of 'Bonsai' warrants investigation into its context.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Investigate if 'Bonsai' refers to a specific token, project, channel, or just a community meme.",
+          "Clarify if engagement is organic or potentially coordinated promotion.",
+          "Analyze the content of the memes."
+        ]
+      }
+    },
+    "score": 6,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 7,
+      "novelty": 5,
+      "timeliness": 6,
+      "engagement_potential": 7,
+      "viewer_appeal": 5
+    },
+    "reasoning": "Specific reference to a 'Bonsai' meme collection driving high engagement. Novelty is moderate; could be an organic meme or potentially tied to a specific project/token (possible Third-Party Tool/Promotion aspect). High frequency of 'Bonsai' warrants investigation into its context.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Eggman Virus Infection",
+      "explanation": "A community-driven meme or game involving an 'Eggman virus' where profile pictures are transformed. Users are being 'infected' and sharing their new Eggman PFPs.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "Eggman",
+          "frequency": 14
+        },
+        {
+          "term": "virus",
+          "frequency": 6
+        },
+        {
+          "term": "infection",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 6,
+        "timeliness": 8,
+        "engagement_potential": 6,
+        "viewer_appeal": 6,
+        "overall": 6,
+        "reasoning": "Duplicate of Topic 22. Ephemeral meme/PFP trend. Consistent scoring.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Merge with Topic 22.",
+          "Track lifecycle and user sentiment."
+        ]
+      }
+    },
+    "score": 6,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 6,
+      "timeliness": 8,
+      "engagement_potential": 6,
+      "viewer_appeal": 6
+    },
+    "reasoning": "Duplicate of Topic 22. Ephemeral meme/PFP trend. Consistent scoring.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Ghibli themed content",
+      "explanation": "Posts referencing Ghibli movies, themes, or artwork, possibly due to a trending event. The posts are mostly user sharing their ITAPs and also requests for the creation of tokens.",
+      "estimated_percentage": "16%",
+      "key_terms": [
+        {
+          "term": "Ghibli",
+          "frequency": 20
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 5,
+        "timeliness": 7,
+        "engagement_potential": 7,
+        "viewer_appeal": 8,
+        "overall": 6,
+        "reasoning": "Broad cultural trend (Ghibli aesthetic) manifesting strongly on Farcaster through various means (ITAP, token requests). High volume, engagement, and broad appeal. Novelty is moderate as it leverages an existing popular style. Mixes baseline activity (ITAP) with more specific actions (token requests).",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Combine with 'Ghiblify PFP's' and 'Ghibli Art Trend' into a single 'Ghibli Trend' topic.",
+          "Distinguish between general appreciation, PFP changes, art creation, and specific token/project discussions related to Ghibli.",
+          "Analyze the drivers behind the trend's prominence on Farcaster."
+        ]
+      }
+    },
+    "score": 6,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 6,
+      "novelty": 5,
+      "timeliness": 7,
+      "engagement_potential": 7,
+      "viewer_appeal": 8
+    },
+    "reasoning": "Broad cultural trend (Ghibli aesthetic) manifesting strongly on Farcaster through various means (ITAP, token requests). High volume, engagement, and broad appeal. Novelty is moderate as it leverages an existing popular style. Mixes baseline activity (ITAP) with more specific actions (token requests).",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Nuts/\ud83e\udd5c conversation",
+      "explanation": "A trending term or phrase relating to a type of community engagement or meme on Farcaster. Users are using the terms to express satisfaction in activities, create posts and promote their content.",
+      "estimated_percentage": "8%",
+      "key_terms": [
+        {
+          "term": "nuts",
+          "frequency": 16
+        },
+        {
+          "term": "\ud83e\udd5c",
+          "frequency": 18
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 6,
+        "timeliness": 7,
+        "engagement_potential": 7,
+        "viewer_appeal": 4,
+        "overall": 6,
+        "reasoning": "Appears to be emergent platform-specific slang or meme ('nuts', \ud83d\udcca) used frequently in context. Moderate-to-high novelty if it's a new Farcaster-native term/behavior. High engagement among participants but low appeal to outsiders due to insider nature.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Investigate the origin, exact meaning, and context of 'nuts/\\ud83e\\udd5c' usage.",
+          "Merge with 'Check \\ud83e\\udd5c Stats!' if they represent the same phenomenon.",
+          "Track if usage spreads beyond the initial group or remains niche slang."
+        ]
+      }
+    },
+    "score": 6,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 7,
+      "novelty": 6,
+      "timeliness": 7,
+      "engagement_potential": 7,
+      "viewer_appeal": 4
+    },
+    "reasoning": "Appears to be emergent platform-specific slang or meme ('nuts', \ud83d\udcca) used frequently in context. Moderate-to-high novelty if it's a new Farcaster-native term/behavior. High engagement among participants but low appeal to outsiders due to insider nature.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Farcaster user/app features",
+      "explanation": "Discussions related to specific Farcaster features and user engagement, including profile verification, the use of frames and the launch of the new maps.",
+      "estimated_percentage": "8%",
+      "key_terms": [
+        {
+          "term": "frames",
+          "frequency": 5
+        },
+        {
+          "term": "maps",
+          "frequency": 1
+        },
+        {
+          "term": "Farcaster",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 6,
+        "reasoning": "Discusses core platform features like Frames (unique to Farcaster) and potentially new Maps. Topic is slightly broad, bundling multiple features. Scores moderately well due to relevance to platform usage and potential evolution (Maps).",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Break down into specific feature discussions (e.g., 'Frame Usage Patterns', 'New Maps Feature Launch/Discussion').",
+          "Clarify if 'maps' refers to a new core feature, a specific app, or something else.",
+          "Analyze discussions around profile verification if volume is significant."
+        ]
+      }
+    },
+    "score": 6,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 6,
+      "novelty": 6,
+      "timeliness": 6,
+      "engagement_potential": 6,
+      "viewer_appeal": 5
+    },
+    "reasoning": "Discusses core platform features like Frames (unique to Farcaster) and potentially new Maps. Topic is slightly broad, bundling multiple features. Scores moderately well due to relevance to platform usage and potential evolution (Maps).",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "OpenRank Stats",
+      "explanation": "Users are discussing OpenRank stats and trying to get more activity.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "OpenRank",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 8,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 6,
+        "reasoning": "Focuses on a core, Farcaster-specific mechanism (OpenRank) influencing user behavior. High specificity and novelty due to platform relevance (Platform Evolution aspect). Discussion volume might fluctuate. Low viewer appeal limits overall score.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Track discussion volume around OpenRank, especially correlating with any algorithm updates.",
+          "Analyze strategies users discuss for improving their OpenRank.",
+          "Monitor sentiment towards OpenRank's influence."
+        ]
+      }
+    },
+    "score": 6,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 8,
+      "timeliness": 6,
+      "engagement_potential": 6,
+      "viewer_appeal": 4
+    },
+    "reasoning": "Focuses on a core, Farcaster-specific mechanism (OpenRank) influencing user behavior. High specificity and novelty due to platform relevance (Platform Evolution aspect). Discussion volume might fluctuate. Low viewer appeal limits overall score.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Transaction History Poisoning",
+      "explanation": "Users are sharing an article about a sophisticated scam and how to avoid it, creating a learning opportunity for users.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "transaction history",
+          "frequency": 2
+        },
+        {
+          "term": "scam",
+          "frequency": 2
+        },
+        {
+          "term": "address",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 6,
+        "timeliness": 7,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 6,
+        "reasoning": "Specific, timely topic about a crypto scam technique. Highly relevant to Farcaster's user base. Educational value and potential impact on user security give it moderate novelty and importance, despite being about an external threat.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Track if specific Farcaster wallets or users report being targeted by this scam.",
+          "Monitor the effectiveness of shared warnings or preventative advice within the community.",
+          "Analyze if Farcaster clients or tools could help mitigate this risk."
+        ]
+      }
+    },
+    "score": 6,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 6,
+      "timeliness": 7,
+      "engagement_potential": 6,
+      "viewer_appeal": 5
+    },
+    "reasoning": "Specific, timely topic about a crypto scam technique. Highly relevant to Farcaster's user base. Educational value and potential impact on user security give it moderate novelty and importance, despite being about an external threat.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Eggman Virus Infection",
+      "explanation": "A meme is spreading with the Eggman character, users are sharing images of themselves with Eggman PFPs",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Eggman",
+          "frequency": 12
+        },
+        {
+          "term": "PFP",
+          "frequency": 4
+        },
+        {
+          "term": "virus",
+          "frequency": 6
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 6,
+        "timeliness": 8,
+        "engagement_potential": 6,
+        "viewer_appeal": 6,
+        "overall": 6,
+        "reasoning": "Duplicate of Topic 22. Ephemeral meme/PFP trend. Consistent scoring.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Merge with Topic 22.",
+          "Track lifecycle and user sentiment."
+        ]
+      }
+    },
+    "score": 6,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 6,
+      "timeliness": 8,
+      "engagement_potential": 6,
+      "viewer_appeal": 6
+    },
+    "reasoning": "Duplicate of Topic 22. Ephemeral meme/PFP trend. Consistent scoring.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "The Eggman Virus",
+      "explanation": "People are sharing about the Eggman virus infection.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Eggman",
+          "frequency": 12
+        },
+        {
+          "term": "virus",
+          "frequency": 6
+        },
+        {
+          "term": "PFP",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 6,
+        "timeliness": 8,
+        "engagement_potential": 6,
+        "viewer_appeal": 6,
+        "overall": 6,
+        "reasoning": "Duplicate of Topic 22 & 44. Ephemeral meme/PFP trend. Consistent scoring.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Merge with Topic 22 & 44.",
+          "Track lifecycle and user sentiment."
+        ]
+      }
+    },
+    "score": 6,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 6,
+      "timeliness": 8,
+      "engagement_potential": 6,
+      "viewer_appeal": 6
+    },
+    "reasoning": "Duplicate of Topic 22 & 44. Ephemeral meme/PFP trend. Consistent scoring.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "New Lens Agora",
+      "explanation": "Discussion and promotion of a new version of Lens Agora, a platform on Lens.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "Lens Agora",
+          "frequency": 2
+        },
+        {
+          "term": "explainer video",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Lens",
+          "type": "Project",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Specific to a platform (Lens Agora) within the related Lens ecosystem, but not core Farcaster. Novelty reduced as it pertains to an external platform update, potentially promotional (Third-Party Tool Detection). Limited engagement potential and appeal within the primary Farcaster user base.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Focus analysis on cross-platform interactions or user flow between Farcaster and Lens Agora.",
+          "Monitor if this announcement drives measurable activity from Farcaster users."
+        ]
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 5,
+      "timeliness": 6,
+      "engagement_potential": 5,
+      "viewer_appeal": 4
+    },
+    "reasoning": "Specific to a platform (Lens Agora) within the related Lens ecosystem, but not core Farcaster. Novelty reduced as it pertains to an external platform update, potentially promotional (Third-Party Tool Detection). Limited engagement potential and appeal within the primary Farcaster user base.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Open Source Funding",
+      "explanation": "Discussion surrounding funding for open source projects. A link to a Vitalik Buterin blog post is included.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "public goods",
+          "frequency": 1
+        },
+        {
+          "term": "open source funding",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Vitalik Buterin",
+          "type": "Person",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 5,
+        "reasoning": "Topic is relevant to the tech/crypto-focused Farcaster demographic, and Vitalik Buterin's involvement adds some weight. However, OSS funding is a broad, recurring discussion, not a novel Farcaster-specific event. Low novelty and moderate timeliness (tied to blog post share).",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Track if discussions link this concept to specific Farcaster projects seeking funding.",
+          "Monitor if Farcaster platform or related DAOs adopt similar funding models."
+        ]
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 6,
+      "novelty": 4,
+      "timeliness": 5,
+      "engagement_potential": 6,
+      "viewer_appeal": 5
+    },
+    "reasoning": "Topic is relevant to the tech/crypto-focused Farcaster demographic, and Vitalik Buterin's involvement adds some weight. However, OSS funding is a broad, recurring discussion, not a novel Farcaster-specific event. Low novelty and moderate timeliness (tied to blog post share).",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Warpcast vs. Farcaster",
+      "explanation": "Posts pointing out the differences between Warpcast and Farcaster, often with a humorous tone. ",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "Warpcast",
+          "frequency": 1
+        },
+        {
+          "term": "Farcaster",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Warpcast",
+          "type": "Product",
+          "relevance": "High"
+        },
+        {
+          "name": "Farcaster",
+          "type": "Platform",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 4,
+        "engagement_potential": 5,
+        "viewer_appeal": 5,
+        "overall": 5,
+        "reasoning": "Discusses a fundamental distinction (client vs. protocol) within the ecosystem. Specific, but low novelty and timeliness as this distinction is constant. Serves more as user education than a dynamic trend.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Track if confusion between Warpcast and Farcaster is increasing or decreasing, perhaps indicating new user influx.",
+          "Analyze if specific events or feature launches trigger these comparison discussions."
+        ]
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 5,
+      "timeliness": 4,
+      "engagement_potential": 5,
+      "viewer_appeal": 5
+    },
+    "reasoning": "Discusses a fundamental distinction (client vs. protocol) within the ecosystem. Specific, but low novelty and timeliness as this distinction is constant. Serves more as user education than a dynamic trend.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Mini-app for The Weekend",
+      "explanation": "Announcement of the launch of a mini-app called \"The Weekend\", which allows users to mint during weekends, and is enforced on-chain.",
+      "estimated_percentage": "1%",
+      "key_terms": [
+        {
+          "term": "The Weekend",
+          "frequency": 2
+        },
+        {
+          "term": "mini-app",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 5,
+        "timeliness": 8,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Highly specific topic about a single mini-app ('The Weekend') with unique functionality. Penalized for Third-Party Tool Detection; it's a specific app launch, not a broad platform trend. Novelty score reduced accordingly. Limited appeal and engagement potential outside users interested in this specific app.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Track usage and engagement metrics specifically for 'The Weekend' mini-app.",
+          "Monitor if this inspires similar time-gated or niche-functionality mini-apps.",
+          "Assess if the on-chain enforcement aspect generates discussion."
+        ]
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 9,
+      "novelty": 5,
+      "timeliness": 8,
+      "engagement_potential": 5,
+      "viewer_appeal": 4
+    },
+    "reasoning": "Highly specific topic about a single mini-app ('The Weekend') with unique functionality. Penalized for Third-Party Tool Detection; it's a specific app launch, not a broad platform trend. Novelty score reduced accordingly. Limited appeal and engagement potential outside users interested in this specific app.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Check \ud83e\udd5c Stats!",
+      "explanation": "Posts encouraging users to check their stats, using the \"\ud83e\udd5c\" emoji and references to \"Frame\" indicate the use of frames and a particular community behavior.",
+      "estimated_percentage": "7%",
+      "key_terms": [
+        {
+          "term": "\ud83e\udd5c",
+          "frequency": 9
+        },
+        {
+          "term": "Frame",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Specific call to action involving an emoji (\ud83d\udcca) and 'Frame', likely pointing to a stats-checking tool/app. Use of Frames is Farcaster-specific, adding some novelty. However, likely promotes a specific third-party tool, reducing novelty score (Third-Party Tool Detection). Limited viewer appeal.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Identify the specific Frame/app being promoted.",
+          "Analyze if this reflects genuine interest in stats or is driven by tool promotion.",
+          "Merge with 'Nuts/\\ud83e\\udd5c conversation' if confirmed to be the same phenomenon."
+        ]
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 7,
+      "novelty": 5,
+      "timeliness": 6,
+      "engagement_potential": 6,
+      "viewer_appeal": 4
+    },
+    "reasoning": "Specific call to action involving an emoji (\ud83d\udcca) and 'Frame', likely pointing to a stats-checking tool/app. Use of Frames is Farcaster-specific, adding some novelty. However, likely promotes a specific third-party tool, reducing novelty score (Third-Party Tool Detection). Limited viewer appeal.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Moxie Protocol burns",
+      "explanation": "Discussion around the Moxie Protocol burning transaction fees, with increasing burn rates and significant amounts of MOXIE burned. A high-level overview of the protocol's financial performance.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "Moxie",
+          "frequency": 4
+        },
+        {
+          "term": "burn",
+          "frequency": 2
+        },
+        {
+          "term": "Protocol",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Specific topic about an external crypto protocol's tokenomics (Moxie burns). Novelty reduced as it focuses on a specific third-party project/token, potentially promotional (Third-Party Tool Detection). Relevance depends on Moxie's integration or user overlap with Farcaster. Niche appeal.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Clarify Moxie Protocol's relationship to Farcaster (built on Base? Integrated via Frames?).",
+          "Monitor if discussion is organic user interest versus project promotion.",
+          "Assess the overlap between Moxie holders/users and Farcaster users."
+        ]
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 5,
+      "timeliness": 6,
+      "engagement_potential": 5,
+      "viewer_appeal": 4
+    },
+    "reasoning": "Specific topic about an external crypto protocol's tokenomics (Moxie burns). Novelty reduced as it focuses on a specific third-party project/token, potentially promotional (Third-Party Tool Detection). Relevance depends on Moxie's integration or user overlap with Farcaster. Niche appeal.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Photo Quality Control, QC",
+      "explanation": "Users are asking for a review and quality control of the photos they are uploading.",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "QC",
+          "frequency": 11
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Specific community behavior: users requesting 'QC' on photos. Moderate novelty \u2013 feedback seeking is common, but the 'QC' framing might be a specific Farcaster norm, possibly within certain channels. Limited viewer appeal.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Investigate if 'QC' requests are concentrated in specific channels (e.g., /photography).",
+          "Determine if this is an established norm or a newly emerging behavior.",
+          "Analyze the nature of the feedback given/received."
+        ]
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 7,
+      "novelty": 5,
+      "timeliness": 6,
+      "engagement_potential": 6,
+      "viewer_appeal": 4
+    },
+    "reasoning": "Specific community behavior: users requesting 'QC' on photos. Moderate novelty \u2013 feedback seeking is common, but the 'QC' framing might be a specific Farcaster norm, possibly within certain channels. Limited viewer appeal.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Building on Base",
+      "explanation": "Users are discussing and sharing their projects, and the activities in Base ecosystem.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "Base",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 5,
+        "novelty": 5,
+        "timeliness": 5,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Discusses development activity on the closely related Base L2. Relevant to the Farcaster ecosystem, but the topic is broad and represents ongoing activity rather than a specific, novel trend *within* Farcaster conversations during this period. Moderate scores.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Focus on specific projects being built on Base *by* Farcaster users or integrated *with* Farcaster (e.g., via Frames).",
+          "Merge with 'Base Channel Discussions' if content overlaps significantly.",
+          "Track announcements of major Farcaster-related projects launching on Base."
+        ]
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 5,
+      "novelty": 5,
+      "timeliness": 5,
+      "engagement_potential": 5,
+      "viewer_appeal": 4
+    },
+    "reasoning": "Discusses development activity on the closely related Base L2. Relevant to the Farcaster ecosystem, but the topic is broad and represents ongoing activity rather than a specific, novel trend *within* Farcaster conversations during this period. Moderate scores.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Base Channel Discussions",
+      "explanation": "General discussions around the Base channel, and people are confused about its purpose and content. ",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "Base",
+          "frequency": 10
+        },
+        {
+          "term": "channel",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 5,
+        "timeliness": 5,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Specific to meta-discussion about the /base channel, including confusion about its purpose. Relevant due to Base's importance, but the topic is channel governance/understanding, not activity *within* the channel. Moderate scores.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Merge with 'Building on Base' if discussions overlap significantly (e.g., confusion stems from types of projects discussed).",
+          "Analyze the source and nature of the confusion regarding the channel's purpose.",
+          "Monitor if channel moderation or description changes in response."
+        ]
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 6,
+      "novelty": 5,
+      "timeliness": 5,
+      "engagement_potential": 5,
+      "viewer_appeal": 4
+    },
+    "reasoning": "Specific to meta-discussion about the /base channel, including confusion about its purpose. Relevant due to Base's importance, but the topic is channel governance/understanding, not activity *within* the channel. Moderate scores.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Degen Community Mentions",
+      "explanation": "Mentions of 'degen' and references to bounty programs, giveaways, and involvement in the community.",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "degen",
+          "frequency": 12
+        },
+        {
+          "term": "bounty",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 5,
+        "reasoning": "Focuses on a specific, influential token/community ('Degen') and related activities (bounties, giveaways). Highly relevant within the Farcaster/Base ecosystem, but centers on one specific (though large) sub-community/token. Moderate novelty as Degen is established.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Merge with 'Degen Rewards & Degen'.",
+          "Analyze the *nature* of Degen mentions (price, community building, utility, rewards).",
+          "Track the influence of Degen culture and economics on broader Farcaster norms and activity."
+        ]
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 6,
+      "novelty": 5,
+      "timeliness": 6,
+      "engagement_potential": 6,
+      "viewer_appeal": 5
+    },
+    "reasoning": "Focuses on a specific, influential token/community ('Degen') and related activities (bounties, giveaways). Highly relevant within the Farcaster/Base ecosystem, but centers on one specific (though large) sub-community/token. Moderate novelty as Degen is established.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Muppet PFPs",
+      "explanation": "Users are discussing the trend of making Muppet-themed profile pictures.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "Muppet",
+          "frequency": 2
+        },
+        {
+          "term": "PFP",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 4,
+        "viewer_appeal": 5,
+        "overall": 5,
+        "reasoning": "Another ephemeral PFP trend ('Muppets'). Specific, but likely smaller scale or lower engagement than Ghibli/Eggman based on description ('discussing the trend'). Moderate novelty (Ephemeral Trend penalty), moderate timeliness.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Monitor the scale, duration, and actual participation rate (PFP changes) of this trend.",
+          "Compare engagement levels with other concurrent PFP trends (Ghibli, Eggman)."
+        ]
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 5,
+      "timeliness": 6,
+      "engagement_potential": 4,
+      "viewer_appeal": 5
+    },
+    "reasoning": "Another ephemeral PFP trend ('Muppets'). Specific, but likely smaller scale or lower engagement than Ghibli/Eggman based on description ('discussing the trend'). Moderate novelty (Ephemeral Trend penalty), moderate timeliness.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "New Zora split",
+      "explanation": "A user is reporting that the split option seems no longer available on new Zora.",
+      "estimated_percentage": "1%",
+      "key_terms": [
+        {
+          "term": "Zora",
+          "frequency": 2
+        },
+        {
+          "term": "split",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 8,
+        "engagement_potential": 4,
+        "viewer_appeal": 3,
+        "overall": 5,
+        "reasoning": "Specific issue reported on a relevant third-party platform (Zora) frequently used by Farcaster creators. Timely due to recent user report. Penalized slightly for Third-Party Tool focus. Niche appeal limits overall score.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Monitor if this is a confirmed change or bug on Zora's side.",
+          "Track the impact on Farcaster creators who use Zora splits for collaborations or sales.",
+          "Assess if alternative splitting mechanisms on Farcaster gain traction as a result."
+        ]
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 5,
+      "timeliness": 8,
+      "engagement_potential": 4,
+      "viewer_appeal": 3
+    },
+    "reasoning": "Specific issue reported on a relevant third-party platform (Zora) frequently used by Farcaster creators. Timely due to recent user report. Penalized slightly for Third-Party Tool focus. Niche appeal limits overall score.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Degen Rewards & Degen",
+      "explanation": "Degen rewards, degen, and their journey on farcaster.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Degen",
+          "frequency": 13
+        },
+        {
+          "term": "rewards",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 5,
+        "reasoning": "Duplicate theme, similar to Topic 38. Focuses on the Degen token/community, specifically rewards and user journeys. Relevant ecosystem player, but discussion is specific to that sub-community/token. Moderate novelty.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Merge with Topic 38 'Degen Community Mentions'.",
+          "Analyze the impact of Degen rewards distribution on Farcaster activity patterns (e.g., posting frequency, engagement farming).",
+          "Track sentiment regarding the Degen reward system."
+        ]
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 6,
+      "novelty": 5,
+      "timeliness": 6,
+      "engagement_potential": 6,
+      "viewer_appeal": 5
+    },
+    "reasoning": "Duplicate theme, similar to Topic 38. Focuses on the Degen token/community, specifically rewards and user journeys. Relevant ecosystem player, but discussion is specific to that sub-community/token. Moderate novelty.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "AI & Conversational Interfaces",
+      "explanation": "Discussion and sharing of an essay that critiques conversational interfaces and promotes AI as augmentation.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "conversational interfaces",
+          "frequency": 2
+        },
+        {
+          "term": "AI",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Julian",
+          "type": "Person",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 4,
+        "timeliness": 4,
+        "engagement_potential": 5,
+        "viewer_appeal": 5,
+        "overall": 4,
+        "reasoning": "A general technology discussion topic sparked by an essay. While potentially interesting to some users, it lacks specificity to Farcaster platform dynamics, culture, or features. Low novelty and timeliness within the Farcaster context.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Monitor if this discussion connects to AI tools or applications being built *on* or integrated *with* Farcaster.",
+          "Track overall sentiment towards AI development within the Farcaster community."
+        ]
+      }
+    },
+    "score": 4,
+    "score_category": "poor",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 6,
+      "novelty": 4,
+      "timeliness": 4,
+      "engagement_potential": 5,
+      "viewer_appeal": 5
+    },
+    "reasoning": "A general technology discussion topic sparked by an essay. While potentially interesting to some users, it lacks specificity to Farcaster platform dynamics, culture, or features. Low novelty and timeliness within the Farcaster context.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "ITAP of Flowers",
+      "explanation": "The phrase \"ITAP\" (I took a picture) along with images of flowers are a recurring theme. This signifies a popular trend of sharing photos and engaging with visual content within the community.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "ITAP",
+          "frequency": 12
+        },
+        {
+          "term": "flowers",
+          "frequency": 8
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "ITAP",
+          "type": "Activity",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 5,
+        "novelty": 3,
+        "timeliness": 3,
+        "engagement_potential": 5,
+        "viewer_appeal": 6,
+        "overall": 4,
+        "reasoning": "A common sub-category of the baseline ITAP activity. Slightly more specific than general ITAP, but still very common content with low novelty. Likely seasonal but fundamentally evergreen. Borderline baseline.",
+        "is_baseline_topic": true,
+        "improvement_suggestions": [
+          "Merge into a general 'ITAP Photo Sharing' topic or filter out.",
+          "Only track separately if volume spikes significantly beyond normal seasonal patterns or connects to another event."
+        ]
+      }
+    },
+    "score": 4,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 5,
+      "novelty": 3,
+      "timeliness": 3,
+      "engagement_potential": 5,
+      "viewer_appeal": 6
+    },
+    "reasoning": "A common sub-category of the baseline ITAP activity. Slightly more specific than general ITAP, but still very common content with low novelty. Likely seasonal but fundamentally evergreen. Borderline baseline.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Monochrome Monday",
+      "explanation": "The hashtag #monochromeMonday and similar posts referencing this day is a specific community behavior.",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "Monochrome",
+          "frequency": 4
+        },
+        {
+          "term": "Monday",
+          "frequency": 6
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 3,
+        "timeliness": 3,
+        "engagement_potential": 5,
+        "viewer_appeal": 5,
+        "overall": 4,
+        "reasoning": "Specific, recurring community activity (#monochromeMonday). Low novelty and timeliness because it's an established weekly ritual, not a new or time-bound event. Qualifies as a baseline activity pattern.",
+        "is_baseline_topic": true,
+        "improvement_suggestions": [
+          "Filter out as a recurring baseline activity.",
+          "Monitor participation levels over time to gauge community health in that segment.",
+          "Track emergence of similar weekly themed activities."
+        ]
+      }
+    },
+    "score": 4,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 7,
+      "novelty": 3,
+      "timeliness": 3,
+      "engagement_potential": 5,
+      "viewer_appeal": 5
+    },
+    "reasoning": "Specific, recurring community activity (#monochromeMonday). Low novelty and timeliness because it's an established weekly ritual, not a new or time-bound event. Qualifies as a baseline activity pattern.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "ITAP in Japan",
+      "explanation": "Specific travel photos and the frequency of posting \"ITAP\" indicates the trend of visual content.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "ITAP",
+          "frequency": 12
+        },
+        {
+          "term": "Japan",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "ITAP",
+          "type": "Activity",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 3,
+        "timeliness": 3,
+        "engagement_potential": 4,
+        "viewer_appeal": 5,
+        "overall": 4,
+        "reasoning": "More specific location than general travel ITAP, but still fundamentally baseline photo sharing. Low novelty unless tied to a specific, shared Farcaster-related event happening in Japan during this period. Otherwise, low engagement potential.",
+        "is_baseline_topic": true,
+        "improvement_suggestions": [
+          "Merge into 'ITAP Travel Photos' unless a specific Farcaster-related event in Japan justifies separate tracking.",
+          "Filter out as baseline if no specific event context."
+        ]
+      }
+    },
+    "score": 4,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 6,
+      "novelty": 3,
+      "timeliness": 3,
+      "engagement_potential": 4,
+      "viewer_appeal": 5
+    },
+    "reasoning": "More specific location than general travel ITAP, but still fundamentally baseline photo sharing. Low novelty unless tied to a specific, shared Farcaster-related event happening in Japan during this period. Otherwise, low engagement potential.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Daily Doodle Series",
+      "explanation": "Mention of a 'Daily doodle' series indicates an ongoing creative project with a dedicated audience, suggesting a specific user and the work they are doing.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "Daily Doodle",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 4,
+        "viewer_appeal": 4,
+        "overall": 4,
+        "reasoning": "Specific to a single user's ongoing content series. While potentially interesting content, it's not a platform-wide trend or emergent behavior. Low novelty and limited engagement/appeal beyond the creator's followers.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Track as notable user-generated content, not a platform trend.",
+          "Aggregate if multiple 'daily creative series' become a common pattern on the platform."
+        ]
+      }
+    },
+    "score": 4,
+    "score_category": "poor",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 7,
+      "novelty": 4,
+      "timeliness": 5,
+      "engagement_potential": 4,
+      "viewer_appeal": 4
+    },
+    "reasoning": "Specific to a single user's ongoing content series. While potentially interesting content, it's not a platform-wide trend or emergent behavior. Low novelty and limited engagement/appeal beyond the creator's followers.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Warpslot Game Play",
+      "explanation": "Discussion around the Warpslot game, users sharing wins. Indicates ongoing engagement with games on the platform.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Warpslot",
+          "frequency": 7
+        },
+        {
+          "term": "Spin",
+          "frequency": 6
+        },
+        {
+          "term": "wins",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 5,
+        "viewer_appeal": 3,
+        "overall": 4,
+        "reasoning": "Clearly about a specific third-party game ('Warpslot'). Penalized for Third-Party Tool Detection. Discussion (sharing wins) is typical for game communities but not a broad Farcaster trend. Low novelty and appeal outside game players.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Track Warpslot discussion within its specific channel or community.",
+          "Monitor if game mechanics (e.g., rewards) influence broader platform behavior (unlikely)."
+        ]
+      }
+    },
+    "score": 4,
+    "score_category": "poor",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 4,
+      "timeliness": 5,
+      "engagement_potential": 5,
+      "viewer_appeal": 3
+    },
+    "reasoning": "Clearly about a specific third-party game ('Warpslot'). Penalized for Third-Party Tool Detection. Discussion (sharing wins) is typical for game communities but not a broad Farcaster trend. Low novelty and appeal outside game players.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Farcade Game Milestones",
+      "explanation": "Users celebrating achievements, such as level milestones, and highlighting activity within the /farcade channel. A consistent conversation topic.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "Farcade",
+          "frequency": 4
+        },
+        {
+          "term": "level",
+          "frequency": 3
+        },
+        {
+          "term": "coins",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 5,
+        "viewer_appeal": 3,
+        "overall": 4,
+        "reasoning": "Specific to activities (celebrating milestones) within a niche channel/community (/farcade). Penalized for Third-Party Tool/Community focus. Standard behavior within gaming communities, low novelty and appeal outside participants.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Track activity volume and types of games discussed within the /farcade channel.",
+          "Analyze if Farcarde mechanics or games are unique to Farcaster or standard patterns."
+        ]
+      }
+    },
+    "score": 4,
+    "score_category": "poor",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 4,
+      "timeliness": 5,
+      "engagement_potential": 5,
+      "viewer_appeal": 3
+    },
+    "reasoning": "Specific to activities (celebrating milestones) within a niche channel/community (/farcade). Penalized for Third-Party Tool/Community focus. Standard behavior within gaming communities, low novelty and appeal outside participants.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Photo Collection Showcases",
+      "explanation": "Users sharing their photo collections or discussing their favorite photos on the platform",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "collection",
+          "frequency": 4
+        },
+        {
+          "term": "photo",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 5,
+        "novelty": 3,
+        "timeliness": 3,
+        "engagement_potential": 4,
+        "viewer_appeal": 5,
+        "overall": 4,
+        "reasoning": "Describes users sharing photo collections. More specific than general ITAP, but still a common form of content sharing for creators. Low novelty and timeliness as a trend category.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Track if specific *platforms or Frames* for showcasing collections on Farcaster are trending.",
+          "Merge into a broader 'Photography on Farcaster' theme if needed, distinguishing from single ITAP posts."
+        ]
+      }
+    },
+    "score": 4,
+    "score_category": "poor",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 5,
+      "novelty": 3,
+      "timeliness": 3,
+      "engagement_potential": 4,
+      "viewer_appeal": 5
+    },
+    "reasoning": "Describes users sharing photo collections. More specific than general ITAP, but still a common form of content sharing for creators. Low novelty and timeliness as a trend category.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Bootstrapping Business",
+      "explanation": "Discussion about the pros and cons of bootstrapping a business, sparking conversation.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "bootstrapping",
+          "frequency": 3
+        },
+        {
+          "term": "business",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 3,
+        "timeliness": 3,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 4,
+        "reasoning": "General business topic relevant to the builder/entrepreneur segment of Farcaster users, but not a platform-specific trend. Common discussion in relevant circles. Low novelty and timeliness.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Track if discussion specifically links bootstrapping challenges or successes to building *on Farcaster* or using its native features.",
+          "Monitor if specific Farcaster-native tools or communities emerge to support bootstrappers."
+        ]
+      }
+    },
+    "score": 4,
+    "score_category": "poor",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 6,
+      "novelty": 3,
+      "timeliness": 3,
+      "engagement_potential": 5,
+      "viewer_appeal": 4
+    },
+    "reasoning": "General business topic relevant to the builder/entrepreneur segment of Farcaster users, but not a platform-specific trend. Common discussion in relevant circles. Low novelty and timeliness.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Farcaster's  value",
+      "explanation": "Users are sharing their value about the Farcaster platform.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "Farcaster",
+          "frequency": 10
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 3,
+        "novelty": 3,
+        "timeliness": 3,
+        "engagement_potential": 5,
+        "viewer_appeal": 5,
+        "overall": 4,
+        "reasoning": "Very broad topic about the platform's general value proposition. Represents evergreen user sentiment rather than a specific, timely trend or event. Low specificity and novelty.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Focus analysis on *specific aspects* of Farcaster's value being highlighted in current discussions (e.g., community quality, decentralization benefits, specific feature utility).",
+          "Track shifts in expressed user value propositions over time.",
+          "Filter out if discussion remains too generic."
+        ]
+      }
+    },
+    "score": 4,
+    "score_category": "poor",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 3,
+      "novelty": 3,
+      "timeliness": 3,
+      "engagement_potential": 5,
+      "viewer_appeal": 5
+    },
+    "reasoning": "Very broad topic about the platform's general value proposition. Represents evergreen user sentiment rather than a specific, timely trend or event. Low specificity and novelty.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "ITAP (I Took A Photo)",
+      "explanation": "Posts tagged as \"ITAP\", showcasing user-submitted photos with their related descriptions, indicating a strong focus on visual content and community engagement.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "ITAP",
+          "frequency": 15
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 3,
+        "novelty": 2,
+        "timeliness": 2,
+        "engagement_potential": 5,
+        "viewer_appeal": 6,
+        "overall": 3,
+        "reasoning": "Extremely broad category representing baseline user behavior (photo sharing) using a common tag. Very low specificity, novelty, and timeliness. High frequency confirms it's background activity, not a trend.",
+        "is_baseline_topic": true,
+        "improvement_suggestions": [
+          "Filter this out as baseline activity.",
+          "Focus analysis on *specific types* of ITAP content if they show unusual spikes or tie into other trends.",
+          "Merge with other general ITAP topics for tracking overall photo volume if needed."
+        ]
+      }
+    },
+    "score": 3,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 3,
+      "novelty": 2,
+      "timeliness": 2,
+      "engagement_potential": 5,
+      "viewer_appeal": 6
+    },
+    "reasoning": "Extremely broad category representing baseline user behavior (photo sharing) using a common tag. Very low specificity, novelty, and timeliness. High frequency confirms it's background activity, not a trend.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "ITAP of Nature",
+      "explanation": "Similar to ITAP of flowers, this category shows users frequently sharing images of nature.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "ITAP",
+          "frequency": 12
+        },
+        {
+          "term": "Nature",
+          "frequency": 10
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "ITAP",
+          "type": "Activity",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 4,
+        "novelty": 2,
+        "timeliness": 2,
+        "engagement_potential": 5,
+        "viewer_appeal": 6,
+        "overall": 3,
+        "reasoning": "Another broad sub-category of the baseline ITAP activity. Nature photos are extremely common online. Very low novelty and timeliness. Clearly baseline.",
+        "is_baseline_topic": true,
+        "improvement_suggestions": [
+          "Merge into a general 'ITAP Photo Sharing' topic or filter out.",
+          "Only track separately if related to specific events (e.g., Earth Day) or locations relevant to Farcaster."
+        ]
+      }
+    },
+    "score": 3,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 4,
+      "novelty": 2,
+      "timeliness": 2,
+      "engagement_potential": 5,
+      "viewer_appeal": 6
+    },
+    "reasoning": "Another broad sub-category of the baseline ITAP activity. Nature photos are extremely common online. Very low novelty and timeliness. Clearly baseline.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "ITAP Travel Photos",
+      "explanation": "The use of ITAP combined with places, indicates a high degree of travel photo sharing",
+      "estimated_percentage": "8%",
+      "key_terms": [
+        {
+          "term": "ITAP",
+          "frequency": 12
+        },
+        {
+          "term": "Travel",
+          "frequency": 8
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "ITAP",
+          "type": "Activity",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 4,
+        "novelty": 2,
+        "timeliness": 2,
+        "engagement_potential": 5,
+        "viewer_appeal": 6,
+        "overall": 3,
+        "reasoning": "Broad sub-category of baseline ITAP activity. Sharing travel photos is common online. Low novelty and timeliness. Baseline.",
+        "is_baseline_topic": true,
+        "improvement_suggestions": [
+          "Merge into a general 'ITAP Photo Sharing' topic or filter out.",
+          "Focus only if travel photos spike related to a specific Farcaster conference or event."
+        ]
+      }
+    },
+    "score": 3,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 4,
+      "novelty": 2,
+      "timeliness": 2,
+      "engagement_potential": 5,
+      "viewer_appeal": 6
+    },
+    "reasoning": "Broad sub-category of baseline ITAP activity. Sharing travel photos is common online. Low novelty and timeliness. Baseline.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Ask and answer Q&A",
+      "explanation": "Posts that encourage discussion and conversations among the users. This pattern represents community participation and engagement. ",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "Question",
+          "frequency": 6
+        },
+        {
+          "term": "Answer",
+          "frequency": 6
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 3,
+        "novelty": 2,
+        "timeliness": 2,
+        "engagement_potential": 4,
+        "viewer_appeal": 3,
+        "overall": 3,
+        "reasoning": "Very generic description of a basic social interaction pattern (Q&A). Low specificity, novelty, and timeliness. Not a Farcaster-specific trend.",
+        "is_baseline_topic": true,
+        "improvement_suggestions": [
+          "Filter out as baseline interaction.",
+          "Focus analysis on specific *types* of Q&A that might be trending (e.g., AMAs with key figures, Q&A about new features)."
+        ]
+      }
+    },
+    "score": 3,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 3,
+      "novelty": 2,
+      "timeliness": 2,
+      "engagement_potential": 4,
+      "viewer_appeal": 3
+    },
+    "reasoning": "Very generic description of a basic social interaction pattern (Q&A). Low specificity, novelty, and timeliness. Not a Farcaster-specific trend.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "ITAP, Photos of Food",
+      "explanation": "The use of ITAP and the descriptions of meals are another recurring pattern, showcasing people sharing their food and the activity.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "ITAP",
+          "frequency": 12
+        },
+        {
+          "term": "Food",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "ITAP",
+          "type": "Activity",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 5,
+        "novelty": 2,
+        "timeliness": 2,
+        "engagement_potential": 4,
+        "viewer_appeal": 5,
+        "overall": 3,
+        "reasoning": "Sub-category of baseline ITAP. Sharing food photos is extremely common online. Low novelty and timeliness. Baseline.",
+        "is_baseline_topic": true,
+        "improvement_suggestions": [
+          "Merge into a general 'ITAP Photo Sharing' topic or filter out.",
+          "Merge with 'Food Discussions'."
+        ]
+      }
+    },
+    "score": 3,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 5,
+      "novelty": 2,
+      "timeliness": 2,
+      "engagement_potential": 4,
+      "viewer_appeal": 5
+    },
+    "reasoning": "Sub-category of baseline ITAP. Sharing food photos is extremely common online. Low novelty and timeliness. Baseline.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "ITAP (I took a photo)",
+      "explanation": "Users are actively sharing photos, with 'ITAP' as a common hashtag or phrase to initiate and participate in threads. The posts are about various topics like nature, food, art and other topics.",
+      "estimated_percentage": "18%",
+      "key_terms": [
+        {
+          "term": "ITAP",
+          "frequency": 36
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 3,
+        "novelty": 2,
+        "timeliness": 2,
+        "engagement_potential": 5,
+        "viewer_appeal": 6,
+        "overall": 3,
+        "reasoning": "Duplicate of Topic 10. Baseline photo sharing activity. Very high frequency (36) reinforces its status as widespread background noise, not a specific trend.",
+        "is_baseline_topic": true,
+        "improvement_suggestions": [
+          "Filter out as baseline activity.",
+          "Merge all general ITAP topics.",
+          "Focus analysis on *spikes* within specific ITAP sub-categories or context."
+        ]
+      }
+    },
+    "score": 3,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 3,
+      "novelty": 2,
+      "timeliness": 2,
+      "engagement_potential": 5,
+      "viewer_appeal": 6
+    },
+    "reasoning": "Duplicate of Topic 10. Baseline photo sharing activity. Very high frequency (36) reinforces its status as widespread background noise, not a specific trend.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "ITAP Photo Sharing",
+      "explanation": "Users frequently post 'ITAP' (I took a picture) with photos of landscapes, food, pets, and other subjects. High recency and consistent engagement.",
+      "estimated_percentage": "15%",
+      "key_terms": [
+        {
+          "term": "ITAP",
+          "frequency": 50
+        },
+        {
+          "term": "photo",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 3,
+        "novelty": 2,
+        "timeliness": 2,
+        "engagement_potential": 5,
+        "viewer_appeal": 6,
+        "overall": 3,
+        "reasoning": "Duplicate theme, similar to Topic 10 & 25. Baseline photo sharing. Extremely high frequency (50) confirms it's pervasive background activity.",
+        "is_baseline_topic": true,
+        "improvement_suggestions": [
+          "Filter out as baseline activity.",
+          "Merge all general ITAP topics.",
+          "Use ITAP volume as a general indicator of platform visual content activity, but don't treat the tag itself as a trend."
+        ]
+      }
+    },
+    "score": 3,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 3,
+      "novelty": 2,
+      "timeliness": 2,
+      "engagement_potential": 5,
+      "viewer_appeal": 6
+    },
+    "reasoning": "Duplicate theme, similar to Topic 10 & 25. Baseline photo sharing. Extremely high frequency (50) confirms it's pervasive background activity.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "Food Discussions",
+      "explanation": "Food pictures, mentions of specific dishes, and discussions related to eating. The discussions show a positive feeling. The frequency is consistent and relevant to the community",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "food",
+          "frequency": 10
+        },
+        {
+          "term": "pizza",
+          "frequency": 2
+        },
+        {
+          "term": "sushi",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 5,
+        "novelty": 2,
+        "timeliness": 2,
+        "engagement_potential": 5,
+        "viewer_appeal": 5,
+        "overall": 3,
+        "reasoning": "General discussion about food, including pictures. Universal, baseline social topic. Very low novelty and timeliness as a trend. Similar to 'ITAP, Photos of Food'.",
+        "is_baseline_topic": true,
+        "improvement_suggestions": [
+          "Filter out as baseline social chatter.",
+          "Merge with 'ITAP, Photos of Food'.",
+          "Only track if food discussion spikes around a specific event or Farcaster-related gathering."
+        ]
+      }
+    },
+    "score": 3,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 5,
+      "novelty": 2,
+      "timeliness": 2,
+      "engagement_potential": 5,
+      "viewer_appeal": 5
+    },
+    "reasoning": "General discussion about food, including pictures. Universal, baseline social topic. Very low novelty and timeliness as a trend. Similar to 'ITAP, Photos of Food'.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "GM, Good Morning",
+      "explanation": "The use of \"GM\" (Good Morning) to start conversations, as well as the various mentions of the weekly days indicate that this is a community-driven activity.",
+      "estimated_percentage": "15%",
+      "key_terms": [
+        {
+          "term": "GM",
+          "frequency": 20
+        },
+        {
+          "term": "Weekend",
+          "frequency": 10
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 2,
+        "novelty": 1,
+        "timeliness": 1,
+        "engagement_potential": 7,
+        "viewer_appeal": 3,
+        "overall": 2,
+        "reasoning": "The quintessential baseline activity. Extremely generic daily greeting, common across social media, especially crypto. Very low specificity, novelty, and timeliness. High engagement potential (starts threads) doesn't make it a meaningful *trend*.",
+        "is_baseline_topic": true,
+        "improvement_suggestions": [
+          "Filter out as baseline activity.",
+          "Analyze *changes* in GM patterns only if significant shifts occur (e.g., sudden drop-off, change in associated content).",
+          "Merge with other GM/GN topics."
+        ]
+      }
+    },
+    "score": 2,
+    "score_category": "baseline",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 2,
+      "novelty": 1,
+      "timeliness": 1,
+      "engagement_potential": 7,
+      "viewer_appeal": 3
+    },
+    "reasoning": "The quintessential baseline activity. Extremely generic daily greeting, common across social media, especially crypto. Very low specificity, novelty, and timeliness. High engagement potential (starts threads) doesn't make it a meaningful *trend*.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "GM/Good Morning Threads",
+      "explanation": "Users are starting daily threads with GM (Good Morning) greetings. The discussions are centered around greetings, and other general content.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "GM",
+          "frequency": 29
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 2,
+        "novelty": 1,
+        "timeliness": 1,
+        "engagement_potential": 7,
+        "viewer_appeal": 3,
+        "overall": 2,
+        "reasoning": "Duplicate of Topic 15. Baseline daily greeting activity. High frequency (29) confirms baseline status.",
+        "is_baseline_topic": true,
+        "improvement_suggestions": [
+          "Filter out as baseline activity.",
+          "Merge all GM/GN topics."
+        ]
+      }
+    },
+    "score": 2,
+    "score_category": "baseline",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 2,
+      "novelty": 1,
+      "timeliness": 1,
+      "engagement_potential": 7,
+      "viewer_appeal": 3
+    },
+    "reasoning": "Duplicate of Topic 15. Baseline daily greeting activity. High frequency (29) confirms baseline status.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "GM/GN Greetings",
+      "explanation": "Daily greetings, often used to begin or end posts. High frequency, showing community participation.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "GM",
+          "frequency": 25
+        },
+        {
+          "term": "GN",
+          "frequency": 10
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 2,
+        "novelty": 1,
+        "timeliness": 1,
+        "engagement_potential": 7,
+        "viewer_appeal": 3,
+        "overall": 2,
+        "reasoning": "Duplicate theme, similar to Topic 15 & 26. Baseline daily greetings (GM/GN). High frequency confirms baseline status.",
+        "is_baseline_topic": true,
+        "improvement_suggestions": [
+          "Filter out as baseline activity.",
+          "Merge all GM/GN topics."
+        ]
+      }
+    },
+    "score": 2,
+    "score_category": "baseline",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 2,
+      "novelty": 1,
+      "timeliness": 1,
+      "engagement_potential": 7,
+      "viewer_appeal": 3
+    },
+    "reasoning": "Duplicate theme, similar to Topic 15 & 26. Baseline daily greetings (GM/GN). High frequency confirms baseline status.",
+    "date_evaluated": "20250413_182726"
+  },
+  {
+    "topic_data": {
+      "name": "DesignOps for AI",
+      "explanation": "A user is highlighting a friend working on DesignOps for an MSFT AI project.",
+      "estimated_percentage": "1%",
+      "key_terms": [
+        {
+          "term": "DesignOps",
+          "frequency": 1
+        },
+        {
+          "term": "AI",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "MSFT",
+          "type": "Company",
+          "relevance": "Medium"
+        }
+      ],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 3,
+        "timeliness": 3,
+        "engagement_potential": 2,
+        "viewer_appeal": 2,
+        "overall": 2,
+        "reasoning": "Anecdotal mention of a friend's job in a specific field (DesignOps for AI at MSFT). Not related to Farcaster platform activity, trends, or culture. Very low relevance and scores.",
+        "is_baseline_topic": false,
+        "improvement_suggestions": [
+          "Filter out as non-relevant anecdote.",
+          "Only consider if DesignOps discussions become relevant to building apps *on* Farcaster."
+        ]
+      }
+    },
+    "score": 2,
+    "score_category": "baseline",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 3,
+      "timeliness": 3,
+      "engagement_potential": 2,
+      "viewer_appeal": 2
+    },
+    "reasoning": "Anecdotal mention of a friend's job in a specific field (DesignOps for AI at MSFT). Not related to Farcaster platform activity, trends, or culture. Very low relevance and scores.",
+    "date_evaluated": "20250413_182726"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "topics": [
+    {
+      "name": "Warpcast Tipping Feature",
+      "explanation": "Discussion around the Warpcast tipping feature is trending, with users actively experimenting with and discussing the feature. Conversations include questions, positive feedback, and troubleshooting.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "tipping",
+          "frequency": 15
+        },
+        {
+          "term": "tips",
+          "frequency": 12
+        },
+        {
+          "term": "Warpcast",
+          "frequency": 6
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Warpcast",
+          "type": "Project",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "High"
+    }
+  ],
+  "analysis_period": "2025-03-28 to 2025-04-01",
+  "total_posts_analyzed": 20000
+}

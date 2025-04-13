@@ -1,0 +1,147 @@
+{
+  "topics": [
+    {
+      "name": "Ghiblify Your PFP Trend",
+      "explanation": "Users transform profile pictures into the popular Studio Ghibli art style, sparking a visually engaging and widely shared community trend.",
+      "estimated_percentage": "8%",
+      "key_terms": [
+        {
+          "term": "Ghibli",
+          "frequency": 13
+        },
+        {
+          "term": "PFP",
+          "frequency": 10
+        },
+        {
+          "term": "Ghiblify",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Studio Ghibli",
+          "type": "Company",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium"
+    },
+    {
+      "name": "Eggman Virus Takes Over PFPs",
+      "explanation": "A playful, viral community meme where users 'infect' profile pictures, transforming them into the character Eggman, driving high engagement.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Eggman",
+          "frequency": 35
+        },
+        {
+          "term": "virus",
+          "frequency": 16
+        },
+        {
+          "term": "infection",
+          "frequency": 15
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Eggman",
+          "type": "Character/Meme",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium"
+    },
+    {
+      "name": "Ex-Coinbase CTO Hiring Farcaster Devs",
+      "explanation": "High-profile hiring call from a former Coinbase CTO for Farcaster developers signals growing ecosystem interest and opportunities.",
+      "estimated_percentage": "2.5%",
+      "key_terms": [
+        {
+          "term": "Farcaster",
+          "frequency": 2
+        },
+        {
+          "term": "developer",
+          "frequency": 1
+        },
+        {
+          "term": "Coinbase",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Coinbase",
+          "type": "Company",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "High"
+    },
+    {
+      "name": "Warpcast Rebrand to Farcaster?",
+      "explanation": "Community debates whether the Warpcast app should rebrand to Farcaster, discussing the platform's core identity and future direction.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "Warpcast",
+          "frequency": 2
+        },
+        {
+          "term": "Farcaster",
+          "frequency": 2
+        },
+        {
+          "term": "rebrand",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Warpcast",
+          "type": "App",
+          "relevance": "High"
+        },
+        {
+          "name": "Farcaster",
+          "type": "Platform",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium"
+    },
+    {
+      "name": "New Farcaster Support Interface",
+      "explanation": "A user-launched support interface sparks discussion, highlighting community efforts to improve user experience and platform interaction.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "support",
+          "frequency": 3
+        },
+        {
+          "term": "interface",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Farcaster",
+          "type": "Platform",
+          "relevance": "High"
+        },
+        {
+          "name": "support requests",
+          "type": "Feature",
+          "relevance": "Medium"
+        }
+      ],
+      "engagement_level": "Medium"
+    }
+  ],
+  "analysis_period": "2025-03-28 to 2025-04-01",
+  "total_posts_analyzed": 5000
+}

@@ -1,0 +1,925 @@
+[
+  {
+    "topic_data": {
+      "name": "Tips Feature Launched",
+      "explanation": "The introduction of a new tipping feature within Farcaster, allowing users to send $1 USDC tips to those they interact with.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "Tips",
+          "frequency": 10
+        },
+        {
+          "term": "tip",
+          "frequency": 10
+        },
+        {
+          "term": "USDC",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 9,
+        "timeliness": 9,
+        "engagement_potential": 8,
+        "viewer_appeal": 8,
+        "overall": 9,
+        "reasoning": "Highly specific and novel topic centered around the launch of a significant new platform feature ($1 USDC tips). The launch event makes it timely, and the nature of the feature (micro-transactions, social interaction) drives high engagement and broad viewer appeal. Represents a major platform update.",
+        "improvement_suggestions": [
+          "Ensure differentiation from 'Farcaster Tipping Feature' (topic #11) - perhaps focus this one purely on the launch announcement and initial reactions.",
+          "Include key figures involved in the launch if prominent in discussions."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    "score": 9,
+    "score_category": "excellent",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 9,
+      "timeliness": 9,
+      "engagement_potential": 8,
+      "viewer_appeal": 8
+    },
+    "reasoning": "Highly specific and novel topic centered around the launch of a significant new platform feature ($1 USDC tips). The launch event makes it timely, and the nature of the feature (micro-transactions, social interaction) drives high engagement and broad viewer appeal. Represents a major platform update.",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "Eggman Virus Meme",
+      "explanation": "A community-driven meme involving the \"Eggman virus,\" transforming profile pictures, demonstrating the creative and humorous aspects of the platform.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "Eggman",
+          "frequency": 5
+        },
+        {
+          "term": "virus",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 9,
+        "timeliness": 9,
+        "engagement_potential": 7,
+        "viewer_appeal": 8,
+        "overall": 9,
+        "reasoning": "Excellent example of a highly specific, novel, and timely Farcaster-native meme. Community-driven, humorous, and visual (PFP changes), leading to high viewer appeal and solid engagement as users participate or react. Captures unique platform culture.",
+        "improvement_suggestions": [
+          "Link to the origin or key posts spreading the meme if possible.",
+          "Monitor for evolution or related spin-off memes."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    "score": 9,
+    "score_category": "excellent",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 9,
+      "novelty": 9,
+      "timeliness": 9,
+      "engagement_potential": 7,
+      "viewer_appeal": 8
+    },
+    "reasoning": "Excellent example of a highly specific, novel, and timely Farcaster-native meme. Community-driven, humorous, and visual (PFP changes), leading to high viewer appeal and solid engagement as users participate or react. Captures unique platform culture.",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "Farcaster Tipping Feature",
+      "explanation": "Discussion around the newly implemented tipping feature on Farcaster, with users showing appreciation and discussing its impact on the community.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "tipping",
+          "frequency": 15
+        },
+        {
+          "term": "farcasters",
+          "frequency": 8
+        },
+        {
+          "term": "appreciation",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 9,
+        "timeliness": 9,
+        "engagement_potential": 7,
+        "viewer_appeal": 8,
+        "overall": 9,
+        "reasoning": "Focuses on the discussion, appreciation, and impact of the new tipping feature. High specificity, novelty, and timeliness due to the feature's recent implementation. Strong engagement (high frequency terms) and viewer appeal. Very similar to topic #1, potentially capturing ongoing usage vs. launch.",
+        "improvement_suggestions": [
+          "Merge with or clearly differentiate from 'Tips Feature Launched' (topic #1).",
+          "Focus on the *community reaction* and *usage patterns* aspect."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    "score": 9,
+    "score_category": "excellent",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 9,
+      "timeliness": 9,
+      "engagement_potential": 7,
+      "viewer_appeal": 8
+    },
+    "reasoning": "Focuses on the discussion, appreciation, and impact of the new tipping feature. High specificity, novelty, and timeliness due to the feature's recent implementation. Strong engagement (high frequency terms) and viewer appeal. Very similar to topic #1, potentially capturing ongoing usage vs. launch.",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "Ghibli PFP Craze",
+      "explanation": "Users using a tool or process to generate a profile picture in the style of Studio Ghibli animations.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "Ghiblify",
+          "frequency": 2
+        },
+        {
+          "term": "Ghibli",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 8,
+        "timeliness": 8,
+        "engagement_potential": 7,
+        "viewer_appeal": 8,
+        "overall": 8,
+        "reasoning": "A specific, visual trend involving profile picture modification in a popular aesthetic style (Studio Ghibli). Likely driven by a new tool or shared interest, making it novel and timely. Visual trends have high viewer appeal and moderate engagement potential (sharing, commenting).",
+        "improvement_suggestions": [
+          "Identify the specific tool or hashtag used (e.g., 'Ghiblify Tool Trend').",
+          "Highlight key examples or influential users driving the trend."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    "score": 8,
+    "score_category": "good",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 8,
+      "timeliness": 8,
+      "engagement_potential": 7,
+      "viewer_appeal": 8
+    },
+    "reasoning": "A specific, visual trend involving profile picture modification in a popular aesthetic style (Studio Ghibli). Likely driven by a new tool or shared interest, making it novel and timely. Visual trends have high viewer appeal and moderate engagement potential (sharing, commenting).",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "Mystery Location Game",
+      "explanation": "Users are participating in a game where they guess a mystery location based on their proximity, showing the social aspect of the community.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "mystery location",
+          "frequency": 10
+        },
+        {
+          "term": "game",
+          "frequency": 10
+        },
+        {
+          "term": "km away",
+          "frequency": 8
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 8,
+        "timeliness": 9,
+        "engagement_potential": 7,
+        "viewer_appeal": 8,
+        "overall": 8,
+        "reasoning": "A highly specific, interactive community game driving social engagement. Novel as a distinct activity, timely due to its likely periodic nature (e.g., daily challenge). High viewer appeal due to its fun, game-like nature.",
+        "improvement_suggestions": [
+          "Identify the specific channel or originator (e.g., '/channel Mystery Location Game').",
+          "Highlight winning guesses or particularly interesting rounds."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    "score": 8,
+    "score_category": "good",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 9,
+      "novelty": 8,
+      "timeliness": 9,
+      "engagement_potential": 7,
+      "viewer_appeal": 8
+    },
+    "reasoning": "A highly specific, interactive community game driving social engagement. Novel as a distinct activity, timely due to its likely periodic nature (e.g., daily challenge). High viewer appeal due to its fun, game-like nature.",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "THE BOLE Community",
+      "explanation": "Enthusiasm and discussion around the 'THE BOLE' project, with users sharing their ID and expressing excitement about its features.",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "THE BOLE",
+          "frequency": 18
+        },
+        {
+          "term": "community",
+          "frequency": 5
+        },
+        {
+          "term": "ID",
+          "frequency": 6
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 7,
+        "timeliness": 8,
+        "engagement_potential": 7,
+        "viewer_appeal": 6,
+        "overall": 7,
+        "reasoning": "Centered around a specific named project or community ('THE BOLE'). High specificity and timeliness due to active discussion (sharing IDs, excitement) during the period. Novelty depends on the project's age. Moderate engagement and appeal beyond its members.",
+        "improvement_suggestions": [
+          "Add context: 'THE BOLE NFT Project Discussion'.",
+          "Track sentiment and key discussion points within the community."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    "score": 7,
+    "score_category": "good",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 7,
+      "timeliness": 8,
+      "engagement_potential": 7,
+      "viewer_appeal": 6
+    },
+    "reasoning": "Centered around a specific named project or community ('THE BOLE'). High specificity and timeliness due to active discussion (sharing IDs, excitement) during the period. Novelty depends on the project's age. Moderate engagement and appeal beyond its members.",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "ITAP (I Took A Picture)",
+      "explanation": "Users sharing photos and their experiences with them, showcasing a creative side of the community. The 'ITAP' is trending",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "ITAP",
+          "frequency": 12
+        },
+        {
+          "term": "photo",
+          "frequency": 7
+        },
+        {
+          "term": "image",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 7,
+        "viewer_appeal": 8,
+        "overall": 7,
+        "reasoning": "Recognizable format for sharing original photos ('ITAP'). Specificity comes from the acronym/activity framing. High viewer appeal due to visual content. Novelty and timeliness are moderate, as photo sharing is common, but the 'ITAP' framing might be trending specifically.",
+        "improvement_suggestions": [
+          "Identify if concentrated in a specific channel (e.g., '/photography').",
+          "Highlight particularly popular or high-quality ITAP posts.",
+          "Frame as 'ITAP Photo Sharing Trend'."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    "score": 7,
+    "score_category": "good",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 7,
+      "novelty": 6,
+      "timeliness": 6,
+      "engagement_potential": 7,
+      "viewer_appeal": 8
+    },
+    "reasoning": "Recognizable format for sharing original photos ('ITAP'). Specificity comes from the acronym/activity framing. High viewer appeal due to visual content. Novelty and timeliness are moderate, as photo sharing is common, but the 'ITAP' framing might be trending specifically.",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "Farcaster Birthday Celebrations",
+      "explanation": "Users celebrating their Farcaster anniversaries (birthdays), sharing experiences and reflections on their time on the platform.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Birthday",
+          "frequency": 2
+        },
+        {
+          "term": "Happy",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 8,
+        "viewer_appeal": 6,
+        "overall": 6,
+        "reasoning": "Topic describes a recurring social behavior (celebrating platform anniversaries). While specificity is moderate (clear event type) and engagement potential is high (congratulations, reflections), its novelty and timeliness as a *trend* are lower, as these happen individually over time. Its value lies in reflecting community sentiment.",
+        "improvement_suggestions": [
+          "Specify if there was a notable *cluster* of anniversaries during this period.",
+          "Frame as 'Community Milestone: Farcaster Anniversaries' to elevate beyond individual posts."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    "score": 6,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 6,
+      "novelty": 4,
+      "timeliness": 5,
+      "engagement_potential": 8,
+      "viewer_appeal": 6
+    },
+    "reasoning": "Topic describes a recurring social behavior (celebrating platform anniversaries). While specificity is moderate (clear event type) and engagement potential is high (congratulations, reflections), its novelty and timeliness as a *trend* are lower, as these happen individually over time. Its value lies in reflecting community sentiment.",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "Haptic feedback for Tips",
+      "explanation": "Feedback regarding the feature of haptic feedback.",
+      "estimated_percentage": "1%",
+      "key_terms": [
+        {
+          "term": "haptic feedback",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 8,
+        "timeliness": 8,
+        "engagement_potential": 3,
+        "viewer_appeal": 5,
+        "overall": 6,
+        "reasoning": "Highly specific feedback related to a detail (haptic feedback) of the new Tips feature. This makes it novel and timely. However, the reported low engagement significantly weakens its standing as a major trend. It's a niche discussion within a larger trend.",
+        "improvement_suggestions": [
+          "Consider merging into the main 'Tips Feature' trend as a sub-point.",
+          "Monitor if engagement on this specific feedback point increases."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    "score": 6,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 8,
+      "timeliness": 8,
+      "engagement_potential": 3,
+      "viewer_appeal": 5
+    },
+    "reasoning": "Highly specific feedback related to a detail (haptic feedback) of the new Tips feature. This makes it novel and timely. However, the reported low engagement significantly weakens its standing as a major trend. It's a niche discussion within a larger trend.",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "Onchain Photography Journey",
+      "explanation": "Users are sharing their journey with onchain photography, showcasing a new way to create and share art.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "photography",
+          "frequency": 1
+        },
+        {
+          "term": "journey",
+          "frequency": 1
+        },
+        {
+          "term": "onchain",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 8,
+        "timeliness": 6,
+        "engagement_potential": 4,
+        "viewer_appeal": 6,
+        "overall": 6,
+        "reasoning": "Discusses a novel concept at the intersection of crypto and art. High novelty and moderate viewer appeal to the web3/art crowd. Specificity is okay ('onchain photography') but 'journey' is vague. Low engagement suggests individual sharing rather than a widespread discussion trend currently.",
+        "improvement_suggestions": [
+          "Frame as 'Exploring Onchain Photography'.",
+          "Look for specific platforms, artists, or collections being discussed.",
+          "Monitor for increasing engagement."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    "score": 6,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 6,
+      "novelty": 8,
+      "timeliness": 6,
+      "engagement_potential": 4,
+      "viewer_appeal": 6
+    },
+    "reasoning": "Discusses a novel concept at the intersection of crypto and art. High novelty and moderate viewer appeal to the web3/art crowd. Specificity is okay ('onchain photography') but 'journey' is vague. Low engagement suggests individual sharing rather than a widespread discussion trend currently.",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "WrapAI Check-in Streaks",
+      "explanation": "People are actively participating in and discussing check-in streaks on WrapAI, a platform that rewards consistent activity.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "WrapAI",
+          "frequency": 8
+        },
+        {
+          "term": "check-in",
+          "frequency": 9
+        },
+        {
+          "term": "points",
+          "frequency": 6
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 6,
+        "timeliness": 8,
+        "engagement_potential": 4,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Specific activity (check-ins) on a specific platform (WrapAI). Timely due to daily nature. However, novelty is moderate (check-ins are common mechanics), and reported low engagement potential and viewer appeal suggest it might be repetitive posts rather than rich discussion.",
+        "improvement_suggestions": [
+          "Assess if discussion goes beyond simple check-in posts.",
+          "If only check-ins, consider filtering as low-value/external promotion.",
+          "Focus on any *discussion* about WrapAI strategy or value."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 6,
+      "timeliness": 8,
+      "engagement_potential": 4,
+      "viewer_appeal": 4
+    },
+    "reasoning": "Specific activity (check-ins) on a specific platform (WrapAI). Timely due to daily nature. However, novelty is moderate (check-ins are common mechanics), and reported low engagement potential and viewer appeal suggest it might be repetitive posts rather than rich discussion.",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "Question: What are you frustrated",
+      "explanation": "A post asking users about their frustrations with the platform, sparking dialogue and providing a space for community feedback.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "frustrated",
+          "frequency": 1
+        },
+        {
+          "term": "Farcaster",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 3,
+        "timeliness": 3,
+        "engagement_potential": 8,
+        "viewer_appeal": 5,
+        "overall": 4,
+        "reasoning": "While the engagement potential is high due to the direct question format, the topic itself (platform frustrations) is common and lacks novelty and timeliness. It represents baseline platform feedback solicitation rather than an emergent trend.",
+        "improvement_suggestions": [
+          "Filter out as baseline feedback.",
+          "Only consider if focused on frustrations related to a *specific recent event* or change."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    "score": 4,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 6,
+      "novelty": 3,
+      "timeliness": 3,
+      "engagement_potential": 8,
+      "viewer_appeal": 5
+    },
+    "reasoning": "While the engagement potential is high due to the direct question format, the topic itself (platform frustrations) is common and lacks novelty and timeliness. It represents baseline platform feedback solicitation rather than an emergent trend.",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "Ghibli vs. Manhwa",
+      "explanation": "A discussion about the art style, with a comparison between Ghibli and Manhwa.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "Ghibli",
+          "frequency": 6
+        },
+        {
+          "term": "Manhwa",
+          "frequency": 1
+        },
+        {
+          "term": "art",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 4,
+        "viewer_appeal": 4,
+        "overall": 4,
+        "reasoning": "A specific comparison between two art styles. Specificity is high, but novelty and timeliness are moderate (possibly linked to Ghibli PFP trend but not strongly). Low engagement and niche appeal make it a weak trend signal.",
+        "improvement_suggestions": [
+          "Filter out as low-signal niche discussion.",
+          "Only include if engagement significantly increases or clearly drives a larger conversation."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    "score": 4,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 6,
+      "timeliness": 6,
+      "engagement_potential": 4,
+      "viewer_appeal": 4
+    },
+    "reasoning": "A specific comparison between two art styles. Specificity is high, but novelty and timeliness are moderate (possibly linked to Ghibli PFP trend but not strongly). Low engagement and niche appeal make it a weak trend signal.",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "Farville Game",
+      "explanation": "Users are searching for specific items within the Farville game, showing engagement with this gaming community.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "farville",
+          "frequency": 11
+        },
+        {
+          "term": "seeds",
+          "frequency": 4
+        },
+        {
+          "term": "game",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 5,
+        "engagement_potential": 4,
+        "viewer_appeal": 3,
+        "overall": 4,
+        "reasoning": "Activity related to a specific game ('Farville'). Specificity is high, but novelty and timeliness are moderate (ongoing game). Low engagement score and explanation (seeking items) suggest functional, in-game-related chatter with limited appeal, not a broader discussion trend.",
+        "improvement_suggestions": [
+          "Filter out as low-signal game chatter/requests.",
+          "Focus only if significant discussion about game strategy, updates, or community emerges."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    "score": 4,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 5,
+      "timeliness": 5,
+      "engagement_potential": 4,
+      "viewer_appeal": 3
+    },
+    "reasoning": "Activity related to a specific game ('Farville'). Specificity is high, but novelty and timeliness are moderate (ongoing game). Low engagement score and explanation (seeking items) suggest functional, in-game-related chatter with limited appeal, not a broader discussion trend.",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "Free $QR Stickers",
+      "explanation": "Users are giving away $QR stickers to grow awareness.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "QR stickers",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 6,
+        "timeliness": 8,
+        "engagement_potential": 4,
+        "viewer_appeal": 3,
+        "overall": 4,
+        "reasoning": "Specific giveaway event ($QR stickers). Timely due to the limited nature of giveaways. However, novelty is moderate, and low engagement/appeal suggest it's primarily promotional noise with limited community interest or discussion.",
+        "improvement_suggestions": [
+          "Filter out as low-signal promotion/giveaway.",
+          "Only include if the $QR token or project itself is trending significantly."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    "score": 4,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 6,
+      "timeliness": 8,
+      "engagement_potential": 4,
+      "viewer_appeal": 3
+    },
+    "reasoning": "Specific giveaway event ($QR stickers). Timely due to the limited nature of giveaways. However, novelty is moderate, and low engagement/appeal suggest it's primarily promotional noise with limited community interest or discussion.",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "Glow Compliments",
+      "explanation": "Users are posting compliments, which is related to Glow's latest fix and shows an active and engaging use of the platform.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "Glow",
+          "frequency": 2
+        },
+        {
+          "term": "compliment",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 6,
+        "timeliness": 8,
+        "engagement_potential": 4,
+        "viewer_appeal": 4,
+        "overall": 4,
+        "reasoning": "Specific activity ('compliments') tied to a specific app ('Glow') and a recent event ('latest fix'). High specificity and timeliness. However, novelty is moderate, and low engagement/appeal suggest niche activity related to an app feature, not a broad trend.",
+        "improvement_suggestions": [
+          "Filter out as low-signal app-specific activity.",
+          "Only include if discussion about Glow itself or the nature of compliments becomes significant."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    "score": 4,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 6,
+      "timeliness": 8,
+      "engagement_potential": 4,
+      "viewer_appeal": 4
+    },
+    "reasoning": "Specific activity ('compliments') tied to a specific app ('Glow') and a recent event ('latest fix'). High specificity and timeliness. However, novelty is moderate, and low engagement/appeal suggest niche activity related to an app feature, not a broad trend.",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "Appliance for AI Doctors",
+      "explanation": "Discussion around a news article about AI doctors for iOS.",
+      "estimated_percentage": "1%",
+      "key_terms": [
+        {
+          "term": "AI doctors",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 3,
+        "viewer_appeal": 3,
+        "overall": 3,
+        "reasoning": "Discussion of an external news item (AI doctors on iOS). Specificity and timeliness are moderate (tied to news), but the reported low engagement and likely niche appeal within the Farcaster context make it a weak trend signal.",
+        "improvement_suggestions": [
+          "Filter out as low-signal external news discussion.",
+          "Requires evidence of significant Farcaster-specific angle or impact."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    "score": 3,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 6,
+      "novelty": 5,
+      "timeliness": 6,
+      "engagement_potential": 3,
+      "viewer_appeal": 3
+    },
+    "reasoning": "Discussion of an external news item (AI doctors on iOS). Specificity and timeliness are moderate (tied to news), but the reported low engagement and likely niche appeal within the Farcaster context make it a weak trend signal.",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "Base is for music",
+      "explanation": "Discussion around music and collection.",
+      "estimated_percentage": "1%",
+      "key_terms": [
+        {
+          "term": "music",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 3,
+        "novelty": 3,
+        "timeliness": 2,
+        "engagement_potential": 3,
+        "viewer_appeal": 3,
+        "overall": 3,
+        "reasoning": "A very generic statement about a use case for the Base blockchain. Lacks specificity, novelty, and timeliness. Low engagement suggests it's part of ongoing, low-signal background chatter rather than a focused trend.",
+        "improvement_suggestions": [
+          "Filter out as too generic.",
+          "Needs focus on specific music projects, debates, or events on Base gaining traction."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    "score": 3,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 3,
+      "novelty": 3,
+      "timeliness": 2,
+      "engagement_potential": 3,
+      "viewer_appeal": 3
+    },
+    "reasoning": "A very generic statement about a use case for the Base blockchain. Lacks specificity, novelty, and timeliness. Low engagement suggests it's part of ongoing, low-signal background chatter rather than a focused trend.",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "Building a Video",
+      "explanation": "A person requesting to have a video edited and cut.",
+      "estimated_percentage": "1%",
+      "key_terms": [
+        {
+          "term": "video",
+          "frequency": 1
+        },
+        {
+          "term": "editors",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 2,
+        "novelty": 2,
+        "timeliness": 2,
+        "engagement_potential": 2,
+        "viewer_appeal": 1,
+        "overall": 2,
+        "reasoning": "Appears to be an individual user's request for video editing services. Lacks all characteristics of a trend (specificity related to a broader topic, novelty, timeliness, broad engagement/appeal).",
+        "improvement_suggestions": [
+          "Filter out as an individual service request.",
+          "Not applicable for trend improvement."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    "score": 2,
+    "score_category": "baseline",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 2,
+      "novelty": 2,
+      "timeliness": 2,
+      "engagement_potential": 2,
+      "viewer_appeal": 1
+    },
+    "reasoning": "Appears to be an individual user's request for video editing services. Lacks all characteristics of a trend (specificity related to a broader topic, novelty, timeliness, broad engagement/appeal).",
+    "date_evaluated": "20250413_175057"
+  },
+  {
+    "topic_data": {
+      "name": "Weather in Africa",
+      "explanation": "People talking about weather in Africa.",
+      "estimated_percentage": "1%",
+      "key_terms": [
+        {
+          "term": "weather",
+          "frequency": 1
+        },
+        {
+          "term": "Africa",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 2,
+        "novelty": 1,
+        "timeliness": 4,
+        "engagement_potential": 2,
+        "viewer_appeal": 2,
+        "overall": 2,
+        "reasoning": "Extremely broad and generic topic (weather). While weather is inherently timely, the discussion lacks specificity and novelty. Low engagement suggests general chatter, not a Farcaster-specific trend.",
+        "improvement_suggestions": [
+          "Filter out as generic chatter.",
+          "Needs connection to a specific major weather event impacting the community or a Farcaster-related activity."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    "score": 2,
+    "score_category": "baseline",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 2,
+      "novelty": 1,
+      "timeliness": 4,
+      "engagement_potential": 2,
+      "viewer_appeal": 2
+    },
+    "reasoning": "Extremely broad and generic topic (weather). While weather is inherently timely, the discussion lacks specificity and novelty. Low engagement suggests general chatter, not a Farcaster-specific trend.",
+    "date_evaluated": "20250413_175057"
+  }
+]

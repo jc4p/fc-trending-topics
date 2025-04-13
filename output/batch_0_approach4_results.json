@@ -1,0 +1,107 @@
+{
+  "topics": [
+    {
+      "name": "DEGEN Tipping & Rewards Surge",
+      "explanation": "High community engagement around the $DEGEN token, focusing on tipping mechanics and reward distribution, shaping platform culture.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "DEGEN",
+          "frequency": 10
+        },
+        {
+          "term": "rewards",
+          "frequency": 8
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "$DEGEN",
+          "type": "Token/Project",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "High"
+    },
+    {
+      "name": "Interactive Frames & Games Evolving",
+      "explanation": "Users actively exploring and discussing Farcaster Frames, especially for creating novel interactive experiences and games.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "frames",
+          "frequency": 6
+        },
+        {
+          "term": "game",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium"
+    },
+    {
+      "name": "Users Hit Storage Limits",
+      "explanation": "Growing discussion about Farcaster storage constraints, prompting users to check usage and seek solutions like caststorage.com.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "storage",
+          "frequency": 8
+        },
+        {
+          "term": "casts",
+          "frequency": 4
+        },
+        {
+          "term": "reactions",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "caststorage.com",
+          "type": "Website",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium"
+    },
+    {
+      "name": "Farcaster Native Tipping Feature",
+      "explanation": "Discussion surrounding the implementation and potential impact of a native Farcaster tipping feature, distinct from specific token tips.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "tips",
+          "frequency": 2
+        },
+        {
+          "term": "feature",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium"
+    },
+    {
+      "name": "Photo Galleries Emerge in Frames",
+      "explanation": "A novel use case for Farcaster Frames gains traction, with users creating and sharing visually appealing photo galleries within casts.",
+      "estimated_percentage": "1%",
+      "key_terms": [
+        {
+          "term": "photo gallery",
+          "frequency": 1
+        },
+        {
+          "term": "frame",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low"
+    }
+  ],
+  "analysis_period": "2025-03-28 to 2025-04-01",
+  "total_posts_analyzed": 50000
+}

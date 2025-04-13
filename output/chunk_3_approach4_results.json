@@ -1,0 +1,176 @@
+{
+  "topics": [
+    {
+      "name": "Farcaster Frames Evolving",
+      "explanation": "Users actively discuss and showcase new features, applications, and possibilities enabled by Farcaster Frames, highlighting their central role in platform innovation.",
+      "estimated_percentage": "8%",
+      "key_terms": [
+        {
+          "term": "frames",
+          "frequency": 5
+        },
+        {
+          "term": "Farcaster",
+          "frequency": 4
+        },
+        {
+          "term": "features",
+          "frequency": 3
+        },
+        {
+          "term": "functionality",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Farcaster",
+          "type": "Project",
+          "relevance": "High"
+        },
+        {
+          "name": "Frames",
+          "type": "Feature",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium"
+    },
+    {
+      "name": "Tipping Culture Shapes Community",
+      "explanation": "The practice of tipping is becoming a significant cultural norm on Farcaster, used to express appreciation, reward quality content, and foster a collaborative spirit.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "tipping",
+          "frequency": 5
+        },
+        {
+          "term": "community engagement",
+          "frequency": 2
+        },
+        {
+          "term": "appreciation",
+          "frequency": 2
+        },
+        {
+          "term": "rewards",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Farcaster",
+          "type": "Platform",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium"
+    },
+    {
+      "name": "Zora Coin Buzz Grows",
+      "explanation": "Significant discussion surrounds the Zora platform, particularly frequent mentions of a 'coin' alongside project links, suggesting high interest in potential tokenomics or rewards.",
+      "estimated_percentage": "12%",
+      "key_terms": [
+        {
+          "term": "Zora",
+          "frequency": 21
+        },
+        {
+          "term": "coin",
+          "frequency": 15
+        },
+        {
+          "term": "projects",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Zora",
+          "type": "Project",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "High"
+    },
+    {
+      "name": "Ghibli-style Art NFTs Trend",
+      "explanation": "A visually appealing trend sees users minting and sharing NFTs inspired by the popular Ghibli art style, often utilizing the Zora platform integrated within Farcaster.",
+      "estimated_percentage": "7%",
+      "key_terms": [
+        {
+          "term": "Ghibli",
+          "frequency": 13
+        },
+        {
+          "term": "Zora",
+          "frequency": 10
+        },
+        {
+          "term": "art",
+          "frequency": 8
+        },
+        {
+          "term": "NFT",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Zora",
+          "type": "Project",
+          "relevance": "High"
+        },
+        {
+          "name": "Ghibli",
+          "type": "Style/Studio",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "High"
+    },
+    {
+      "name": "Merkle Boosting Transparency Debate",
+      "explanation": "Users are debating Merkle's potential influence on cast visibility within Warpcast, sparking conversations about algorithmic transparency, fairness, and content control.",
+      "estimated_percentage": "7%",
+      "key_terms": [
+        {
+          "term": "Merkle",
+          "frequency": 1
+        },
+        {
+          "term": "boost",
+          "frequency": 1
+        },
+        {
+          "term": "hide",
+          "frequency": 1
+        },
+        {
+          "term": "visibility",
+          "frequency": 1
+        },
+        {
+          "term": "censorship",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Merkle",
+          "type": "Company/Algorithm",
+          "relevance": "High"
+        },
+        {
+          "name": "Warpcast",
+          "type": "Client/Platform",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium"
+    }
+  ],
+  "analysis_period": "2025-03-28 to 2025-04-01",
+  "total_posts_analyzed": 5000
+}

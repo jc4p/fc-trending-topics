@@ -1,0 +1,160 @@
+{
+  "topics": [
+    {
+      "name": "Zora NFTs Surge on Base",
+      "explanation": "Significant activity around minting and sharing NFTs via Zora on the Base network, highlighting a major use case within the Farcaster ecosystem.",
+      "estimated_percentage": "20%",
+      "key_terms": [
+        {
+          "term": "Zora",
+          "frequency": 45
+        },
+        {
+          "term": "Base",
+          "frequency": 14
+        },
+        {
+          "term": "NFT",
+          "frequency": 15
+        },
+        {
+          "term": "mint",
+          "frequency": 10
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Zora",
+          "type": "Project",
+          "relevance": "High"
+        },
+        {
+          "name": "Base",
+          "type": "Project",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "High"
+    },
+    {
+      "name": "Eggman Virus PFP Trend",
+      "explanation": "A viral, community-driven trend where users are changing their profile pictures to the Eggman character, showcasing organic Farcaster culture.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "Eggman",
+          "frequency": 10
+        },
+        {
+          "term": "virus",
+          "frequency": 5
+        },
+        {
+          "term": "PFP",
+          "frequency": 2
+        },
+        {
+          "term": "meme",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High"
+    },
+    {
+      "name": "Creative Warpcast Frame Uses",
+      "explanation": "Users are actively building and sharing innovative applications using Warpcast Frames, pushing the boundaries of the platform's interactive features.",
+      "estimated_percentage": "15%",
+      "key_terms": [
+        {
+          "term": "Frames",
+          "frequency": 3
+        },
+        {
+          "term": "frame",
+          "frequency": 12
+        },
+        {
+          "term": "plugin",
+          "frequency": 1
+        },
+        {
+          "term": "Action",
+          "frequency": 1
+        },
+        {
+          "term": "build",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Warpcast",
+          "type": "Project",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium"
+    },
+    {
+      "name": "AI Creates Ghibli-Style Art",
+      "explanation": "A trend of users employing AI tools to generate artwork mimicking the distinct aesthetic of Studio Ghibli, blending technology with popular art styles.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Ghibli",
+          "frequency": 8
+        },
+        {
+          "term": "AI",
+          "frequency": 2
+        },
+        {
+          "term": "art",
+          "frequency": 6
+        },
+        {
+          "term": "generate",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Studio Ghibli",
+          "type": "Company",
+          "relevance": "Medium"
+        }
+      ],
+      "engagement_level": "Medium"
+    },
+    {
+      "name": "$DEGEN Tipping Gains Traction",
+      "explanation": "Tipping content creators with the $DEGEN token is becoming a noticeable behavior, reflecting unique Farcaster economic interactions and user support mechanisms.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "tipping",
+          "frequency": 2
+        },
+        {
+          "term": "$degen",
+          "frequency": 1
+        },
+        {
+          "term": "reward",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "$DEGEN",
+          "type": "Token",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Low"
+    }
+  ],
+  "analysis_period": "2025-03-28 to 2025-04-01",
+  "total_posts_analyzed": 5000
+}

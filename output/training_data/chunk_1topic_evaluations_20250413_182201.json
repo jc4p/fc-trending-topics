@@ -1,0 +1,439 @@
+[
+  {
+    "topic_data": {
+      "name": "Tips Feature Launch",
+      "explanation": "Discussion around the launch of a new tipping feature on the platform, which allows users to send $1 USDC tips to those they interact with the most, showing a high engagement level and recent activity.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "Tips",
+          "frequency": 4
+        },
+        {
+          "term": "tipping",
+          "frequency": 5
+        },
+        {
+          "term": "USDC",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Neynar",
+          "type": "Company",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 9,
+        "timeliness": 9,
+        "engagement_potential": 8,
+        "viewer_appeal": 6,
+        "overall": 8,
+        "reasoning": "This topic is highly specific, novel, and timely, centered around the launch of a new core platform feature ($1 USDC tips via Neynar). It directly reflects platform evolution, encouraging new interaction patterns and significant discussion about its utility and adoption. While viewer appeal might be slightly lower for passive users, its importance for active participants and platform development makes it a strong trend.",
+        "improvement_suggestions": [
+          "Track user sentiment and adoption rates post-launch.",
+          "Analyze if specific user segments are using tips more than others."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    "score": 8,
+    "score_category": "good",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 9,
+      "timeliness": 9,
+      "engagement_potential": 8,
+      "viewer_appeal": 6
+    },
+    "reasoning": "This topic is highly specific, novel, and timely, centered around the launch of a new core platform feature ($1 USDC tips via Neynar). It directly reflects platform evolution, encouraging new interaction patterns and significant discussion about its utility and adoption. While viewer appeal might be slightly lower for passive users, its importance for active participants and platform development makes it a strong trend.",
+    "date_evaluated": "20250413_182201"
+  },
+  {
+    "topic_data": {
+      "name": "ITAP (I Took a Photo)",
+      "explanation": "The 'ITAP' (I took a photo) trend highlights user engagement with photography. Users are sharing photos of various subjects, with significant engagement metrics and recent activity. This illustrates the platform's use for visual content and personal expression.",
+      "estimated_percentage": "15%",
+      "key_terms": [
+        {
+          "term": "ITAP",
+          "frequency": 45
+        },
+        {
+          "term": "photo",
+          "frequency": 15
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 6,
+        "viewer_appeal": 8,
+        "overall": 6,
+        "reasoning": "Represents a common social media behavior (photo sharing) using a Farcaster-specific acronym. While the high estimated percentage and term frequency indicate significant activity, the core behavior lacks novelty. It's a recurring activity pattern rather than a new phenomenon. High viewer appeal due to visual content, but moderate overall score due to low novelty.",
+        "improvement_suggestions": [
+          "Analyze the *types* of photos shared under ITAP to see if specific sub-themes are emerging.",
+          "Compare current volume to historical baseline to confirm if it's a genuine spike."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    "score": 6,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 6,
+      "novelty": 4,
+      "timeliness": 5,
+      "engagement_potential": 6,
+      "viewer_appeal": 8
+    },
+    "reasoning": "Represents a common social media behavior (photo sharing) using a Farcaster-specific acronym. While the high estimated percentage and term frequency indicate significant activity, the core behavior lacks novelty. It's a recurring activity pattern rather than a new phenomenon. High viewer appeal due to visual content, but moderate overall score due to low novelty.",
+    "date_evaluated": "20250413_182201"
+  },
+  {
+    "topic_data": {
+      "name": "Eggman Virus Meme",
+      "explanation": "The spread of an 'Eggman Virus' meme shows the growth of inside jokes and community-specific trends, where users are humorously 'infected' and their profile pictures transformed. This is a good example of internal community culture and shared experiences.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Eggman",
+          "frequency": 5
+        },
+        {
+          "term": "virus",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 6,
+        "timeliness": 8,
+        "engagement_potential": 5,
+        "viewer_appeal": 5,
+        "overall": 5,
+        "reasoning": "A highly specific and timely ephemeral trend (meme involving profile picture changes). Its novelty score is capped (Ephemeral Trend Assessment) because while the *specific meme* is new, the *phenomenon* of viral PFP memes is common on social platforms. Engagement is participatory but often shallow, and viewer appeal is limited to those 'in the know'. Represents community culture but not deep platform evolution.",
+        "improvement_suggestions": [
+          "Track the meme's lifecycle (spread, peak, decline).",
+          "Analyze if this type of meme is becoming more common on Farcaster."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 8,
+      "novelty": 6,
+      "timeliness": 8,
+      "engagement_potential": 5,
+      "viewer_appeal": 5
+    },
+    "reasoning": "A highly specific and timely ephemeral trend (meme involving profile picture changes). Its novelty score is capped (Ephemeral Trend Assessment) because while the *specific meme* is new, the *phenomenon* of viral PFP memes is common on social platforms. Engagement is participatory but often shallow, and viewer appeal is limited to those 'in the know'. Represents community culture but not deep platform evolution.",
+    "date_evaluated": "20250413_182201"
+  },
+  {
+    "topic_data": {
+      "name": "Base Discussions",
+      "explanation": "The mention of \"Base\" within several posts displays a trending interest in this specific area of the platform. This is also a good measure of how people are beginning to think of this system.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "Base",
+          "frequency": 10
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Refers to discussions about the Base L2 network, relevant to Farcaster's onchain aspects. While Base integration is evolving (moderate novelty/timeliness), the topic 'Base Discussions' is too broad. It likely reflects ongoing technical conversation within a specific user segment (crypto-natives), limiting viewer appeal. Needs more specificity to be a strong trend.",
+        "improvement_suggestions": [
+          "Specify the *nature* of Base discussions (e.g., 'Base Gas Fee Concerns', 'New Apps on Base via Farcaster Frames').",
+          "Focus on specific channels or contexts where these discussions are peaking (e.g., /base channel)."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 6,
+      "novelty": 6,
+      "timeliness": 6,
+      "engagement_potential": 6,
+      "viewer_appeal": 4
+    },
+    "reasoning": "Refers to discussions about the Base L2 network, relevant to Farcaster's onchain aspects. While Base integration is evolving (moderate novelty/timeliness), the topic 'Base Discussions' is too broad. It likely reflects ongoing technical conversation within a specific user segment (crypto-natives), limiting viewer appeal. Needs more specificity to be a strong trend.",
+    "date_evaluated": "20250413_182201"
+  },
+  {
+    "topic_data": {
+      "name": "Farcaster Meetups",
+      "explanation": "The organization and promotion of \"Farcaster Meetups\" signifies the community's interest in real-world interactions and events, highlighting the platform's potential for fostering a local community. This demonstrates the growth of in-person networking.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "meetup",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Indicates community building extending offline, which has moderate novelty. However, the extremely low key term frequency ('meetup': 1) suggests this might be about specific, isolated events rather than a widespread *discussion* trend during this period. Engagement and appeal are likely limited to participants or specific locations.",
+        "improvement_suggestions": [
+          "Track discussion volume around meetups more closely; require higher frequency.",
+          "Focus on specific meetup locations or themes gaining traction in *online* discussions."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 7,
+      "novelty": 6,
+      "timeliness": 6,
+      "engagement_potential": 5,
+      "viewer_appeal": 4
+    },
+    "reasoning": "Indicates community building extending offline, which has moderate novelty. However, the extremely low key term frequency ('meetup': 1) suggests this might be about specific, isolated events rather than a widespread *discussion* trend during this period. Engagement and appeal are likely limited to participants or specific locations.",
+    "date_evaluated": "20250413_182201"
+  },
+  {
+    "topic_data": {
+      "name": "Farcade",
+      "explanation": "The consistent appearance of \"Farcade\" within many posts suggests a growing interest and use of gaming within the platform. This reflects the evolving nature of Farcaster.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Farcade",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 5,
+        "reasoning": "Points to the potentially significant trend of gaming on Farcaster ('Farcade'). However, the low term frequency ('Farcade': 3) and potential link to specific third-party games/apps (Third-Party Tool Detection) temper its score. It's an area of platform evolution but may not be a widespread, unified trend yet. Needs more evidence of scale.",
+        "improvement_suggestions": [
+          "Clarify if 'Farcade' refers to a specific app/platform or a general concept.",
+          "Identify specific games driving the discussion.",
+          "Monitor term frequency for significant increases."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": false,
+    "evaluation_metrics": {
+      "specificity": 7,
+      "novelty": 6,
+      "timeliness": 6,
+      "engagement_potential": 6,
+      "viewer_appeal": 5
+    },
+    "reasoning": "Points to the potentially significant trend of gaming on Farcaster ('Farcade'). However, the low term frequency ('Farcade': 3) and potential link to specific third-party games/apps (Third-Party Tool Detection) temper its score. It's an area of platform evolution but may not be a widespread, unified trend yet. Needs more evidence of scale.",
+    "date_evaluated": "20250413_182201"
+  },
+  {
+    "topic_data": {
+      "name": "Zora",
+      "explanation": "Mention of \"Zora\" across numerous posts (e.g., trading on Zora) indicates a high engagement level. The activity reflects user interest in different platforms and the way people are trading on the platform.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "Zora",
+          "frequency": 14
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Highlights user activity involving a specific third-party platform (Zora), likely related to NFT minting/trading. While relevant to Farcaster's crypto-native user base and showing decent term frequency, this reflects interaction with an external tool rather than a purely internal Farcaster phenomenon (Third-Party Tool Detection). Limited appeal outside the NFT community.",
+        "improvement_suggestions": [
+          "Specify the *type* of Zora activity trending (e.g., 'Zora Free Mints via Frames', 'Discussion of specific Zora collections').",
+          "Analyze if the interaction pattern with Zora is changing significantly."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 7,
+      "novelty": 5,
+      "timeliness": 6,
+      "engagement_potential": 6,
+      "viewer_appeal": 4
+    },
+    "reasoning": "Highlights user activity involving a specific third-party platform (Zora), likely related to NFT minting/trading. While relevant to Farcaster's crypto-native user base and showing decent term frequency, this reflects interaction with an external tool rather than a purely internal Farcaster phenomenon (Third-Party Tool Detection). Limited appeal outside the NFT community.",
+    "date_evaluated": "20250413_182201"
+  },
+  {
+    "topic_data": {
+      "name": "Monochrome Monday",
+      "explanation": "The recurring 'Monochrome Monday' hashtag indicates the presence of community-driven challenges or themes on specific days, creating a sense of routine and shared activity. The posts display substantial likes and replies, indicating an active participation.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "monochrome",
+          "frequency": 5
+        },
+        {
+          "term": "Monday",
+          "frequency": 7
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 3,
+        "timeliness": 4,
+        "engagement_potential": 5,
+        "viewer_appeal": 6,
+        "overall": 4,
+        "reasoning": "This is a standard, recurring social media theme (#MonochromeMonday). It lacks novelty and specific timeliness beyond its regular weekly occurrence. While it fosters routine participation, it represents baseline community activity rather than a significant, emergent trend.",
+        "improvement_suggestions": [
+          "Filter out unless participation significantly deviates from the established baseline.",
+          "Analyze if the *content* shared under the tag changes significantly over time."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    "score": 4,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 7,
+      "novelty": 3,
+      "timeliness": 4,
+      "engagement_potential": 5,
+      "viewer_appeal": 6
+    },
+    "reasoning": "This is a standard, recurring social media theme (#MonochromeMonday). It lacks novelty and specific timeliness beyond its regular weekly occurrence. While it fosters routine participation, it represents baseline community activity rather than a significant, emergent trend.",
+    "date_evaluated": "20250413_182201"
+  },
+  {
+    "topic_data": {
+      "name": "Ghibli",
+      "explanation": "The recurrent usage of \"Ghibli\" in various contexts (e.g., Ghibli-fying, Ghibli-related queries) suggests that the community has a shared interest in the Studio Ghibli films, or using them as inspiration for art. This indicates a shared cultural interest among users, and that people are making art themed around the movies.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Ghibli",
+          "frequency": 11
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 5,
+        "novelty": 4,
+        "timeliness": 3,
+        "engagement_potential": 5,
+        "viewer_appeal": 6,
+        "overall": 4,
+        "reasoning": "Discussion around a shared cultural interest (Studio Ghibli) is common baseline activity on social platforms. The topic lacks specificity regarding *how* it's trending (beyond general mentions/art) and has low novelty and timeliness. It doesn't indicate significant platform evolution or a specific event.",
+        "improvement_suggestions": [
+          "Identify specific Ghibli-related activities (e.g., a particular art challenge, reactions to specific news).",
+          "Require more context than just mentions of the term 'Ghibli'."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    "score": 4,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 5,
+      "novelty": 4,
+      "timeliness": 3,
+      "engagement_potential": 5,
+      "viewer_appeal": 6
+    },
+    "reasoning": "Discussion around a shared cultural interest (Studio Ghibli) is common baseline activity on social platforms. The topic lacks specificity regarding *how* it's trending (beyond general mentions/art) and has low novelty and timeliness. It doesn't indicate significant platform evolution or a specific event.",
+    "date_evaluated": "20250413_182201"
+  },
+  {
+    "topic_data": {
+      "name": "Reactions to News",
+      "explanation": "There are several posts discussing current affairs and news, showing interest from the users of the platform in real-world events. The posts display substantial likes and replies, indicating an active participation.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "news",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 2,
+        "novelty": 1,
+        "timeliness": 2,
+        "engagement_potential": 5,
+        "viewer_appeal": 5,
+        "overall": 2,
+        "reasoning": "This topic is extremely generic and describes a fundamental function of any social network \u2013 discussing current events. It lacks specificity, novelty, and timeliness as a 'trend'. The low term frequency ('news': 3) further confirms its weakness. This is a clear baseline activity.",
+        "improvement_suggestions": [
+          "Filter out completely.",
+          "Replace with topics about reactions to *specific, highly discussed* news events relevant to the Farcaster community."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    "score": 2,
+    "score_category": "baseline",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 2,
+      "novelty": 1,
+      "timeliness": 2,
+      "engagement_potential": 5,
+      "viewer_appeal": 5
+    },
+    "reasoning": "This topic is extremely generic and describes a fundamental function of any social network \u2013 discussing current events. It lacks specificity, novelty, and timeliness as a 'trend'. The low term frequency ('news': 3) further confirms its weakness. This is a clear baseline activity.",
+    "date_evaluated": "20250413_182201"
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "topics": [
+    {
+      "name": "Tips Feature Announcement",
+      "explanation": "The new Tips feature allows users to easily tip each other $1 USDC, batching transactions for efficiency. The announcement and related posts generated significant engagement and discussion about the new feature's impact on Farcaster community.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Tips",
+          "frequency": 8
+        },
+        {
+          "term": "USDC",
+          "frequency": 3
+        },
+        {
+          "term": "tip",
+          "frequency": 16
+        },
+        {
+          "term": "tipping",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Tips",
+          "type": "Feature",
+          "relevance": "High"
+        },
+        {
+          "name": "USDC",
+          "type": "Crypto",
+          "relevance": "High"
+        },
+        {
+          "name": "Warpcast",
+          "type": "Platform",
+          "relevance": "Medium"
+        }
+      ],
+      "engagement_level": "High"
+    }
+  ],
+  "analysis_period": "2025-03-28 to 2025-04-01",
+  "total_posts_analyzed": 20000
+}

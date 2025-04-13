@@ -1,0 +1,702 @@
+{
+  "evaluated_topics": [
+    {
+      "name": "Warpcast Tipping Feature",
+      "explanation": "Discussion around the Warpcast tipping feature is trending, with users actively experimenting with and discussing the feature. Conversations include questions, positive feedback, and troubleshooting.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "tipping",
+          "frequency": 15
+        },
+        {
+          "term": "tips",
+          "frequency": 12
+        },
+        {
+          "term": "Warpcast",
+          "frequency": 6
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Warpcast",
+          "type": "Project",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 8,
+        "timeliness": 9,
+        "engagement_potential": 9,
+        "viewer_appeal": 6,
+        "overall": 8,
+        "reasoning": "This topic is highly specific, timely, and focuses on a core platform feature (Warpcast tipping) driving significant user interaction and discussion. It reflects platform evolution, showing how users are adopting new native functionalities. The high engagement level suggests genuine interest and activity.",
+        "improvement_suggestions": [
+          "Specify the timeframe of the surge in discussion (e.g., 'following recent update').",
+          "Analyze the sentiment (positive feedback vs. troubleshooting).",
+          "Quantify the adoption rate if possible."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Base Chain Activity",
+      "explanation": "There's a noticeable increase in discussion around the Base chain, with users sharing their activities like building or trading on Base.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "Base",
+          "frequency": 7
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Base",
+          "type": "Blockchain",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 6,
+        "timeliness": 7,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 6,
+        "reasoning": "Discussion around a specific, relevant blockchain (Base) indicates ecosystem activity. The timeliness score reflects the 'noticeable increase'. However, the appeal is somewhat niche (crypto-focused users), and 'activity' could be more specific. It's relevant but not a top-tier platform-wide trend.",
+        "improvement_suggestions": [
+          "Specify the *types* of Base activity being discussed (e.g., specific apps, NFT mints, DeFi protocols).",
+          "Quantify the 'noticeable increase' in discussion volume.",
+          "Identify key projects or events driving the discussion."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "THE BOLE Community",
+      "explanation": "THE BOLE is an emerging community or concept within Farcaster, with users actively 'onboarding' and sharing their 'mystical energy,' suggesting a unique community activity.",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "THE BOLE",
+          "frequency": 8
+        },
+        {
+          "term": "onboarding",
+          "frequency": 4
+        },
+        {
+          "term": "energy",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 7,
+        "timeliness": 8,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 6,
+        "reasoning": "This seems to be a specific, emergent, Farcaster-native community or activity, giving it higher novelty than a standard third-party game. It's timely ('onboarding'). However, the description ('mystical energy') suggests it might be niche or an inside joke, limiting broader viewer appeal and potentially engagement.",
+        "improvement_suggestions": [
+          "Provide more context: What is THE BOLE? (A channel, a game, a collective, a meme?).",
+          "Analyze the nature of the 'onboarding' and 'energy'.",
+          "Assess the size and influence of this community."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Ghibli-fied PFPs",
+      "explanation": "Users are sharing Ghibli-style profile pictures, indicating a trend of customizing profiles with this anime aesthetic, showing the user's ability to be able to create and show new forms of digital art.",
+      "estimated_percentage": "7%",
+      "key_terms": [
+        {
+          "term": "Ghibli",
+          "frequency": 4
+        },
+        {
+          "term": "PFP",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 4,
+        "viewer_appeal": 8,
+        "overall": 5,
+        "reasoning": "This is a specific visual trend (Ghibli PFPs), making it visually appealing. However, PFP trends are common across social platforms and often ephemeral. Its novelty is moderate (scored 5 due to ephemeral nature penalty), and engagement potential beyond sharing the PFP is limited. It doesn't signify deep platform evolution.",
+        "improvement_suggestions": [
+          "Monitor the trend's duration.",
+          "Identify if specific tools are being used to create these PFPs.",
+          "Merge with 'Ghibli Art Trend' if the underlying driver is the same."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Product Outage",
+      "explanation": "Reports and discussions about product outages of various APIs are being talked about.",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "outage",
+          "frequency": 2
+        },
+        {
+          "term": "API",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 5,
+        "novelty": 5,
+        "timeliness": 8,
+        "engagement_potential": 6,
+        "viewer_appeal": 3,
+        "overall": 5,
+        "reasoning": "This topic is timely, as outage discussions spike when they happen. However, the description 'various APIs' lacks specificity, and outages are recurring events in tech. Viewer appeal is low, primarily relevant to affected users/developers.",
+        "improvement_suggestions": [
+          "Specify *which* products or APIs experienced outages.",
+          "Quantify the discussion volume or impact.",
+          "Analyze the nature of the discussion (reporting, complaining, mutual support)."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farcaster Football Game",
+      "explanation": "The Farcaster Football game is gaining traction as a new and engaging game within the platform. Users are sharing their scores and enthusiasm for the new game.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Farcaster Football",
+          "frequency": 3
+        },
+        {
+          "term": "game",
+          "frequency": 4
+        },
+        {
+          "term": "goals",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 5,
+        "timeliness": 8,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 5,
+        "reasoning": "Highly specific to a named game. It's timely due to current activity. However, this appears to be a third-party game/app/frame, not an organic platform phenomenon. Novelty is penalized (scored 5 due to tool/game detection), as it reflects app usage rather than platform evolution. Engagement is moderate among players.",
+        "improvement_suggestions": [
+          "Identify the game's developer or source (e.g., specific frame URL).",
+          "Frame as 'User Engagement with Farcaster Football Game'.",
+          "Assess if its usage reveals insights about popular frame types."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Mystery Location Game",
+      "explanation": "Users are participating in a mystery location game, sharing their distances from the daily location and encouraging others to beat their scores.",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "mystery location",
+          "frequency": 7
+        },
+        {
+          "term": "game",
+          "frequency": 3
+        },
+        {
+          "term": "beat me",
+          "frequency": 8
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 5,
+        "timeliness": 8,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 5,
+        "reasoning": "Very specific named game/activity. Timely due to daily score sharing. Like Farcaster Football, this is likely a third-party tool/frame implementing a known game concept (GeoGuessr-like). Novelty is penalized (scored 5 due to tool/game detection). Engagement involves score sharing and competition.",
+        "improvement_suggestions": [
+          "Identify the specific tool/frame/bot running the game.",
+          "Frame as 'User Engagement with Mystery Location Game'.",
+          "Analyze participation patterns (e.g., number of daily players)."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Ghibli Art Trend",
+      "explanation": "There's a trend of users creating art inspired by Studio Ghibli, a Japanese animation studio, indicating a cultural interest within the community.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Ghibli",
+          "frequency": 7
+        },
+        {
+          "term": "art",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 4,
+        "viewer_appeal": 7,
+        "overall": 5,
+        "reasoning": "Specific art style trend, visually appealing. Similar to 'Ghibli-fied PFPs', this is likely an ephemeral cultural trend expressed through art sharing. Novelty is moderate (scored 5 due to ephemeral nature), and engagement potential beyond sharing/liking art is low. Overlaps with other topics.",
+        "improvement_suggestions": [
+          "Merge with 'Ghibli-fied PFPs' and potentially 'Sharing Art'.",
+          "Quantify the volume and duration of this specific art trend.",
+          "Identify if specific prompts or challenges sparked this."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farcaster Anniversary Celebrations",
+      "explanation": "Users are celebrating Farcaster anniversaries, which is creating a sense of community and celebrating a shared milestone, fostering a positive user experience",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "birthday",
+          "frequency": 1
+        },
+        {
+          "term": "Farcaster",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Farcaster",
+          "type": "Platform",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 5,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 5,
+        "viewer_appeal": 5,
+        "overall": 4,
+        "reasoning": "While fostering community, celebrating individual user anniversaries ('Farcaster birthdays') is a common, recurring activity on social platforms. It lacks significant novelty and specificity unless tied to a platform-wide milestone. Engagement is moderate, mostly congratulatory.",
+        "improvement_suggestions": [
+          "Clarify if this refers to individual user anniversaries or a specific platform anniversary.",
+          "Quantify if there's an unusual spike compared to baseline anniversary posts."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "Discussions on AI",
+      "explanation": "There is a consistent conversation happening regarding AI, including a discussion around the use of AI in building on-chain products.",
+      "estimated_percentage": "7%",
+      "key_terms": [
+        {
+          "term": "AI",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 3,
+        "novelty": 3,
+        "timeliness": 4,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 4,
+        "reasoning": "AI is a broad, evergreen topic. While relevant, general discussion about AI is baseline in tech communities. The mention of 'on-chain products' adds slight specificity but isn't explored. Lacks novelty as a general trend.",
+        "improvement_suggestions": [
+          "Focus sharply on the specific angle: 'Use of AI in building on-chain products on Farcaster'.",
+          "Identify specific AI projects, tools, or debates happening *on Farcaster*.",
+          "Filter out as baseline unless a Farcaster-specific AI application or discussion is prominent."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "The B O O P E D",
+      "explanation": "Users are playing with a new Warpcast frame called booped.xyz",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Boop",
+          "frequency": 3
+        },
+        {
+          "term": "booped.xyz",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 8,
+        "engagement_potential": 4,
+        "viewer_appeal": 4,
+        "overall": 4,
+        "reasoning": "Specific reference to a named Warpcast frame (booped.xyz), making it likely a third-party tool interaction. Novelty is penalized (scored 5 due to tool detection). Timely due to current usage. Low engagement suggests simple frame interaction rather than deep discussion.",
+        "improvement_suggestions": [
+          "Explain the function of the 'booped.xyz' frame.",
+          "Analyze user sentiment or purpose for using the frame.",
+          "Frame as 'Interaction with booped.xyz Frame'."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "ITAP - Daily Photography",
+      "explanation": "A significant number of posts feature the hashtag \"ITAP\" (I took a picture), with users sharing photographs of various subjects. This suggests an ongoing trend of visual content and personal expression within the community.",
+      "estimated_percentage": "15%",
+      "key_terms": [
+        {
+          "term": "ITAP",
+          "frequency": 15
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 3,
+        "novelty": 2,
+        "timeliness": 2,
+        "engagement_potential": 5,
+        "viewer_appeal": 7,
+        "overall": 3,
+        "reasoning": "ITAP ('I took a picture') represents a very broad and baseline user activity (sharing photos) using a standard internet tag. It lacks specificity, novelty, and timeliness as a distinct 'trend'. High volume indicates common behavior, not necessarily a trending topic.",
+        "improvement_suggestions": [
+          "Identify specific sub-trends within ITAP (e.g., themes, styles, locations).",
+          "Merge with related topics like 'Sharing Travel Photos' and 'Photo Challenge/Trends' into a broader 'Photography on Farcaster' analysis.",
+          "Focus on *discussions* about photography, not just the act of posting."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "Sharing Travel Photos",
+      "explanation": "Multiple posts display travel photos from various locations, indicating a trend of sharing experiences and visual content within the community, which showcases different cultures and experiences",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "ITAP",
+          "frequency": 6
+        },
+        {
+          "term": "travel",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 3,
+        "novelty": 2,
+        "timeliness": 2,
+        "engagement_potential": 4,
+        "viewer_appeal": 6,
+        "overall": 3,
+        "reasoning": "This is a sub-category of general photo sharing (ITAP) and represents baseline user behavior. It has low specificity, novelty, and the data indicates low engagement. It overlaps significantly with the 'ITAP' topic.",
+        "improvement_suggestions": [
+          "Merge into a broader 'Photography Sharing' topic.",
+          "Identify if there are specific travel-related *discussions*, *challenges*, or *questions* beyond just sharing photos.",
+          "Filter out as baseline unless a specific travel photo trend emerges."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "Sharing Art and Sketches",
+      "explanation": "The trend of users sharing their art is still apparent with users posting sketches and art, which is a good showcase of a user's ability to create.",
+      "estimated_percentage": "7%",
+      "key_terms": [
+        {
+          "term": "art",
+          "frequency": 6
+        },
+        {
+          "term": "sketch",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 3,
+        "novelty": 2,
+        "timeliness": 2,
+        "engagement_potential": 5,
+        "viewer_appeal": 6,
+        "overall": 3,
+        "reasoning": "Similar to photo sharing, this describes baseline activity for users in a creative space. It lacks specificity and novelty as a 'trend'. It's ongoing content sharing, not a specific event or emergent behavior.",
+        "improvement_suggestions": [
+          "Identify specific art *styles*, *mediums*, *challenges*, or *tools* being discussed or used prominently on Farcaster.",
+          "Merge with 'Ghibli Art Trend' if appropriate.",
+          "Filter out as baseline unless a specific art-related trend is identified."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "Farville Game Play",
+      "explanation": "Discussions revolve around gameplay, specifically seeking and trading in-game items.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "Farville",
+          "frequency": 3
+        },
+        {
+          "term": "seeds",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 4,
+        "timeliness": 6,
+        "engagement_potential": 3,
+        "viewer_appeal": 3,
+        "overall": 3,
+        "reasoning": "Highly specific named game, likely third-party. Novelty is penalized (scored 4 due to tool/game detection and low engagement). The reported low engagement (seeking items) and low viewer appeal make this a weak trend signal, possibly indicating a niche or declining game.",
+        "improvement_suggestions": [
+          "Identify the game's source/platform (Frame? Standalone?).",
+          "Investigate reasons for low engagement.",
+          "Consider filtering out if volume and engagement remain low."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Sign Game",
+      "explanation": "Users share scores and achievements in a game called 'Sign Game'.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "Sign Game",
+          "frequency": 3
+        },
+        {
+          "term": "score",
+          "frequency": 2
+        },
+        {
+          "term": "achievement",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 4,
+        "timeliness": 6,
+        "engagement_potential": 3,
+        "viewer_appeal": 3,
+        "overall": 3,
+        "reasoning": "Highly specific named game, likely third-party. Novelty is penalized (scored 4 due to tool/game detection and low engagement). Similar to Farville, the reported low engagement (score sharing) suggests a niche activity with limited platform-wide impact.",
+        "improvement_suggestions": [
+          "Identify the game's source/platform.",
+          "Assess actual participation levels beyond the few key terms.",
+          "Consider filtering out if volume and engagement are minimal."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "The Anti Elon Slide",
+      "explanation": "A cultural trend or inside joke involving an 'Electric Slide' dance outside of Tesla, suggesting community engagement with current events.",
+      "estimated_percentage": "1%",
+      "key_terms": [
+        {
+          "term": "Elon",
+          "frequency": 1
+        },
+        {
+          "term": "Electric Slide",
+          "frequency": 1
+        },
+        {
+          "term": "Tesla",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 5,
+        "timeliness": 7,
+        "engagement_potential": 3,
+        "viewer_appeal": 3,
+        "overall": 3,
+        "reasoning": "Specific cultural reference/inside joke. Likely ephemeral and tied to current events/sentiment. Novelty penalized slightly (scored 5 for ephemeral meme). Very low estimated percentage (1%) and likely niche appeal/context required make this a very minor trend.",
+        "improvement_suggestions": [
+          "Provide context for the reference.",
+          "Assess if this gained any traction beyond a small group.",
+          "Filter out due to extremely low volume and likely ephemeral nature."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Photo Challenge/Trends",
+      "explanation": "The recurring use of ITAP (I took a picture), QC, and other phrases relating to photo sharing suggest the existence of a photo sharing challenge or trend.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "ITAP",
+          "frequency": 7
+        },
+        {
+          "term": "QC",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 4,
+        "novelty": 3,
+        "timeliness": 3,
+        "engagement_potential": 4,
+        "viewer_appeal": 5,
+        "overall": 3,
+        "reasoning": "This topic is vague and seems to repackage baseline photo sharing (ITAP, QC) as a 'challenge' without clear evidence. It lacks specificity and novelty. Low engagement score further suggests it's not a distinct, engaging trend.",
+        "improvement_suggestions": [
+          "Identify a *specific named challenge* with rules, duration, or a unique hashtag.",
+          "Explain the 'QC' tag/term.",
+          "Merge into the broader 'Photography Sharing' analysis or filter out as poorly defined baseline activity."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "Meme Sharing",
+      "explanation": "Users are frequently sharing and referencing memes, with some posts dedicated to specific meme formats or humorous observations, which showcases the power of humor and relatability.",
+      "estimated_percentage": "8%",
+      "key_terms": [
+        {
+          "term": "meme",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 2,
+        "novelty": 1,
+        "timeliness": 1,
+        "engagement_potential": 5,
+        "viewer_appeal": 6,
+        "overall": 2,
+        "reasoning": "This is an extremely generic topic describing baseline behavior on any social network. It lacks specificity, novelty, and timeliness. While memes engage users, simply stating 'Meme Sharing' isn't a meaningful trend.",
+        "improvement_suggestions": [
+          "Identify *specific* meme formats or themes that are currently surging *within Farcaster*.",
+          "Analyze if Farcaster-native memes are emerging.",
+          "Filter this out as baseline activity unless a specific, novel meme trend is identified."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "Sharing Favorite Lines",
+      "explanation": "A trend of users sharing their favorite lines from works, including books or music, potentially indicating a subculture of sharing and appreciating artistic content.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "lines",
+          "frequency": 2
+        },
+        {
+          "term": "favorite",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 5,
+        "novelty": 3,
+        "timeliness": 2,
+        "engagement_potential": 3,
+        "viewer_appeal": 3,
+        "overall": 2,
+        "reasoning": "Sharing quotes/lines is a common, evergreen social media activity. It lacks novelty and Farcaster-specific context in this description. Low engagement and estimated percentage indicate a minor, baseline behavior rather than a trend.",
+        "improvement_suggestions": [
+          "Identify if a specific prompt, event, or channel (e.g., book club) is driving this activity *now*.",
+          "Analyze the source of the lines (books, music, movies?).",
+          "Filter out as baseline activity unless a specific driver is found."
+        ],
+        "is_baseline_topic": true
+      }
+    }
+  ],
+  "final_results": {
+    "topics": [
+      {
+        "name": "Warpcast Tipping Feature",
+        "explanation": "Discussion around the Warpcast tipping feature is trending, with users actively experimenting with and discussing the feature. Conversations include questions, positive feedback, and troubleshooting.",
+        "estimated_percentage": "10%",
+        "key_terms": [
+          {
+            "term": "tipping",
+            "frequency": 15
+          },
+          {
+            "term": "tips",
+            "frequency": 12
+          },
+          {
+            "term": "Warpcast",
+            "frequency": 6
+          }
+        ],
+        "key_entities": [
+          {
+            "name": "Warpcast",
+            "type": "Project",
+            "relevance": "High"
+          }
+        ],
+        "engagement_level": "High"
+      }
+    ],
+    "analysis_period": "2025-03-28 to 2025-04-01",
+    "total_posts_analyzed": 20000
+  }
+}

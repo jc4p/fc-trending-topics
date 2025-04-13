@@ -1,0 +1,3341 @@
+{
+  "evaluated_topics": [
+    {
+      "name": "Farcaster Frames",
+      "explanation": "Users are mentioning the features of Farcaster's new 'frames'.",
+      "estimated_percentage": "8%",
+      "key_terms": [
+        {
+          "term": "frames",
+          "frequency": 5
+        },
+        {
+          "term": "Farcaster",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 8,
+        "timeliness": 8,
+        "engagement_potential": 7,
+        "viewer_appeal": 7,
+        "overall": 8,
+        "reasoning": "Discussion about a core, defining feature of Farcaster ('Frames'). High specificity, novelty, and timeliness, as Frames are relatively new and evolving. High relevance to platform evolution and user experience.",
+        "improvement_suggestions": [
+          "Focus on *which* features or *types* of frames are being discussed.",
+          "Track sentiment and specific use cases highlighted by users."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farcaster Frames Features",
+      "explanation": "Users are highlighting features of Farcaster frames, including new functionality and the launch of new frames or applications.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "Farcaster",
+          "frequency": 4
+        },
+        {
+          "term": "Frames",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 8,
+        "timeliness": 8,
+        "engagement_potential": 7,
+        "viewer_appeal": 7,
+        "overall": 8,
+        "reasoning": "Second mention focusing on core 'Frames' functionality. High relevance, novelty, and timeliness. Key indicator of platform evolution.",
+        "improvement_suggestions": [
+          "Combine with the other Frames topic.",
+          "Detail the specific 'new functionality' or 'new frames' being highlighted."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farcaster Tipping Culture",
+      "explanation": "Discussion around tipping on Farcaster as a way to foster community engagement. Several posts mention tipping, highlighting its growing importance and the rewarding of valuable contributions.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "tipping",
+          "frequency": 5
+        },
+        {
+          "term": "community engagement",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 8,
+        "timeliness": 7,
+        "engagement_potential": 7,
+        "viewer_appeal": 6,
+        "overall": 8,
+        "reasoning": "Second mention of tipping culture. Reinforces its significance as an emergent platform behavior. Moderate engagement ('Medium', '5%'). High relevance.",
+        "improvement_suggestions": [
+          "Combine tipping topics.",
+          "Deep dive into tipping dynamics (who, what, why, how much)."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farcaster Tipping Culture",
+      "explanation": "The growing trend of users tipping each other, boosting engagement and collaborative spirit.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "tipping",
+          "frequency": 4
+        },
+        {
+          "term": "appreciation",
+          "frequency": 2
+        },
+        {
+          "term": "engagement",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 8,
+        "timeliness": 7,
+        "engagement_potential": 7,
+        "viewer_appeal": 6,
+        "overall": 8,
+        "reasoning": "Second mention of tipping culture. Reinforces its significance as an emergent platform behavior. Moderate engagement ('Medium', '5%'). High relevance.",
+        "improvement_suggestions": [
+          "Combine tipping topics.",
+          "Deep dive into tipping dynamics (who, what, why, how much)."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Impact Rewards Program",
+      "explanation": "Users are actively participating in the Impact Rewards program, receiving, and sharing their rewards for curating and contributing to the /impact channel.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "Impact Rewards",
+          "frequency": 3
+        },
+        {
+          "term": "Impact",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 7,
+        "timeliness": 7,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 7,
+        "reasoning": "Highly specific to a Farcaster-related program ('Impact Rewards', /impact channel). This seems tied to platform mechanisms for curation and contribution, making it relevant to platform evolution. It encourages specific user behavior (curation) with rewards.",
+        "improvement_suggestions": [
+          "Track the volume and sentiment around these rewards.",
+          "Analyze the effectiveness of the program in driving quality curation.",
+          "Distinguish discussion about the *program* vs. just *receiving* rewards."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Zora NFT Drops",
+      "explanation": "Users are sharing their Zora NFT drops, with Zora also being shared in the context of the platform's features, like a 'coin' or a 'base'.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "Zora",
+          "frequency": 12
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 6,
+        "timeliness": 7,
+        "engagement_potential": 7,
+        "viewer_appeal": 6,
+        "overall": 7,
+        "reasoning": "Specific activity (NFT drops) on a relevant platform (Zora), often integrated via Farcaster frames. High engagement ('10%'). While Zora isn't Farcaster itself, its tight integration makes this relevant. Represents a key use case (NFTs, minting) within the ecosystem.",
+        "improvement_suggestions": [
+          "Distinguish between general Zora mentions and specific drop activity.",
+          "Analyze *what* kind of NFTs are being dropped/minted.",
+          "Track the evolution of Zora frame usage."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Merkle\u2019s account boosting",
+      "explanation": "Discussion around Merkle's potential control over account and cast visibility on Warpcast, sparking debate about censorship and platform practices.",
+      "estimated_percentage": "7%",
+      "key_terms": [
+        {
+          "term": "Merkle",
+          "frequency": 1
+        },
+        {
+          "term": "boost",
+          "frequency": 1
+        },
+        {
+          "term": "hide",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 7,
+        "timeliness": 8,
+        "engagement_potential": 7,
+        "viewer_appeal": 6,
+        "overall": 7,
+        "reasoning": "Specific discussion about potential content moderation/visibility algorithms ('Merkle', 'boost', 'hide') on the main client (Warpcast). This touches on core platform governance, censorship concerns, and user experience. High relevance and potential for engagement.",
+        "improvement_suggestions": [
+          "Track the volume and sentiment of this debate.",
+          "Look for official responses or clarifications from Warpcast/Merkle.",
+          "Analyze specific examples cited by users."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Ghibli-style Art",
+      "explanation": "There is clear interest in art mimicking the style of the renowned Ghibli studio, suggesting a crossover of interest in art and popular culture.",
+      "estimated_percentage": "7%",
+      "key_terms": [
+        {
+          "term": "Ghibli",
+          "frequency": 13
+        },
+        {
+          "term": "Zora",
+          "frequency": 10
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 7,
+        "viewer_appeal": 8,
+        "overall": 7,
+        "reasoning": "Similar to other Ghibli topics, but notes high frequency ('13') and connection to Zora ('10'), suggesting NFT minting of this art style. This adds a layer of Farcaster/web3 relevance. High engagement/appeal.",
+        "improvement_suggestions": [
+          "Focus on the intersection of the art trend and Zora minting.",
+          "Combine Ghibli topics, highlighting the Zora connection."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Zora Coin",
+      "explanation": "Several posts mention the Zora platform with links to various projects.",
+      "estimated_percentage": "12%",
+      "key_terms": [
+        {
+          "term": "Zora",
+          "frequency": 21
+        },
+        {
+          "term": "coin",
+          "frequency": 15
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 7,
+        "timeliness": 7,
+        "engagement_potential": 8,
+        "viewer_appeal": 6,
+        "overall": 7,
+        "reasoning": "High frequency mentions of Zora ('21') and potentially a related token ('coin', '15'). This could signify significant activity around Zora's platform/protocol, possibly related to rewards or a new token launch, tightly integrated with Farcaster. High engagement.",
+        "improvement_suggestions": [
+          "Investigate the 'coin' mention \u2013 is it official, a meme, or related to specific mints?",
+          "Distinguish from general Zora NFT drops.",
+          "Track the context of Zora links being shared."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Warpcast Recovery Phrase",
+      "explanation": "Users are discussing and reacting to the addition of a recovery phrase feature on Warpcast.",
+      "estimated_percentage": "1%",
+      "key_terms": [
+        {
+          "term": "warpcast recovery phrase",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 8,
+        "timeliness": 8,
+        "engagement_potential": 5,
+        "viewer_appeal": 5,
+        "overall": 7,
+        "reasoning": "Discussion about a new, important security feature ('recovery phrase') on the main client (Warpcast). High specificity, novelty, and timeliness. Relevant to user security and platform usability. Engagement is 'Low' ('1%'), which limits its current score, but the topic is inherently important.",
+        "improvement_suggestions": [
+          "Monitor discussion volume and sentiment.",
+          "Track user understanding and adoption of the feature."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Zora Minting",
+      "explanation": "Users are showing off their newly minted NFTs through Zora. Referrals and showcasing art.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "Zora",
+          "frequency": 6
+        },
+        {
+          "term": "mint",
+          "frequency": 4
+        },
+        {
+          "term": "NFT",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 7,
+        "timeliness": 7,
+        "engagement_potential": 6,
+        "viewer_appeal": 6,
+        "overall": 7,
+        "reasoning": "Specific Zora activity (minting NFTs), including referrals and art sharing. High relevance due to Zora's integration. Moderate engagement ('Medium', '4%'). Complements the 'Zora NFT Drops' topic.",
+        "improvement_suggestions": [
+          "Combine with 'Zora NFT Drops', focusing on the minting action.",
+          "Analyze the types of NFTs being minted and shared."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Account Verification Beta",
+      "explanation": "Discussions around the new account verification beta program.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "account verification",
+          "frequency": 2
+        },
+        {
+          "term": "beta",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 8,
+        "timeliness": 8,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 7,
+        "reasoning": "Discussion about a potential new platform feature ('account verification beta'). High specificity, novelty, timeliness. Relevant to trust, identity, and platform evolution. Low engagement ('Low', '2%') currently limits score.",
+        "improvement_suggestions": [
+          "Monitor closely for official announcements or increased discussion.",
+          "Track user sentiment and potential impact."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farcaster storage limits",
+      "explanation": "Several users are mentioning Farcaster storage limits and providing links to caststorage.com, indicating a common user experience.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "farcaster storage",
+          "frequency": 3
+        },
+        {
+          "term": "cast storage",
+          "frequency": 4
+        },
+        {
+          "term": "reactions",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 7,
+        "timeliness": 7,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 7,
+        "reasoning": "Discussion about a core platform constraint ('storage limits') and related tools ('caststorage.com'). Highly specific and relevant to user experience and platform architecture. Moderate engagement ('Medium', '4%').",
+        "improvement_suggestions": [
+          "Track user sentiment and proposed solutions.",
+          "Monitor official communication regarding storage."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farcaster ecosystem growth",
+      "explanation": "Several posts highlight the growth of the Farcaster ecosystem, users are excited about this growth, particularly the emergence of new projects.",
+      "estimated_percentage": "8%",
+      "key_terms": [
+        {
+          "term": "Farcaster ecosystem",
+          "frequency": 5
+        },
+        {
+          "term": "Web3",
+          "frequency": 4
+        },
+        {
+          "term": "Caster",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 6,
+        "timeliness": 7,
+        "engagement_potential": 7,
+        "viewer_appeal": 6,
+        "overall": 7,
+        "reasoning": "Meta-discussion about the growth of the Farcaster ecosystem itself. Moderately specific, but highly relevant and timely. Reflects user sentiment and awareness of platform development. Moderate engagement ('Medium', '8%').",
+        "improvement_suggestions": [
+          "Identify specific projects or growth metrics being cited.",
+          "Track sentiment (excitement, concerns) about growth.",
+          "Connect to discussions about specific new apps or features."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Ghibli-Inspired Art",
+      "explanation": "Users are sharing Ghibli-style art and transformations of themselves and others, indicating a trend centered around the popular animation studio.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "Ghibli",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 5,
+        "viewer_appeal": 7,
+        "overall": 6,
+        "reasoning": "Specific visual trend ('Ghibli-style'). Likely an ephemeral trend or meme, common on social platforms. While visually appealing, its novelty is moderate as it follows patterns of visual fads. It doesn't necessarily reflect deep platform evolution.",
+        "improvement_suggestions": [
+          "Monitor if the trend persists or evolves.",
+          "Analyze if specific tools or frames are driving this trend.",
+          "Combine with other art/visual trends if they emerge."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Mystery Location Game",
+      "explanation": "Users are frequently sharing their proximity to a daily mystery location game, showing high engagement and competitive spirit.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "mystery location",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 7,
+        "viewer_appeal": 6,
+        "overall": 6,
+        "reasoning": "Third mention of this specific game. Consistently high engagement noted ('km away'). Penalized for novelty as app-specific.",
+        "improvement_suggestions": [
+          "Consolidate all 'Mystery Location' topics.",
+          "Identify the app/frame."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Warpcast Hubble choice",
+      "explanation": "Users are discussing the specific infrastructure Warpcast uses and suggesting options for users to choose their preferred hubs.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Warpcast",
+          "frequency": 2
+        },
+        {
+          "term": "hubble",
+          "frequency": 2
+        },
+        {
+          "term": "Primal",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 7,
+        "timeliness": 7,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 6,
+        "reasoning": "Discusses core Farcaster infrastructure (Hubs) and client choice (Warpcast, Primal). This relates to platform architecture and user control, making it potentially significant. Engagement is 'Low', limiting its current impact, but the topic itself is relevant to platform evolution.",
+        "improvement_suggestions": [
+          "Monitor if this discussion gains traction.",
+          "Track sentiment towards Warpcast's default hub.",
+          "Look for actual client development offering hub choices."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Ghibli-inspired Content",
+      "explanation": "Users are posting content that references Ghibli's style, showcasing a cultural trend within the Farcaster community.",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "Ghibli",
+          "frequency": 4
+        },
+        {
+          "term": "anime",
+          "frequency": 1
+        },
+        {
+          "term": "style",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 4,
+        "viewer_appeal": 7,
+        "overall": 6,
+        "reasoning": "Similar to 'Ghibli-Inspired Art'. A specific visual/cultural trend. Moderate novelty as an ephemeral trend. Lower engagement ('Low') than the other Ghibli topic suggests it might be fading or less interactive.",
+        "improvement_suggestions": [
+          "Combine with the other Ghibli topic.",
+          "Determine if it's driven by a specific event or tool."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Photo Challenge: Mystery Location",
+      "explanation": "Users are participating in a location-based game or challenge, sharing their proximity to a mystery location and competing.",
+      "estimated_percentage": "9%",
+      "key_terms": [
+        {
+          "term": "mystery location",
+          "frequency": 6
+        },
+        {
+          "term": "km away",
+          "frequency": 5
+        },
+        {
+          "term": "beat me",
+          "frequency": 6
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 7,
+        "viewer_appeal": 6,
+        "overall": 6,
+        "reasoning": "Same as 'Mystery Location Game'. Specific game activity, penalized for novelty as it's app-driven. High engagement noted ('beat me', 'km away').",
+        "improvement_suggestions": [
+          "Combine with the other Mystery Location topic.",
+          "Identify the specific app/frame."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farcaster Games, Farcade",
+      "explanation": "References to games within the Farcaster platform, specifically the Farcade, shows increasing interest in platform features.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Farcaster",
+          "frequency": 4
+        },
+        {
+          "term": "Farcade",
+          "frequency": 3
+        },
+        {
+          "term": "game",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 5,
+        "viewer_appeal": 5,
+        "overall": 6,
+        "reasoning": "Mentions 'Farcade', potentially a hub or category for frame games. More general than specific game topics, potentially indicating a trend towards in-platform gaming. Moderate novelty and relevance.",
+        "improvement_suggestions": [
+          "Track mentions of 'Farcade' itself vs. specific games within it.",
+          "Analyze if 'Farcade' is an official feature or user-coined term.",
+          "This could be a good parent topic for individual game trends."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "THE BOLE Onboarding",
+      "explanation": "Users are discussing their participation in 'THE BOLE,' a project or game, indicating interest in a new or niche platform.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "THE BOLE",
+          "frequency": 10
+        },
+        {
+          "term": "onboarding",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 6,
+        "timeliness": 7,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 6,
+        "reasoning": "Seventh mention of 'THE BOLE' onboarding, mentioning IDs. Consistent niche activity. Moderate engagement ('Medium', '5%').",
+        "improvement_suggestions": [
+          "Consolidate BOLE topics. Final assessment needed on its nature/significance."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Mystery Location Game",
+      "explanation": "Users are actively participating in a location-based game, sharing their scores and proximity to a mystery location, indicating an engaging location-based game.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "mystery location",
+          "frequency": 7
+        },
+        {
+          "term": "km away",
+          "frequency": 8
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 7,
+        "viewer_appeal": 6,
+        "overall": 6,
+        "reasoning": "Third mention of this specific game. Consistently high engagement noted ('km away'). Penalized for novelty as app-specific.",
+        "improvement_suggestions": [
+          "Consolidate all 'Mystery Location' topics.",
+          "Identify the app/frame."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Ghibli Art & Culture",
+      "explanation": "Discussions and posts referencing Studio Ghibli, including art, themes, and potentially a meme around a specific Ghibli-related theme or artwork.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "Ghibli",
+          "frequency": 5
+        },
+        {
+          "term": "Studio Ghibli",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 5,
+        "viewer_appeal": 7,
+        "overall": 6,
+        "reasoning": "Third Ghibli topic. Reinforces the visual/cultural trend. Moderate novelty as an ephemeral trend.",
+        "improvement_suggestions": [
+          "Consolidate all Ghibli topics into one, noting variations (art sharing, NFTs, general discussion)."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Warpcast vs X Discussion",
+      "explanation": "Users are discussing and comparing Warpcast and X (Twitter), indicating active debate around their features, advantages, or user experience.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "Warpcast",
+          "frequency": 3
+        },
+        {
+          "term": "X",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 6,
+        "reasoning": "Comparison between Farcaster's main client (Warpcast) and a major competitor (X/Twitter). This is relevant as it touches on platform positioning and user perception. Novelty is moderate as such comparisons are common for new platforms.",
+        "improvement_suggestions": [
+          "Identify the specific points of comparison being raised.",
+          "Track the sentiment - what advantages/disadvantages are highlighted?"
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farcade Game Participation",
+      "explanation": "People are playing and discussing a game called 'Farcade' on Farcaster, with users sharing strategies and participating in airdrops.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Farcade",
+          "frequency": 4
+        },
+        {
+          "term": "game",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 6,
+        "reasoning": "Second mention of 'Farcade'. Focuses on participation, strategies, and airdrops, suggesting it's a hub for game-related activities and rewards. More significant than individual game mentions.",
+        "improvement_suggestions": [
+          "Consolidate Farcade topics.",
+          "Analyze the types of games and reward mechanisms within Farcade."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Mystery Location Challenge",
+      "explanation": "Users are sharing their distances from a daily mystery location, creating a competitive and engaging community challenge.",
+      "estimated_percentage": "7%",
+      "key_terms": [
+        {
+          "term": "mystery location",
+          "frequency": 8
+        },
+        {
+          "term": "km away",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 7,
+        "viewer_appeal": 6,
+        "overall": 6,
+        "reasoning": "Fourth mention of the 'Mystery Location' game/challenge. Consistent engagement pattern. App-specific novelty penalty applies.",
+        "improvement_suggestions": [
+          "Consolidate Mystery Location topics.",
+          "Identify the app/frame."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farcaster Frames API",
+      "explanation": "Discussion about the Farcaster Frames API, with examples of how it can be used. Specifically a user asking if Warpcast developers can see when testing the analcaster frame",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "Farcaster Frames",
+          "frequency": 1
+        },
+        {
+          "term": "Warpcast",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 7,
+        "timeliness": 7,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 6,
+        "reasoning": "Discussion about the technical backend of Frames (API). Highly specific, relevant to developers building on Farcaster. Moderate novelty/timeliness. Low engagement ('Low', '3%') and appeal for non-developers.",
+        "improvement_suggestions": [
+          "Track specific API use cases or issues being discussed.",
+          "Connect to the broader 'Farcaster Frames' topic."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Ghibli Art Trend",
+      "explanation": "The repeated mentions and appreciation for Ghibli-related content (art, movies) suggests a micro-trend within the community. This could be due to a recent event or cultural moment.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "Ghibli",
+          "frequency": 5
+        },
+        {
+          "term": "Ghiblification",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Ghibli",
+          "type": "Studio",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 5,
+        "viewer_appeal": 7,
+        "overall": 6,
+        "reasoning": "Fifth Ghibli mention, term 'Ghiblification'. Reinforces the ephemeral visual trend. Low engagement ('Low', '4%').",
+        "improvement_suggestions": [
+          "Consolidate Ghibli topics."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Frame/App Feature Discussions",
+      "explanation": "Discussion around features of the platform and external apps, showing the user's interest in expanding what's possible on the platform.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "frame",
+          "frequency": 5
+        },
+        {
+          "term": "Warpslot",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 7,
+        "timeliness": 7,
+        "engagement_potential": 5,
+        "viewer_appeal": 5,
+        "overall": 6,
+        "reasoning": "General discussion about frame/app features, mentioning 'Warpslot'. Broader than single-app topics, potentially capturing user interest in frame capabilities. Moderate relevance.",
+        "improvement_suggestions": [
+          "Identify specific features being discussed.",
+          "Connect to the main 'Farcaster Frames' topic.",
+          "Distinguish discussion about frame potential vs. specific existing apps."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Daily Streak Challenges",
+      "explanation": "Multiple users mentioned 'streaks' related to posting or engagement, this indicates a trend for consistent participation and a sense of community within the platform.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "streak",
+          "frequency": 11
+        },
+        {
+          "term": "daily",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 6,
+        "reasoning": "Identifies 'streaks' as a recurring engagement mechanic (seen in GM, Farville, WrapAI). This meta-topic about gamification/consistency is more novel than individual streak mentions. Moderate relevance.",
+        "improvement_suggestions": [
+          "Analyze which apps/activities are using streaks most effectively.",
+          "Track user sentiment towards streak mechanics.",
+          "This could be a useful lens for evaluating engagement patterns."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farcaster Community Events",
+      "explanation": "Discussions about upcoming events, such as the announcement of a Farcon. This suggests a potential event trend.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "Farcon",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 6,
+        "timeliness": 7,
+        "engagement_potential": 5,
+        "viewer_appeal": 5,
+        "overall": 6,
+        "reasoning": "Discussion about community events, specifically mentioning 'Farcon'. Relevant to community building and platform activity. Moderate novelty/timeliness. Low engagement ('Low', '2%') currently.",
+        "improvement_suggestions": [
+          "Track announcements and discussions around specific events like Farcon.",
+          "Broaden to include online events or meetups discussed on Farcaster."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "THE BOLE Onboarding",
+      "explanation": "Users are sharing about their participation in 'THE BOLE,' a community or project, including their ID and progress.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "THE BOLE",
+          "frequency": 5
+        },
+        {
+          "term": "ID",
+          "frequency": 3
+        },
+        {
+          "term": "onboarding",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 6,
+        "timeliness": 7,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 6,
+        "reasoning": "Seventh mention of 'THE BOLE' onboarding, mentioning IDs. Consistent niche activity. Moderate engagement ('Medium', '5%').",
+        "improvement_suggestions": [
+          "Consolidate BOLE topics. Final assessment needed on its nature/significance."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "THE BOLE community",
+      "explanation": "Multiple users are actively participating in 'THE BOLE' community, mentioning onboarding and mystical energy, suggesting a specific, emerging community or game within Farcaster.",
+      "estimated_percentage": "7%",
+      "key_terms": [
+        {
+          "term": "THE BOLE",
+          "frequency": 3
+        },
+        {
+          "term": "onboarding",
+          "frequency": 3
+        },
+        {
+          "term": "mystical energy",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 6,
+        "timeliness": 7,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 6,
+        "reasoning": "Eighth mention of 'THE BOLE', onboarding, mystical energy. Consistent niche activity. Moderate engagement ('Medium', '7%'). Seems like a persistent sub-community.",
+        "improvement_suggestions": [
+          "Consolidate BOLE topics. Make a final call on tracking this specific community vs. broader community trends."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farcade game mentions",
+      "explanation": "Several users mention and recommend games within Farcade, suggesting it is a popular gaming hub on the platform.",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "Farcade",
+          "frequency": 5
+        },
+        {
+          "term": "Flush Fury",
+          "frequency": 1
+        },
+        {
+          "term": "Geo Crush",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 6,
+        "reasoning": "Third mention of 'Farcade', naming specific games ('Flush Fury', 'Geo Crush'). Reinforces Farcade as a gaming hub. Moderate relevance.",
+        "improvement_suggestions": [
+          "Consolidate Farcade topics.",
+          "Track popular games within Farcade."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Framedl Word Game",
+      "explanation": "Framedl, a daily word-guessing game, generates consistent engagement with users sharing their results and strategies, as well as the PRO version.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Framedl",
+          "frequency": 10
+        },
+        {
+          "term": "PRO",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 5,
+        "reasoning": "This topic is highly specific to a particular game ('Framedl'). While engagement seems consistent ('High'), its novelty is reduced as it appears to be a recurring activity around a specific third-party application/frame game, not an organic platform-wide phenomenon. It represents niche activity rather than a broad trend.",
+        "improvement_suggestions": [
+          "Combine with other game-sharing topics under a broader 'Frame Games Activity' theme.",
+          "Focus on *why* this game is engaging users on Farcaster specifically."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "THE BOLE Community",
+      "explanation": "A specific community referred to as 'THE BOLE' is gaining traction, with users mentioning their involvement and the project's progress, highlighting the launch.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "THE BOLE",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 6,
+        "timeliness": 7,
+        "engagement_potential": 5,
+        "viewer_appeal": 3,
+        "overall": 5,
+        "reasoning": "Highly specific to a named community/project ('THE BOLE'). Its novelty depends on whether it's truly new. Appears tied to a specific group/initiative (potentially a third-party project or frame app), limiting its scope as a platform-wide trend. Viewer appeal is likely low outside the community.",
+        "improvement_suggestions": [
+          "Investigate what 'THE BOLE' actually is \u2013 a game, DAO, channel?",
+          "Focus on the *type* of community activity it represents rather than just the name.",
+          "Combine with similar emerging community topics if possible."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Base is for Fun",
+      "explanation": "A community is forming around the idea that Base is primarily for fun, promoting creative expression and a welcoming environment.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "Base",
+          "frequency": 13
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 5,
+        "timeliness": 5,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Relates to the perception and use of the Base blockchain, which is relevant to Farcaster. However, the 'for fun' angle is somewhat generic sentiment. It's moderately specific but might represent a recurring discussion rather than a sharp, new trend.",
+        "improvement_suggestions": [
+          "Track specific examples of 'fun' activities on Base being discussed.",
+          "Connect this sentiment to specific Farcaster frames or apps built on Base."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "SuperPrompt Coloring Pages",
+      "explanation": "Users are sharing a new tool that turns photos into coloring pages, showcasing practical utility and creative applications.",
+      "estimated_percentage": "1%",
+      "key_terms": [
+        {
+          "term": "coloring page",
+          "frequency": 1
+        },
+        {
+          "term": "Superprompt",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 4,
+        "viewer_appeal": 5,
+        "overall": 5,
+        "reasoning": "Very specific tool ('Superprompt') for a specific function (coloring pages). Novelty is moderate as it's a new tool application, but engagement seems low ('1%'). Likely a niche tool promotion or discovery.",
+        "improvement_suggestions": [
+          "Monitor if usage picks up.",
+          "See if it sparks a broader trend of AI-generated creative content sharing."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farcaster Football Game",
+      "explanation": "Discussion around a new game on the Farcaster frame, showcasing engagement through goal scoring and enjoyment.",
+      "estimated_percentage": "8%",
+      "key_terms": [
+        {
+          "term": "Farcaster Football",
+          "frequency": 4
+        },
+        {
+          "term": "goals",
+          "frequency": 2
+        },
+        {
+          "term": "game",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 5,
+        "reasoning": "Specific frame game ('Farcaster Football'). High specificity, moderate novelty (another frame game). Engagement seems decent ('Medium', '8%'). Penalized for being app-specific rather than platform-wide.",
+        "improvement_suggestions": [
+          "Combine under 'Frame Games Activity'.",
+          "Analyze the gameplay mechanics being discussed (goal scoring)."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Sign Game results/scores",
+      "explanation": "Community members are sharing their scores and strategies for the Sign Game on Farcaster, reflecting gameplay.",
+      "estimated_percentage": "8%",
+      "key_terms": [
+        {
+          "term": "Sign Game",
+          "frequency": 4
+        },
+        {
+          "term": "moves",
+          "frequency": 3
+        },
+        {
+          "term": "points",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 5,
+        "reasoning": "Another specific game ('Sign Game'). High specificity, low novelty due to being app-specific activity (score sharing). Moderate engagement. Falls into the 'Frame Games' category.",
+        "improvement_suggestions": [
+          "Combine with other game topics.",
+          "Analyze strategies being shared, if any."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "The BOLE community",
+      "explanation": "References to a community called 'The BOLE,' with users discussing its launch and indicating a new community initiative.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "BOLE",
+          "frequency": 2
+        },
+        {
+          "term": "community",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 6,
+        "timeliness": 7,
+        "engagement_potential": 4,
+        "viewer_appeal": 3,
+        "overall": 5,
+        "reasoning": "Same as 'THE BOLE Community'. Specific niche community/project. Lower engagement ('Low', '3%') suggests less traction than the other mention.",
+        "improvement_suggestions": [
+          "Combine with the other BOLE topic.",
+          "Clarify the nature of 'THE BOLE'."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farville Game & Items",
+      "explanation": "Multiple users are actively seeking or offering items, indicating interest in the in-game economy or features of this specific game.",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "Farville",
+          "frequency": 10
+        },
+        {
+          "term": "Eggplant",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Specific game ('Farville') with focus on in-game economy (items like 'Eggplant'). App-specific activity, low novelty. Moderate engagement within its player base.",
+        "improvement_suggestions": [
+          "Combine with other game/Farville topics.",
+          "Analyze the economic/trading behavior emerging around the game."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Base Chain Activity",
+      "explanation": "Users are discussing activity related to the Base blockchain, including development and ecosystem related discussions.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "Base",
+          "frequency": 6
+        },
+        {
+          "term": "chain",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Discussion related to the Base blockchain. Relevant due to Farcaster's ties to Base. Moderately specific. Could be significant if tied to specific protocol upgrades or popular Base apps discussed on Farcaster.",
+        "improvement_suggestions": [
+          "Identify the specific activities or developments being discussed.",
+          "Connect to Farcaster usage (e.g., Base transactions via frames)."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Ghibli Weekend Discussions",
+      "explanation": "Many users are expressing their love for Ghibli and promoting Ghibli content.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Ghibli",
+          "frequency": 5
+        },
+        {
+          "term": "Ghibli weekend",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 4,
+        "viewer_appeal": 6,
+        "overall": 5,
+        "reasoning": "Fourth Ghibli mention, framed around a 'weekend'. Suggests a possible coordinated or themed event, but still likely ephemeral. Low engagement ('Low', '5%').",
+        "improvement_suggestions": [
+          "Consolidate Ghibli topics.",
+          "Verify if 'Ghibli weekend' was an actual organized event."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "The BOLE Onboarding",
+      "explanation": "Users referencing and discussing about onboarding, indicating an internal system of the platform.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "BOLE",
+          "frequency": 4
+        },
+        {
+          "term": "onboarding",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 6,
+        "timeliness": 7,
+        "engagement_potential": 5,
+        "viewer_appeal": 3,
+        "overall": 5,
+        "reasoning": "Third mention of 'THE BOLE' onboarding. Consistent theme for this niche community. Low engagement estimate ('Low', '4%').",
+        "improvement_suggestions": [
+          "Consolidate BOLE topics.",
+          "Determine the nature and scale of this community."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Hatch your Hen",
+      "explanation": "Users are actively participating in the 'Hatch your hen' game, indicating game specific community interest.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "Hatch your hen",
+          "frequency": 6
+        },
+        {
+          "term": "cock code",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Specific game ('Hatch your hen') with unique terms ('cock code'). Appears to be another frame game. Moderate engagement ('Medium', '4%'). Penalized for app-specificity.",
+        "improvement_suggestions": [
+          "Combine under 'Frame Games Activity'.",
+          "Investigate the 'cock code' mechanic."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "AI Hardware Development",
+      "explanation": "Discussion around the development and application of older hardware in AI, specifically concerning efficient usage of older hardware for small applications.  The posts suggest a parallel with the used-car market.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "AI hardware",
+          "frequency": 2
+        },
+        {
+          "term": "situated software",
+          "frequency": 1
+        },
+        {
+          "term": "older hardware",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 5,
+        "viewer_appeal": 3,
+        "overall": 5,
+        "reasoning": "Specific technical discussion about AI hardware, particularly older hardware. Moderate novelty if focusing on efficiency/niche applications. Relevance to Farcaster is unclear unless linked to specific projects or developers on the platform. Moderate engagement estimate ('10%') seems high for a niche topic.",
+        "improvement_suggestions": [
+          "Clarify the Farcaster context.",
+          "Verify the engagement estimate.",
+          "Connect to broader AI discussions if relevant."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "THE BOLE",
+      "explanation": "An apparent community-specific term or inside joke, with multiple users mentioning participation in 'THE BOLE'. The posts suggest some kind of community event or project within Farcaster.",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "THE BOLE",
+          "frequency": 2
+        },
+        {
+          "term": "mystical energy",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 6,
+        "timeliness": 7,
+        "engagement_potential": 4,
+        "viewer_appeal": 3,
+        "overall": 5,
+        "reasoning": "Fourth mention of 'THE BOLE', with terms like 'mystical energy'. Reinforces it as a specific community/project with unique internal language. Still niche.",
+        "improvement_suggestions": [
+          "Consolidate BOLE topics.",
+          "Define 'THE BOLE' and 'mystical energy' in this context."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Daily Game Scores",
+      "explanation": "Users are sharing their scores from games such as 'Sign Game', 'Memory Match game' and 'adivinadrone' within the platform, which demonstrates a trend of users actively using the platform's built-in features.",
+      "estimated_percentage": "8%",
+      "key_terms": [
+        {
+          "term": "Sign Game",
+          "frequency": 3
+        },
+        {
+          "term": "adivinadrone",
+          "frequency": 3
+        },
+        {
+          "term": "Memory Match",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 5,
+        "reasoning": "Generalizes score sharing across multiple games ('Sign Game', 'Memory Match', 'adivinadrone'). Specificity is slightly lower than single-game topics, but novelty remains low (app-specific activity). Moderate engagement.",
+        "improvement_suggestions": [
+          "Use this as a parent category for specific game score sharing.",
+          "Identify the most popular games driving this behavior."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "THE BOLE Community Onboarding",
+      "explanation": "Users are discussing their participation in 'THE BOLE,' a community project. They are sharing onboarding steps and expressing excitement about the project. This indicates a growing community and shared experience.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "THE BOLE",
+          "frequency": 7
+        },
+        {
+          "term": "onboarding",
+          "frequency": 3
+        },
+        {
+          "term": "mystical energy",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "THE BOLE",
+          "type": "Community Project",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 6,
+        "timeliness": 7,
+        "engagement_potential": 5,
+        "viewer_appeal": 3,
+        "overall": 5,
+        "reasoning": "Sixth mention of 'THE BOLE' onboarding. Consistent niche activity. Low engagement ('Low', '6%').",
+        "improvement_suggestions": [
+          "Consolidate BOLE topics.",
+          "Conclude assessment of BOLE's significance."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farville Community Engagement",
+      "explanation": "Users are actively looking for specific items or interacting within a community context. The /farville tag serves as a hub for this activity, showcasing an active community.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "/farville",
+          "frequency": 5
+        },
+        {
+          "term": "Carrot",
+          "frequency": 3
+        },
+        {
+          "term": "Radish",
+          "frequency": 1
+        },
+        {
+          "term": "Lettuce Seeds",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "/farville",
+          "type": "Community",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Third mention of 'Farville', focusing on item trading ('Carrot', 'Radish', etc.) within the '/farville' channel/tag. Highlights in-game economy. Still app-specific.",
+        "improvement_suggestions": [
+          "Consolidate Farville topics.",
+          "Analyze the trading patterns."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "THE BOLE Community Onboarding",
+      "explanation": "Multiple users are mentioning 'THE BOLE' and their 'onboarding' process, indicating an active community with a unique onboarding experience and internal culture. This is a good indicator of emerging community trends.",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "THE BOLE",
+          "frequency": 5
+        },
+        {
+          "term": "onboarding",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 6,
+        "timeliness": 7,
+        "engagement_potential": 5,
+        "viewer_appeal": 3,
+        "overall": 5,
+        "reasoning": "Sixth mention of 'THE BOLE' onboarding. Consistent niche activity. Low engagement ('Low', '6%').",
+        "improvement_suggestions": [
+          "Consolidate BOLE topics.",
+          "Conclude assessment of BOLE's significance."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "WrapAI Check-in Streaks",
+      "explanation": "Users are reporting their check-in streaks on WrapAI. This indicates active engagement with the WrapAI platform.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "WrapAI",
+          "frequency": 4
+        },
+        {
+          "term": "check-in",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Second mention of WrapAI streaks. Third-party app activity. Moderate engagement ('Medium', '6%').",
+        "improvement_suggestions": [
+          "Consolidate WrapAI topics.",
+          "Assess significance based on WrapAI's function."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Web3 Daily Rituals",
+      "explanation": "Users mentioning daily rituals on the OnChainGM and Zora platforms, this indicates how Web3 users are starting their day.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "OnChainGM",
+          "frequency": 3
+        },
+        {
+          "term": "Web3",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 5,
+        "timeliness": 5,
+        "engagement_potential": 4,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Describes user behavior ('daily rituals') involving specific web3 platforms ('OnChainGM', 'Zora'). Connects baseline activity (like GM) to specific web3 actions. Moderate relevance.",
+        "improvement_suggestions": [
+          "Identify the specific actions comprising these rituals.",
+          "Compare with 'GM Culture' and 'Zora' topics.",
+          "Analyze *why* users perform these rituals."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farville Game & Seeds",
+      "explanation": "Users are discussing their gameplay, seed requests and game progress within 'Farville', highlighting the community integration with the game.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "Farville",
+          "frequency": 8
+        },
+        {
+          "term": "Seeds",
+          "frequency": 3
+        },
+        {
+          "term": "streak",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Fifth mention of 'Farville', focusing on seeds and streaks. Consistent game activity, moderate engagement ('Medium', '4%'). App-specific.",
+        "improvement_suggestions": [
+          "Consolidate Farville topics. Filter out."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Ghibli-Inspired Image Trend",
+      "explanation": "Discussions around the Ghibli-inspired image trend.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "Ghibli",
+          "frequency": 3
+        },
+        {
+          "term": "image",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 4,
+        "viewer_appeal": 6,
+        "overall": 5,
+        "reasoning": "Sixth Ghibli mention. Ephemeral visual trend. Low engagement ('Low', '2%').",
+        "improvement_suggestions": [
+          "Consolidate Ghibli topics."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "WrapAI Check-in Streaks",
+      "explanation": "Users sharing their daily check-in streaks and earning points on WrapAI.",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "WrapAI",
+          "frequency": 5
+        },
+        {
+          "term": "streak",
+          "frequency": 7
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Second mention of WrapAI streaks. Third-party app activity. Moderate engagement ('Medium', '6%').",
+        "improvement_suggestions": [
+          "Consolidate WrapAI topics.",
+          "Assess significance based on WrapAI's function."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Sign Game participation",
+      "explanation": "Users are actively sharing their scores and achievements in the 'Sign Game', a specific game within the Farcaster ecosystem.",
+      "estimated_percentage": "7%",
+      "key_terms": [
+        {
+          "term": "Sign Game",
+          "frequency": 5
+        },
+        {
+          "term": "moves",
+          "frequency": 5
+        },
+        {
+          "term": "score",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 6,
+        "viewer_appeal": 5,
+        "overall": 5,
+        "reasoning": "Ninth mention of 'Sign Game'. Moderate engagement ('Medium', '7%'). Repetitive app-specific activity.",
+        "improvement_suggestions": [
+          "Consolidate Sign Game topics. Filter out."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farville farming game",
+      "explanation": "Users actively look for items in the game 'Farville' and share their streaks, showing user participation within this Farcaster mini-game.",
+      "estimated_percentage": "8%",
+      "key_terms": [
+        {
+          "term": "Farville",
+          "frequency": 7
+        },
+        {
+          "term": "streak",
+          "frequency": 3
+        },
+        {
+          "term": "seed",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Sixth mention of 'Farville', focusing on seeds and streaks. Moderate engagement ('Medium', '8%'). Repetitive app-specific activity.",
+        "improvement_suggestions": [
+          "Consolidate Farville topics. Filter out."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "WrapAI streaks and points",
+      "explanation": "Multiple users are showcasing their streaks and earned points on WrapAI, a platform that is clearly trending within the community.",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "WrapAI",
+          "frequency": 4
+        },
+        {
+          "term": "streak",
+          "frequency": 4
+        },
+        {
+          "term": "points",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Third mention of WrapAI streaks/points. Third-party app activity. Moderate engagement ('Medium', '6%').",
+        "improvement_suggestions": [
+          "Consolidate WrapAI topics. Assess significance."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Layer3 Quest Mentions",
+      "explanation": "Users are discussing and linking Layer3 quests and sharing their progress, showing active participation in on-chain activities.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Layer3",
+          "frequency": 6
+        },
+        {
+          "term": "quest",
+          "frequency": 6
+        },
+        {
+          "term": "Mint",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 6,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Specific activity on a third-party platform ('Layer3 quests'). Users sharing progress/links. Penalized for being external activity. Moderate engagement ('Medium', '5%').",
+        "improvement_suggestions": [
+          "Clarify Layer3's relevance to Farcaster users.",
+          "Filter out if just external platform usage sharing."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "GMonchain Meme Culture",
+      "explanation": "The 'GMonchain' meme and related content is consistently appearing, indicating its growing traction.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "GMonchain",
+          "frequency": 5
+        },
+        {
+          "term": "meme",
+          "frequency": 2
+        },
+        {
+          "term": "GM",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 5,
+        "reasoning": "Focuses specifically on the 'GMonchain' meme/aspect of GM culture. More specific than general GM, but still tied to the baseline ritual. Moderate novelty as a specific meme.",
+        "improvement_suggestions": [
+          "Track the evolution and spread of this specific meme.",
+          "Analyze its connection to actual on-chain GM actions."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Warpslot Game Wins",
+      "explanation": "Users are announcing their wins from the Warpslot game, displaying enthusiasm and a sense of community around shared gameplay.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "Warpslot",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 4,
+        "reasoning": "Specific to a game ('Warpslot'). Similar to Framedl, this is activity around a third-party app/frame. Novelty is low as it's just win-sharing for a specific game. Limited platform-wide significance.",
+        "improvement_suggestions": [
+          "Combine with other game topics.",
+          "Analyze if this game introduces novel frame interactions."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Sign Game Achievement",
+      "explanation": "Users are posting about completing a game called 'Sign Game,' which implies a new game on the platform.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "Sign Game",
+          "frequency": 7
+        },
+        {
+          "term": "moves",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 4,
+        "reasoning": "Specific game ('Sign Game') achievement sharing. Low novelty, app-specific. Moderate engagement.",
+        "improvement_suggestions": [
+          "Combine with other Sign Game topics.",
+          "Focus on the 'achievement' aspect - are there leaderboards or shared goals?"
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Onchain Arcade Games",
+      "explanation": "The discussion on the platform is about a game called Onchain Arcade.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "Onchain Arcade",
+          "frequency": 2
+        },
+        {
+          "term": "Breakout",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 6,
+        "engagement_potential": 4,
+        "viewer_appeal": 4,
+        "overall": 4,
+        "reasoning": "Specific game/platform ('Onchain Arcade', 'Breakout'). Appears to be another game-specific topic, possibly a frame. Low engagement ('Low', '3%'). Penalized for being app-specific.",
+        "improvement_suggestions": [
+          "Combine under 'Frame Games Activity'.",
+          "Verify if 'Onchain Arcade' is a specific app or a general term."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Framedl Game",
+      "explanation": "A board game called Framedl is being discussed.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "Framedl",
+          "frequency": 6
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 4,
+        "viewer_appeal": 4,
+        "overall": 4,
+        "reasoning": "Second mention of 'Framedl'. Specific game, low novelty, low engagement ('Low', '4%'). Reinforces it as niche app activity.",
+        "improvement_suggestions": [
+          "Combine Framedl topics.",
+          "Consider filtering out if engagement remains low."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Sign Game Achievements",
+      "explanation": "Users are sharing their achievements in a 'Sign Game' on Farcaster, including move counts and completion times, and linking to their attestations on a blockchain explorer.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Sign Game",
+          "frequency": 8
+        },
+        {
+          "term": "achievement",
+          "frequency": 8
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 4,
+        "reasoning": "Eighth mention of 'Sign Game'. Low engagement ('Medium', '3%'). Minor app activity.",
+        "improvement_suggestions": [
+          "Consolidate Sign Game topics. Filter out."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "GPT and AI Tools",
+      "explanation": "Discussions around the use of new GPT features and other AI tools, including observations about their performance and usefulness.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "GPT",
+          "frequency": 2
+        },
+        {
+          "term": "AI",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 5,
+        "timeliness": 5,
+        "engagement_potential": 4,
+        "viewer_appeal": 4,
+        "overall": 4,
+        "reasoning": "General discussion about AI tools (GPT). Moderately specific but a common topic across the internet. Low engagement ('Low', '3%'). Needs a stronger Farcaster link to be a relevant trend.",
+        "improvement_suggestions": [
+          "Look for discussion of AI tools integrated via Frames.",
+          "See if specific AI applications unique to Farcaster emerge."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "The Sign Game",
+      "explanation": "People are discussing the sign game",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "Sign Game",
+          "frequency": 8
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 4,
+        "reasoning": "Seventh mention of 'Sign Game'. Low engagement ('Low', '4%'). Minor app activity.",
+        "improvement_suggestions": [
+          "Consolidate Sign Game topics.",
+          "Filter out."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Sign Game Achievements",
+      "explanation": "Users are frequently posting about their scores and achievements in the 'Sign Game', indicating community engagement with this game.",
+      "estimated_percentage": "8%",
+      "key_terms": [
+        {
+          "term": "Sign Game",
+          "frequency": 11
+        },
+        {
+          "term": "moves",
+          "frequency": 6
+        },
+        {
+          "term": "achievements",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 4,
+        "reasoning": "Eighth mention of 'Sign Game'. Low engagement ('Medium', '3%'). Minor app activity.",
+        "improvement_suggestions": [
+          "Consolidate Sign Game topics. Filter out."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farville Activity",
+      "explanation": "Users actively engaging with the /farville game, a platform-specific game, demonstrating platform-specific game community interest.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "Farville",
+          "frequency": 3
+        },
+        {
+          "term": "Carrots",
+          "frequency": 1
+        },
+        {
+          "term": "Eggplant",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 4,
+        "reasoning": "Second mention of 'Farville'. Specific game activity, low novelty, low engagement ('Low', '4%'). Niche app.",
+        "improvement_suggestions": [
+          "Combine Farville topics.",
+          "Monitor engagement levels."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "ITAP of various items",
+      "explanation": "Users are posting photos of everyday items, indicating photo-sharing activity on the platform.",
+      "estimated_percentage": "7%",
+      "key_terms": [
+        {
+          "term": "ITAP",
+          "frequency": 7
+        },
+        {
+          "term": "photo",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 4,
+        "timeliness": 4,
+        "engagement_potential": 4,
+        "viewer_appeal": 5,
+        "overall": 4,
+        "reasoning": "'ITAP' (I Took A Picture) is a common Reddit acronym/hashtag for photo sharing. Represents generic photo sharing activity. Low novelty, moderate specificity. Not a unique Farcaster trend.",
+        "improvement_suggestions": [
+          "Filter out unless tied to a specific Farcaster photo challenge or feature.",
+          "Combine with 'Daily Photo Sharing' if that uses ITAP."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "Daily Photo Sharing",
+      "explanation": "The trend of users sharing photos with the hashtag #365photo indicates active participation in a daily photo challenge or personal project.  This indicates a trend for personal expression.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "#365photo",
+          "frequency": 2
+        },
+        {
+          "term": "ITAP",
+          "frequency": 6
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 4,
+        "timeliness": 4,
+        "engagement_potential": 4,
+        "viewer_appeal": 5,
+        "overall": 4,
+        "reasoning": "General photo sharing activity, potentially linked to '#365photo' challenge and 'ITAP'. Low novelty, recurring behavior. Low engagement ('Low', '3%').",
+        "improvement_suggestions": [
+          "Combine with ITAP topic.",
+          "Filter out unless a specific Farcaster feature drives it."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "Sign Game Participation",
+      "explanation": "Users are actively participating in a game on the platform. People share scores and engage in competitive gameplay.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "Sign Game",
+          "frequency": 3
+        },
+        {
+          "term": "moves",
+          "frequency": 3
+        },
+        {
+          "term": "levels",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 4,
+        "reasoning": "Sixth mention of 'Sign Game'. Low engagement ('Low', '3%'). Minor app activity.",
+        "improvement_suggestions": [
+          "Consolidate Sign Game topics.",
+          "Consider filtering due to low engagement and novelty."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Rodeo Club Discussions",
+      "explanation": "The platform Rodeo Club gets specific discussion related to posts and features. Specific posts are mentioned, indicating people are sharing their work and reacting to it.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "Rodeo.club",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 5,
+        "timeliness": 5,
+        "engagement_potential": 4,
+        "viewer_appeal": 3,
+        "overall": 4,
+        "reasoning": "Discussion specific to an external platform/app ('Rodeo.club'). Penalized for being third-party related. Low engagement ('Low', '4%').",
+        "improvement_suggestions": [
+          "Clarify what Rodeo.club is and why Farcaster users discuss it.",
+          "Filter out if just external platform promotion."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "ITAP (I Took A Photo)",
+      "explanation": "Users are sharing photos with ITAP. The frequency suggests an easy way to share pictures. ",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "ITAP",
+          "frequency": 7
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 4,
+        "timeliness": 4,
+        "engagement_potential": 4,
+        "viewer_appeal": 5,
+        "overall": 4,
+        "reasoning": "Second mention of ITAP. General photo sharing. Low novelty. Low engagement ('Low', '4%').",
+        "improvement_suggestions": [
+          "Combine with 'Daily Photo Sharing'.",
+          "Filter out."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "The Sign Game",
+      "explanation": "Users are sharing their results and achievements in 'The Sign Game'. This suggests increasing participation and interest in the game.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "Sign Game",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 4,
+        "reasoning": "Seventh mention of 'Sign Game'. Low engagement ('Low', '4%'). Minor app activity.",
+        "improvement_suggestions": [
+          "Consolidate Sign Game topics.",
+          "Filter out."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Farville Game Activity",
+      "explanation": "Posts mention activity within the 'Farville' game, indicating ongoing engagement with the game and a small community.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "Farville",
+          "frequency": 6
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 4,
+        "reasoning": "Fourth mention of 'Farville'. Low engagement ('Low', '5%'). Minor app activity.",
+        "improvement_suggestions": [
+          "Consolidate Farville topics.",
+          "Filter out."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "MysticMeow's Wisdom",
+      "explanation": "Posts mention MysticMeow and users receiving insights. This suggests a new form of content.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "MysticMeow",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 3,
+        "viewer_appeal": 3,
+        "overall": 4,
+        "reasoning": "Mentions a specific entity ('MysticMeow') providing 'insights'. Could be a bot, a user, or a frame. Novelty is moderate, but very low engagement ('Low', '2%') and unclear nature make it insignificant currently.",
+        "improvement_suggestions": [
+          "Identify what 'MysticMeow' is.",
+          "Monitor if engagement increases."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Sign Game Achievements",
+      "explanation": "Users are posting their scores and achievements from the \"Sign Game\", creating engagement.",
+      "estimated_percentage": "3%",
+      "key_terms": [
+        {
+          "term": "Sign Game",
+          "frequency": 4
+        },
+        {
+          "term": "moves",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 8,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 5,
+        "viewer_appeal": 4,
+        "overall": 4,
+        "reasoning": "Eighth mention of 'Sign Game'. Low engagement ('Medium', '3%'). Minor app activity.",
+        "improvement_suggestions": [
+          "Consolidate Sign Game topics. Filter out."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Open-source Markdown modules",
+      "explanation": "Discussion about an opensource project to create different layout modules for lens' native markdown support.",
+      "estimated_percentage": "1%",
+      "key_terms": [
+        {
+          "term": "markdown",
+          "frequency": 2
+        },
+        {
+          "term": "modules",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 6,
+        "timeliness": 6,
+        "engagement_potential": 4,
+        "viewer_appeal": 3,
+        "overall": 4,
+        "reasoning": "Highly specific technical project related to Lens markdown (potentially relevant if Farcaster adopts similar standards or if developers work across both). Niche audience. Very low engagement ('Low', '1%').",
+        "improvement_suggestions": [
+          "Clarify the Farcaster relevance.",
+          "Filter out if purely Lens-specific."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "GM (Good Morning) Culture",
+      "explanation": "The widespread practice of wishing 'GM' (Good Morning) to the community, with the usage of GMonchain and vercel, which indicates a trend of community interaction.",
+      "estimated_percentage": "12%",
+      "key_terms": [
+        {
+          "term": "GM",
+          "frequency": 15
+        },
+        {
+          "term": "GMonchain",
+          "frequency": 6
+        },
+        {
+          "term": "airdrop",
+          "frequency": 6
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 2,
+        "timeliness": 3,
+        "engagement_potential": 5,
+        "viewer_appeal": 3,
+        "overall": 3,
+        "reasoning": "Baseline GM activity, linked to 'Gmonchain'. Moderate engagement ('Medium', '15%'). Low novelty.",
+        "improvement_suggestions": [
+          "Filter out."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "Shadcn Registry and React",
+      "explanation": "Discussion around the Shadcn registry and its compatibility with the multi-framework React, indicating a developer-focused trend.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "shadcn",
+          "frequency": 1
+        },
+        {
+          "term": "react",
+          "frequency": 1
+        },
+        {
+          "term": "framework",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 5,
+        "timeliness": 5,
+        "engagement_potential": 3,
+        "viewer_appeal": 2,
+        "overall": 3,
+        "reasoning": "Highly specific technical discussion for developers (Shadcn, React). Low novelty unless there's a specific Farcaster integration context. Very low engagement potential and viewer appeal for the general user base.",
+        "improvement_suggestions": [
+          "Filter out unless directly related to building Farcaster frames/apps.",
+          "Look for context on *why* this is discussed on Farcaster."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "Daily GM and Community",
+      "explanation": "Users are actively participating in 'GM' (Good Morning) culture, with posts encouraging others to participate, linking to related websites, and referencing 'GM' streaks for airdrops.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "GM",
+          "frequency": 20
+        },
+        {
+          "term": "GMonchain",
+          "frequency": 8
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 2,
+        "timeliness": 3,
+        "engagement_potential": 5,
+        "viewer_appeal": 3,
+        "overall": 3,
+        "reasoning": "Another GM baseline topic, mentioning 'GMonchain', 'streaks', and 'airdrops'. This adds context (gamification, rewards) but the core is still the low-novelty GM ritual. High frequency ('20') but low trend value.",
+        "improvement_suggestions": [
+          "Focus specifically on the 'GM streak' or 'GM airdrop' mechanics if they are new or driving significant behavior.",
+          "Filter out the basic GM aspect."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "Travel and Lifestyle",
+      "explanation": "Users are sharing travel experiences, including places visited (e.g., Rajasthan, India;  Japan, etc),  and daily routines.",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "Travel",
+          "frequency": 4
+        },
+        {
+          "term": "lifestyle",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 4,
+        "novelty": 2,
+        "timeliness": 2,
+        "engagement_potential": 3,
+        "viewer_appeal": 4,
+        "overall": 3,
+        "reasoning": "Very generic topic (travel, lifestyle). Low specificity, novelty, and timeliness. Unlikely to be a Farcaster-specific trend unless tied to a particular feature or community.",
+        "improvement_suggestions": [
+          "Filter out unless there's a clear Farcaster angle (e.g., using a specific travel frame, posts in a dedicated travel channel)."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "GM (Good Morning) Culture",
+      "explanation": "Consistent use of \"GM\" and variations like \"GM Hardforkers,\" indicating a trend of daily greetings and community engagement, often tied to specific projects or platforms.",
+      "estimated_percentage": "20%",
+      "key_terms": [
+        {
+          "term": "GM",
+          "frequency": 14
+        },
+        {
+          "term": "Gmonchain",
+          "frequency": 6
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 2,
+        "timeliness": 3,
+        "engagement_potential": 5,
+        "viewer_appeal": 3,
+        "overall": 3,
+        "reasoning": "Baseline GM activity, linked to 'Gmonchain'. Moderate engagement ('Medium', '15%'). Low novelty.",
+        "improvement_suggestions": [
+          "Filter out."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "Z Generation's Future",
+      "explanation": "Discussion concerning the future of the Z Generation, specifically focusing on the group becoming the richest population group in the world.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "Z generation",
+          "frequency": 1
+        },
+        {
+          "term": "richest population",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 5,
+        "novelty": 3,
+        "timeliness": 3,
+        "engagement_potential": 4,
+        "viewer_appeal": 4,
+        "overall": 3,
+        "reasoning": "General societal topic (Gen Z wealth). Low specificity, novelty, and timeliness in the context of Farcaster trends. Low engagement ('Low', '2%').",
+        "improvement_suggestions": [
+          "Filter out unless linked to specific Farcaster demographics or economic activity."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "Manga vs Ghibli",
+      "explanation": "A discussion about Manga and Ghibli content and themes. This is related to entertainment and media.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "Manhwa",
+          "frequency": 1
+        },
+        {
+          "term": "Ghibli",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 4,
+        "timeliness": 4,
+        "engagement_potential": 3,
+        "viewer_appeal": 4,
+        "overall": 3,
+        "reasoning": "General discussion comparing media types (Manga, Ghibli). Low relevance to Farcaster platform trends. Low engagement ('Low', '2%').",
+        "improvement_suggestions": [
+          "Filter out unless connected to specific Farcaster content or communities."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "The Promised Neverland",
+      "explanation": "User sharing their experience of watching the anime series.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "Promised Neverland",
+          "frequency": 1
+        },
+        {
+          "term": "orphans",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 7,
+        "novelty": 3,
+        "timeliness": 3,
+        "engagement_potential": 2,
+        "viewer_appeal": 3,
+        "overall": 3,
+        "reasoning": "Discussion about a specific anime series. Low relevance to Farcaster trends. Low engagement ('Low', '2%'). Anecdotal.",
+        "improvement_suggestions": [
+          "Filter out."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "Go Optimization Tips",
+      "explanation": "Tips for Go optimization, including using sync.Pool",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "Go",
+          "frequency": 1
+        },
+        {
+          "term": "optimization",
+          "frequency": 1
+        },
+        {
+          "term": "sync.Pool",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 9,
+        "novelty": 4,
+        "timeliness": 4,
+        "engagement_potential": 3,
+        "viewer_appeal": 2,
+        "overall": 3,
+        "reasoning": "Highly specific technical topic (Go programming language optimization). Very niche audience. Low relevance unless tied to Farcaster infrastructure development. Low engagement ('Low', '2%').",
+        "improvement_suggestions": [
+          "Filter out unless context shows relevance to Farcaster development."
+        ],
+        "is_baseline_topic": false
+      }
+    },
+    {
+      "name": "GM (Good Morning) Culture",
+      "explanation": "The continued use of \"GM\" and its derivatives as a greeting, often tied to specific events, suggests the persistence of this specific cultural trend. It's evolved to include challenges and rewards.",
+      "estimated_percentage": "15%",
+      "key_terms": [
+        {
+          "term": "GM",
+          "frequency": 24
+        },
+        {
+          "term": "GM streak",
+          "frequency": 4
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 2,
+        "timeliness": 3,
+        "engagement_potential": 5,
+        "viewer_appeal": 3,
+        "overall": 3,
+        "reasoning": "Baseline GM activity, linked to 'Gmonchain'. Moderate engagement ('Medium', '15%'). Low novelty.",
+        "improvement_suggestions": [
+          "Filter out."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "GM (Good Morning) Culture",
+      "explanation": "The 'GM' greeting and related posts, likely connected to a daily ritual of engagement. This indicates a community-specific behavior.",
+      "estimated_percentage": "15%",
+      "key_terms": [
+        {
+          "term": "GM",
+          "frequency": 10
+        },
+        {
+          "term": "Gmonchain",
+          "frequency": 7
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 2,
+        "timeliness": 3,
+        "engagement_potential": 5,
+        "viewer_appeal": 3,
+        "overall": 3,
+        "reasoning": "Baseline GM activity, linked to 'Gmonchain'. Moderate engagement ('Medium', '15%'). Low novelty.",
+        "improvement_suggestions": [
+          "Filter out."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "Sustainable Fashion Discussion",
+      "explanation": "Users are discussing the trend of sustainable fashion. This suggests an emerging area of interest.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "sustainable fashion",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 5,
+        "novelty": 3,
+        "timeliness": 3,
+        "engagement_potential": 3,
+        "viewer_appeal": 4,
+        "overall": 3,
+        "reasoning": "General topic (sustainable fashion). Low relevance to Farcaster trends. Low engagement ('Low', '2%').",
+        "improvement_suggestions": [
+          "Filter out unless linked to specific Farcaster projects or commerce."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "GM Culture & Trends",
+      "explanation": "The phrase 'GM' (Good Morning) and associated trends are extremely popular, indicating high community participation.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "GM",
+          "frequency": 45
+        },
+        {
+          "term": "GMstreak",
+          "frequency": 5
+        },
+        {
+          "term": "GMvibes",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 2,
+        "timeliness": 3,
+        "engagement_potential": 5,
+        "viewer_appeal": 3,
+        "overall": 3,
+        "reasoning": "Baseline GM activity, noting extremely high frequency ('45') and variations ('GMstreak', 'GMvibes'). Confirms ubiquity and some evolution (streaks), but core novelty is low.",
+        "improvement_suggestions": [
+          "Filter out basic GM, focus analysis on variations like streaks if they drive behavior."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "GM/GN Daily Activity",
+      "explanation": "The 'GM' (Good Morning) and 'GN' (Good Night) greetings are consistently present, indicating a daily ritual among users.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "GM",
+          "frequency": 13
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 5,
+        "novelty": 1,
+        "timeliness": 1,
+        "engagement_potential": 2,
+        "viewer_appeal": 2,
+        "overall": 2,
+        "reasoning": "This is a classic baseline activity on Farcaster and similar crypto-native platforms. It's highly recurring, lacks novelty and timeliness as a 'trend', and has low engagement potential beyond the ritual itself. It's part of the platform's background noise.",
+        "improvement_suggestions": [
+          "Filter out unless there's a significant, novel change in *how* or *why* GM/GN is used (e.g., tied to a major new protocol or event)."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "GM (Good Morning)",
+      "explanation": "The phrase 'GM' is widely used, showing a community greeting.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "GM",
+          "frequency": 19
+        },
+        {
+          "term": "GMonchain",
+          "frequency": 5
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 5,
+        "novelty": 1,
+        "timeliness": 1,
+        "engagement_potential": 3,
+        "viewer_appeal": 2,
+        "overall": 2,
+        "reasoning": "Pure baseline 'GM' activity, potentially linked to 'GMonchain'. Very low novelty/timeliness. High frequency ('19') confirms it's common but not 'trending' in a meaningful way.",
+        "improvement_suggestions": [
+          "Filter out or merge with other GM topics, focusing only on novel aspects like GMonchain."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "GM (Good Morning) Ritual",
+      "explanation": "The ritualistic 'GM' greetings are a common occurrence on the platform, demonstrating a strong community culture.",
+      "estimated_percentage": "18%",
+      "key_terms": [
+        {
+          "term": "GM",
+          "frequency": 20
+        },
+        {
+          "term": "GMonchain",
+          "frequency": 7
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 5,
+        "novelty": 1,
+        "timeliness": 1,
+        "engagement_potential": 3,
+        "viewer_appeal": 2,
+        "overall": 2,
+        "reasoning": "Another baseline GM topic, noting high estimated percentage ('18%') and link to 'GMonchain'. Confirms ubiquity but low trend value.",
+        "improvement_suggestions": [
+          "Filter out, focus only on novel integrations like GMonchain if significant."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "Heavy Metal Band Goals",
+      "explanation": "A user expressed an interest in starting a heavy metal band, showing personal goals beyond the platform",
+      "estimated_percentage": "1%",
+      "key_terms": [
+        {
+          "term": "heavy metal band",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 6,
+        "novelty": 3,
+        "timeliness": 2,
+        "engagement_potential": 2,
+        "viewer_appeal": 2,
+        "overall": 2,
+        "reasoning": "A single user's personal goal. Very low specificity as a trend, low novelty, timeliness, engagement, and appeal. Anecdotal.",
+        "improvement_suggestions": [
+          "Filter out. This is not a trend."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "Productivity Tips",
+      "explanation": "Users sharing productivity tips and tricks.",
+      "estimated_percentage": "2%",
+      "key_terms": [
+        {
+          "term": "Prioritize",
+          "frequency": 1
+        },
+        {
+          "term": "Eliminate distractions",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "evaluation": {
+        "specificity": 4,
+        "novelty": 2,
+        "timeliness": 2,
+        "engagement_potential": 3,
+        "viewer_appeal": 3,
+        "overall": 2,
+        "reasoning": "Generic self-help topic. Very low specificity, novelty, timeliness. Low engagement ('Low', '2%').",
+        "improvement_suggestions": [
+          "Filter out."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    {
+      "name": "GM (Good Morning) posts",
+      "explanation": "Recurring 'GM' posts and related hashtags indicate a consistent morning greeting ritual within the Farcaster community, with variations on the theme like \"GM onchain\".",
+      "estimated_percentage": "15%",
+      "key_terms": [
+        {
+          "term": "GM",
+          "frequency": 20
+        },
+        {
+          "term": "GMonchain",
+          "frequency": 6
+        },
+        {
+          "term": "GMDegen",
+          "frequency": 3
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "High",
+      "evaluation": {
+        "specificity": 5,
+        "novelty": 1,
+        "timeliness": 1,
+        "engagement_potential": 4,
+        "viewer_appeal": 2,
+        "overall": 2,
+        "reasoning": "Baseline GM activity, noting high frequency ('20') and variations ('GMonchain', 'GMDegen'). Low novelty.",
+        "improvement_suggestions": [
+          "Filter out."
+        ],
+        "is_baseline_topic": true
+      }
+    }
+  ],
+  "final_results": {
+    "topics": [
+      {
+        "name": "Farcaster Frames Evolving",
+        "explanation": "Users actively discuss and showcase new features, applications, and possibilities enabled by Farcaster Frames, highlighting their central role in platform innovation.",
+        "estimated_percentage": "8%",
+        "key_terms": [
+          {
+            "term": "frames",
+            "frequency": 5
+          },
+          {
+            "term": "Farcaster",
+            "frequency": 4
+          },
+          {
+            "term": "features",
+            "frequency": 3
+          },
+          {
+            "term": "functionality",
+            "frequency": 2
+          }
+        ],
+        "key_entities": [
+          {
+            "name": "Farcaster",
+            "type": "Project",
+            "relevance": "High"
+          },
+          {
+            "name": "Frames",
+            "type": "Feature",
+            "relevance": "High"
+          }
+        ],
+        "engagement_level": "Medium"
+      },
+      {
+        "name": "Tipping Culture Shapes Community",
+        "explanation": "The practice of tipping is becoming a significant cultural norm on Farcaster, used to express appreciation, reward quality content, and foster a collaborative spirit.",
+        "estimated_percentage": "5%",
+        "key_terms": [
+          {
+            "term": "tipping",
+            "frequency": 5
+          },
+          {
+            "term": "community engagement",
+            "frequency": 2
+          },
+          {
+            "term": "appreciation",
+            "frequency": 2
+          },
+          {
+            "term": "rewards",
+            "frequency": 2
+          }
+        ],
+        "key_entities": [
+          {
+            "name": "Farcaster",
+            "type": "Platform",
+            "relevance": "High"
+          }
+        ],
+        "engagement_level": "Medium"
+      },
+      {
+        "name": "Zora Coin Buzz Grows",
+        "explanation": "Significant discussion surrounds the Zora platform, particularly frequent mentions of a 'coin' alongside project links, suggesting high interest in potential tokenomics or rewards.",
+        "estimated_percentage": "12%",
+        "key_terms": [
+          {
+            "term": "Zora",
+            "frequency": 21
+          },
+          {
+            "term": "coin",
+            "frequency": 15
+          },
+          {
+            "term": "projects",
+            "frequency": 5
+          }
+        ],
+        "key_entities": [
+          {
+            "name": "Zora",
+            "type": "Project",
+            "relevance": "High"
+          }
+        ],
+        "engagement_level": "High"
+      },
+      {
+        "name": "Ghibli-style Art NFTs Trend",
+        "explanation": "A visually appealing trend sees users minting and sharing NFTs inspired by the popular Ghibli art style, often utilizing the Zora platform integrated within Farcaster.",
+        "estimated_percentage": "7%",
+        "key_terms": [
+          {
+            "term": "Ghibli",
+            "frequency": 13
+          },
+          {
+            "term": "Zora",
+            "frequency": 10
+          },
+          {
+            "term": "art",
+            "frequency": 8
+          },
+          {
+            "term": "NFT",
+            "frequency": 5
+          }
+        ],
+        "key_entities": [
+          {
+            "name": "Zora",
+            "type": "Project",
+            "relevance": "High"
+          },
+          {
+            "name": "Ghibli",
+            "type": "Style/Studio",
+            "relevance": "High"
+          }
+        ],
+        "engagement_level": "High"
+      },
+      {
+        "name": "Merkle Boosting Transparency Debate",
+        "explanation": "Users are debating Merkle's potential influence on cast visibility within Warpcast, sparking conversations about algorithmic transparency, fairness, and content control.",
+        "estimated_percentage": "7%",
+        "key_terms": [
+          {
+            "term": "Merkle",
+            "frequency": 1
+          },
+          {
+            "term": "boost",
+            "frequency": 1
+          },
+          {
+            "term": "hide",
+            "frequency": 1
+          },
+          {
+            "term": "visibility",
+            "frequency": 1
+          },
+          {
+            "term": "censorship",
+            "frequency": 1
+          }
+        ],
+        "key_entities": [
+          {
+            "name": "Merkle",
+            "type": "Company/Algorithm",
+            "relevance": "High"
+          },
+          {
+            "name": "Warpcast",
+            "type": "Client/Platform",
+            "relevance": "High"
+          }
+        ],
+        "engagement_level": "Medium"
+      }
+    ],
+    "analysis_period": "2025-03-28 to 2025-04-01",
+    "total_posts_analyzed": 5000
+  }
+}

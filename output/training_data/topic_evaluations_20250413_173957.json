@@ -1,0 +1,150 @@
+[
+  {
+    "topic_data": {
+      "name": "Farcaster Growth",
+      "explanation": "Discussion around the platform's recent user growth and activity.",
+      "estimated_percentage": "20%",
+      "key_terms": [
+        {
+          "term": "Farcaster",
+          "frequency": 2
+        },
+        {
+          "term": "growth",
+          "frequency": 1
+        },
+        {
+          "term": "month",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Farcaster",
+          "type": "Project",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 5,
+        "novelty": 4,
+        "timeliness": 5,
+        "engagement_potential": 6,
+        "viewer_appeal": 6,
+        "overall": 5,
+        "reasoning": "The topic discusses 'recent' growth, giving it moderate specificity and timeliness. However, platform growth is a recurring discussion point (low novelty) rather than a unique event. Engagement and viewer appeal are moderate, primarily attracting users invested in the platform's metrics. It lacks the spark of a specific event or highly novel conversation.",
+        "improvement_suggestions": [
+          "Focus on specific, quantifiable growth milestones (e.g., 'Farcaster DAU hits 50k').",
+          "Link growth to specific drivers or events (e.g., 'Impact of Frames on Farcaster Growth').",
+          "Highlight growth within specific user segments or activities (e.g., 'Developer Activity Growth on Farcaster')."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    "score": 5,
+    "score_category": "mediocre",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 5,
+      "novelty": 4,
+      "timeliness": 5,
+      "engagement_potential": 6,
+      "viewer_appeal": 6
+    },
+    "reasoning": "The topic discusses 'recent' growth, giving it moderate specificity and timeliness. However, platform growth is a recurring discussion point (low novelty) rather than a unique event. Engagement and viewer appeal are moderate, primarily attracting users invested in the platform's metrics. It lacks the spark of a specific event or highly novel conversation.",
+    "date_evaluated": "20250413_173957"
+  },
+  {
+    "topic_data": {
+      "name": "AI and crypto",
+      "explanation": "Discussion around the intersection of Artificial Intelligence and crypto. ",
+      "estimated_percentage": "20%",
+      "key_terms": [
+        {
+          "term": "AI",
+          "frequency": 1
+        },
+        {
+          "term": "crypto",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 2,
+        "novelty": 3,
+        "timeliness": 2,
+        "engagement_potential": 5,
+        "viewer_appeal": 5,
+        "overall": 3,
+        "reasoning": "This topic is extremely generic ('AI and crypto') and represents a broad, evergreen category of discussion (low specificity, novelty, timeliness). While the underlying intersection can be interesting, the topic itself is too vague to be considered a specific trend. Engagement and appeal are moderate at best without concrete examples.",
+        "improvement_suggestions": [
+          "Identify specific AI/crypto projects gaining traction on Farcaster (e.g., 'Discussion on Bittensor on Farcaster').",
+          "Focus on a specific application or debate emerging within the community (e.g., 'AI Agents for Onchain Tasks').",
+          "Connect the discussion to a recent Farcaster-specific event or announcement related to AI/crypto."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    "score": 3,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 2,
+      "novelty": 3,
+      "timeliness": 2,
+      "engagement_potential": 5,
+      "viewer_appeal": 5
+    },
+    "reasoning": "This topic is extremely generic ('AI and crypto') and represents a broad, evergreen category of discussion (low specificity, novelty, timeliness). While the underlying intersection can be interesting, the topic itself is too vague to be considered a specific trend. Engagement and appeal are moderate at best without concrete examples.",
+    "date_evaluated": "20250413_173957"
+  },
+  {
+    "topic_data": {
+      "name": "New NFT Collection",
+      "explanation": "Discussion about an upcoming NFT collection. Indicates interest in the NFT space.",
+      "estimated_percentage": "10%",
+      "key_terms": [
+        {
+          "term": "NFT",
+          "frequency": 1
+        },
+        {
+          "term": "collection",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "evaluation": {
+        "specificity": 2,
+        "novelty": 3,
+        "timeliness": 4,
+        "engagement_potential": 4,
+        "viewer_appeal": 3,
+        "overall": 3,
+        "reasoning": "Highly generic topic lacking any identifying details about the specific NFT collection. New collections launch constantly, making this a low-novelty, baseline activity. 'Upcoming' provides minimal timeliness. Engagement and appeal are low without specifics, interesting only to those actively seeking generic NFT news.",
+        "improvement_suggestions": [
+          "Specify the name of the NFT collection (e.g., '[Collection Name] Mint Discussion').",
+          "Focus on a particular aspect driving discussion (e.g., 'Art Reveal for [Collection Name]', 'Community Reaction to [Collection Name] Launch').",
+          "Link to a specific Farcaster personality or community involved with the collection."
+        ],
+        "is_baseline_topic": true
+      }
+    },
+    "score": 3,
+    "score_category": "poor",
+    "is_baseline": true,
+    "evaluation_metrics": {
+      "specificity": 2,
+      "novelty": 3,
+      "timeliness": 4,
+      "engagement_potential": 4,
+      "viewer_appeal": 3
+    },
+    "reasoning": "Highly generic topic lacking any identifying details about the specific NFT collection. New collections launch constantly, making this a low-novelty, baseline activity. 'Upcoming' provides minimal timeliness. Engagement and appeal are low without specifics, interesting only to those actively seeking generic NFT news.",
+    "date_evaluated": "20250413_173957"
+  }
+]
