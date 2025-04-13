@@ -1,0 +1,416 @@
+{
+  "topics": [
+    {
+      "name": "Base Chain Photography & Sharing",
+      "explanation": "This topic revolves around users sharing photos, often tagged with 'ITAP' (I Took A Picture), and discussing various aspects of photography and visual aesthetics, particularly those related to or minted on the Base blockchain. It also includes general life updates, interesting links, and engagement with Zora.",
+      "estimated_percentage": "94.5%",
+      "key_terms": [
+        {
+          "term": "ITAP",
+          "frequency": 1
+        },
+        {
+          "term": "Photography",
+          "frequency": 2
+        },
+        {
+          "term": "Base",
+          "frequency": 3
+        },
+        {
+          "term": "Zora",
+          "frequency": 4
+        },
+        {
+          "term": "NFTs",
+          "frequency": 5
+        },
+        {
+          "term": "Art",
+          "frequency": 6
+        },
+        {
+          "term": "Visuals",
+          "frequency": 7
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "trending_score": 83.36346396965867,
+      "exemplar_posts": [
+        {
+          "text": "Me with my Sibling\ud83d\ude01",
+          "engagement_score": 16.0,
+          "likes": 1,
+          "recasts": 0
+        }
+      ]
+    },
+    {
+      "name": "Mystery Location Game & Tokens",
+      "explanation": "This topic encompasses two main threads: a geography-based game where users guess a daily 'mystery location' and share their distances, and requests for deploying new cryptocurrency tokens, often with the 'Ghibli' prefix, and buying them.",
+      "estimated_percentage": "1.2%",
+      "key_terms": [
+        {
+          "term": "mystery location",
+          "frequency": 1
+        },
+        {
+          "term": "token deploy",
+          "frequency": 2
+        },
+        {
+          "term": "Ghibli token",
+          "frequency": 3
+        },
+        {
+          "term": "distance game",
+          "frequency": 4
+        },
+        {
+          "term": "buy token",
+          "frequency": 5
+        },
+        {
+          "term": "pixel noun",
+          "frequency": 6
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "trending_score": 39.51977064308496,
+      "exemplar_posts": [
+        {
+          "text": "I was 15,759 km away from today's mystery location \ud83d\udccd. Can you get further away than me?",
+          "engagement_score": 17.0,
+          "likes": 2,
+          "recasts": 0
+        }
+      ]
+    },
+    {
+      "name": "GM Superchain Daily Quest",
+      "explanation": "Users are participating in a daily \"GM\" (Good Morning) quest on the GMonchain platform, possibly to earn points or airdrops. The posts encourage others to join and maintain their streak.",
+      "estimated_percentage": "0.2%",
+      "key_terms": [
+        {
+          "term": "GM",
+          "frequency": 1
+        },
+        {
+          "term": "GMonchain",
+          "frequency": 2
+        },
+        {
+          "term": "Daily Quest",
+          "frequency": 3
+        },
+        {
+          "term": "Airdrop",
+          "frequency": 4
+        },
+        {
+          "term": "GMBase",
+          "frequency": 5
+        },
+        {
+          "term": "GMstreak",
+          "frequency": 6
+        },
+        {
+          "term": "Superchain",
+          "frequency": 7
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "trending_score": 35.09049023739289,
+      "exemplar_posts": [
+        {
+          "text": "GM or you\u2019re yeeted into the blockchain abyss! HODL the streak! \ud83e\udd87\ud83d\udca8\n\n#GM #GMquest #GMDaily gmonchain.vercel.app",
+          "engagement_score": 16.0,
+          "likes": 1,
+          "recasts": 0
+        }
+      ]
+    },
+    {
+      "name": "EGGS Referral Code Sharing",
+      "explanation": "Users are sharing and seeking referral codes for a project or game called EGGS, likely to earn rewards or grow their \"hen house\" within the platform. The posts often use suggestive language related to chickens and eggs.",
+      "estimated_percentage": "0.3%",
+      "key_terms": [
+        {
+          "term": "EGGS",
+          "frequency": 1
+        },
+        {
+          "term": "cock code",
+          "frequency": 2
+        },
+        {
+          "term": "hen house",
+          "frequency": 3
+        },
+        {
+          "term": "referral code",
+          "frequency": 4
+        },
+        {
+          "term": "hatch",
+          "frequency": 5
+        },
+        {
+          "term": "eggs.name",
+          "frequency": 6
+        },
+        {
+          "term": "grow",
+          "frequency": 7
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "trending_score": 32.356165957935865,
+      "exemplar_posts": [
+        {
+          "text": "Last code for today!! \n\nMEH3MTJ\n\nHatch your hen now with my cock code and earn some $EGGS\n\nhttps://eggs.name/use-my-cock/MEH3MTJ",
+          "engagement_score": 4.0,
+          "likes": 4,
+          "recasts": 0
+        }
+      ]
+    },
+    {
+      "name": "$Saindy and /impact Rewards",
+      "explanation": "This topic revolves around two main themes: promotion of the $Saindy token and claiming $degen rewards for contributions to the /impact frame on Farcaster. Users are encouraged to visit the official $Saindy website and claim their daily $degen rewards.",
+      "estimated_percentage": "0.5%",
+      "key_terms": [
+        {
+          "term": "$Saindy",
+          "frequency": 1
+        },
+        {
+          "term": "Impact Rewards",
+          "frequency": 2
+        },
+        {
+          "term": "$degen",
+          "frequency": 3
+        },
+        {
+          "term": "/impact",
+          "frequency": 4
+        },
+        {
+          "term": "Web3",
+          "frequency": 5
+        },
+        {
+          "term": "Official Website",
+          "frequency": 6
+        },
+        {
+          "term": "GM",
+          "frequency": 7
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "trending_score": 32.30688839184415,
+      "exemplar_posts": [
+        {
+          "text": "GM Farcaster or your WiFi\u2019s toast\u2014say it or lag forever! \ud83d\udd25\ud83d\udce1\n\n#GM #GMchallenge #GMrewards gmonchain.vercel.app",
+          "engagement_score": 121.0,
+          "likes": 8,
+          "recasts": 1
+        }
+      ]
+    },
+    {
+      "name": "WrapAI Check-in Streaks",
+      "explanation": "Users are sharing their progress and achievements related to check-in streaks on WrapAI, a platform that rewards consistent engagement. Many posts are automated updates on streak completions and points earned.",
+      "estimated_percentage": "0.6%",
+      "key_terms": [
+        {
+          "term": "WrapAI",
+          "frequency": 1
+        },
+        {
+          "term": "check-in streak",
+          "frequency": 2
+        },
+        {
+          "term": "points earned",
+          "frequency": 3
+        },
+        {
+          "term": "completed checkin",
+          "frequency": 4
+        },
+        {
+          "term": "GM streak",
+          "frequency": 5
+        },
+        {
+          "term": "airdrop loot",
+          "frequency": 6
+        },
+        {
+          "term": "Farcaster birthday",
+          "frequency": 7
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "trending_score": 28.353187646740107,
+      "exemplar_posts": [
+        {
+          "text": " It's great to see your engagement with the Caster ecosystem. Staying connected with platforms like Farcaster can enhance your understanding of emerging trends in Web3.",
+          "engagement_score": 1.0,
+          "likes": 1,
+          "recasts": 0
+        }
+      ]
+    },
+    {
+      "name": "Warpslot and Gate of Degen Wins",
+      "explanation": "Users are sharing their wins and scores from two specific games, Warpslot and Gate of Degen, often including the amount of tokens won and levels achieved. There's also a component of users challenging each other to beat their scores.",
+      "estimated_percentage": "1.2%",
+      "key_terms": [
+        {
+          "term": "Warpslot",
+          "frequency": 1
+        },
+        {
+          "term": "Gate of Degen",
+          "frequency": 2
+        },
+        {
+          "term": "win",
+          "frequency": 3
+        },
+        {
+          "term": "scored",
+          "frequency": 4
+        },
+        {
+          "term": "level",
+          "frequency": 5
+        },
+        {
+          "term": "$DEGEN",
+          "frequency": 6
+        },
+        {
+          "term": "free spin",
+          "frequency": 7
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "trending_score": 27.45327323695927,
+      "exemplar_posts": [
+        {
+          "text": "I just won 5752.56 $GDUPI from Warpslot. Spin for free today! Tomorrow",
+          "engagement_score": 1.0,
+          "likes": 1,
+          "recasts": 0
+        }
+      ]
+    },
+    {
+      "name": "Sign Game and $EGGS Promotion",
+      "explanation": "Users are sharing their achievements in the 'Sign Game' and promoting the '$EGGS' project, often including referral codes to earn more $EGGS.",
+      "estimated_percentage": "1.0%",
+      "key_terms": [
+        {
+          "term": "Sign Game",
+          "frequency": 1
+        },
+        {
+          "term": "$EGGS",
+          "frequency": 2
+        },
+        {
+          "term": "referral code",
+          "frequency": 3
+        },
+        {
+          "term": "hatch",
+          "frequency": 4
+        },
+        {
+          "term": "completed",
+          "frequency": 5
+        },
+        {
+          "term": "moves",
+          "frequency": 6
+        },
+        {
+          "term": "earn",
+          "frequency": 7
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Medium",
+      "trending_score": 23.418315808948233,
+      "exemplar_posts": [
+        {
+          "text": "I completed the Sign Game with 24 moves in 01:10!  ",
+          "engagement_score": 3.0,
+          "likes": 3,
+          "recasts": 0
+        }
+      ]
+    },
+    {
+      "name": "The Bole Onboarding Experience",
+      "explanation": "Users are announcing their onboarding process to \"The Bole\" and preparing for an event or experience within it, possibly involving mystical energy.",
+      "estimated_percentage": "0.4%",
+      "key_terms": [
+        {
+          "term": "The Bole",
+          "frequency": 1
+        },
+        {
+          "term": "Onboarding",
+          "frequency": 2
+        },
+        {
+          "term": "Mystical Energy",
+          "frequency": 3
+        },
+        {
+          "term": "Charge Energy",
+          "frequency": 4
+        },
+        {
+          "term": "ID",
+          "frequency": 5
+        },
+        {
+          "term": "Cook",
+          "frequency": 6
+        },
+        {
+          "term": "Beginning",
+          "frequency": 7
+        }
+      ],
+      "key_entities": [],
+      "engagement_level": "Low",
+      "trending_score": 7.130475918600385,
+      "exemplar_posts": [
+        {
+          "text": "I am in THE BOLE\n\nTHE BOLE starts to cook. I am ID 3381 and onboarding right now. I am beginning to charge my mystical energy. I believe we will need it when we go into THE BOLE. \ud83c\udf72",
+          "engagement_score": 48.0,
+          "likes": 12,
+          "recasts": 12
+        }
+      ]
+    }
+  ],
+  "analysis_period": "2025-03-28 to 2025-04-01",
+  "total_posts_analyzed": 15820
+}

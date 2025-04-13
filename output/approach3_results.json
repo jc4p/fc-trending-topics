@@ -1,0 +1,135 @@
+[
+  {
+    "cluster_id": 78,
+    "size": 7456,
+    "avg_likes": 7.368562231759657,
+    "avg_recasts": 1.3741952789699572,
+    "total_engagement": 85678.0,
+    "topic_data": {
+      "topic_name": "App Loading Performance Optimization",
+      "explanation": "Users are discussing strategies to improve app loading times, particularly within the Farcaster/Warpcast environment. The conversation focuses on avoiding cold start issues, using CDNs, and implementing placeholders to enhance user experience.",
+      "key_terms": [
+        "ready()",
+        "app loading",
+        "cold start",
+        "CDN",
+        "placeholders",
+        "skeleton states",
+        "vercel",
+        "lambda",
+        "fly"
+      ],
+      "key_entities": [],
+      "engagement_insight": "The high number of likes and recasts on the post about app loading optimization indicates a significant interest and concern within the community regarding app performance.",
+      "sentiment": "Neutral",
+      "language": "English"
+    }
+  },
+  {
+    "cluster_id": 25,
+    "size": 7,
+    "avg_likes": 59.42857142857143,
+    "avg_recasts": 19.571428571428573,
+    "total_engagement": 827.0,
+    "topic_data": {
+      "topic_name": "Lens Protocol V3 and Features",
+      "explanation": "Discussion around the Lens Protocol, specifically focusing on the upcoming V3 release and user experiences with the platform, including feature requests and SBTs.",
+      "key_terms": [
+        "Lens Protocol",
+        "Lens V3",
+        "SBT",
+        "Lens Reputation SBT",
+        "native mac app",
+        "testnet",
+        ".lens"
+      ],
+      "key_entities": [
+        {
+          "name": "Lens Protocol",
+          "type": "Protocol"
+        }
+      ],
+      "engagement_insight": "High engagement around the Lens V3 features suggests strong interest in the protocol's development. The post about the Lens Reputation SBT also garnered significant attention.",
+      "sentiment": "Neutral",
+      "language": "English"
+    }
+  },
+  {
+    "cluster_id": 8,
+    "size": 112,
+    "avg_likes": 3.1607142857142856,
+    "avg_recasts": 0.4642857142857143,
+    "total_engagement": 510.0,
+    "topic_data": {
+      "topic_name": "Mystery Location guessing game",
+      "explanation": "Users are sharing their distances from a 'mystery location' and challenging others to beat their scores, indicating participation in a location-based guessing game.",
+      "key_terms": [
+        "mystery location",
+        "km",
+        "distance",
+        "beat me",
+        "guessing game",
+        "location",
+        "challenge"
+      ],
+      "key_entities": [],
+      "engagement_insight": "The high average likes and total engagement score suggest active participation and interest in the game.",
+      "sentiment": "Neutral",
+      "language": "English"
+    }
+  },
+  {
+    "cluster_id": 26,
+    "size": 124,
+    "avg_likes": 2.9274193548387095,
+    "avg_recasts": 0.4032258064516129,
+    "total_engagement": 513.0,
+    "topic_data": {
+      "topic_name": "The Sign Game Puzzle Challenge",
+      "explanation": "Users are sharing their scores and times for completing 'The Sign Game', a puzzle game involving a sequence of moves.",
+      "key_terms": [
+        "Sign Game",
+        "moves",
+        "time",
+        "completed",
+        "puzzle",
+        "challenge",
+        "score"
+      ],
+      "key_entities": [],
+      "engagement_insight": "The consistent sharing of game results indicates a highly engaged user base actively participating in and comparing their performance in The Sign Game.",
+      "sentiment": "Neutral",
+      "language": "English"
+    }
+  },
+  {
+    "cluster_id": 30,
+    "size": 106,
+    "avg_likes": 3.160377358490566,
+    "avg_recasts": 0.32075471698113206,
+    "total_engagement": 437.0,
+    "topic_data": {
+      "topic_name": "Jump Jump Game High Scores",
+      "explanation": "Users are sharing their scores and levels in the game Jump Jump, a simple game played within Farcaster frames. They are also asking for tips and strategies to improve their scores.",
+      "key_terms": [
+        "Jump Jump",
+        "scores",
+        "level",
+        "points",
+        "leaderboard",
+        "game",
+        "beat that",
+        "high scores"
+      ],
+      "key_entities": [
+        {
+          "name": "Jump Jump",
+          "type": "Game"
+        }
+      ],
+      "engagement_insight": "The posts show a competitive spirit, with users challenging each other to beat their scores. The engagement metrics indicate a moderate level of interaction, with users sharing their achievements and seeking advice.",
+      "sentiment": "Neutral",
+      "language": "English"
+    }
+  }
+]

@@ -1,0 +1,169 @@
+{
+  "topics": [
+    {
+      "name": "$CASTER AI and Cryptocurrency Data",
+      "explanation": "$CASTER, an AI and Cryptocurrency Data Center, is generating significant discussion due to its innovative approach to decentralized finance by building Virtual Infrastructures for Casters that leverage cutting-edge AI for computational efficiency and sustainability. The project's website and documentation links are actively shared, indicating a strong interest in understanding its technical details and potential impact. The high engagement metrics (likes, recasts, replies) show that people are actively discussing and exploring this topic.",
+      "estimated_percentage": "8%",
+      "key_terms": [
+        {
+          "term": "$CASTER",
+          "frequency": 5
+        },
+        {
+          "term": "AI",
+          "frequency": 4
+        },
+        {
+          "term": "Cryptocurrency",
+          "frequency": 2
+        },
+        {
+          "term": "Data Center",
+          "frequency": 1
+        },
+        {
+          "term": "DeFAI",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Caster AI",
+          "type": "Project",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "High"
+    },
+    {
+      "name": "$CAT Airdrop and Warplet Activation",
+      "explanation": "The $CAT airdrop, associated with activating Warplets, is a trending topic due to the high engagement and direct incentives offered to users. The conversation metrics [\ud83d\udde8\ufe0f1175|\ud83d\udc65943|\u23f1\ufe0f2d] and [\ud83d\udde8\ufe0f145|\ud83d\udc65126|\u23f1\ufe0f2d] indicate a large number of users are actively participating in the airdrop and discussing the process of activating their Warplets to claim the tokens. The recency and growth in conversation volume suggest a strong, immediate interest in this Farcaster-specific token distribution.",
+      "estimated_percentage": "7%",
+      "key_terms": [
+        {
+          "term": "$CAT",
+          "frequency": 3
+        },
+        {
+          "term": "Warplet",
+          "frequency": 2
+        },
+        {
+          "term": "Airdrop",
+          "frequency": 2
+        },
+        {
+          "term": "$DEGEN",
+          "frequency": 1
+        },
+        {
+          "term": "tips",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Caster AI",
+          "type": "Project",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "High"
+    },
+    {
+      "name": "Bonsai Launchpad Token Discussions",
+      "explanation": "The Bonsai Launchpad and tokens launched on it are a trending topic. Mentions of tokens being launched, study of tokens, and general Bonsai fam greetings indicate a growing interest and activity around this launchpad. The high engagement metrics also support this conclusion.",
+      "estimated_percentage": "6%",
+      "key_terms": [
+        {
+          "term": "Bonsai",
+          "frequency": 7
+        },
+        {
+          "term": "launchpad",
+          "frequency": 1
+        },
+        {
+          "term": "token",
+          "frequency": 2
+        },
+        {
+          "term": "summer",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Bonsai Launchpad",
+          "type": "Project",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium"
+    },
+    {
+      "name": "Degen Airdrop Season 14",
+      "explanation": "The Degen Airdrop 2 for Season 14 is a trending topic, indicated by the high number of likes and recasts on posts announcing the airdrop. The phrase \"claim your well-earned $DEGEN\" suggests users are actively participating in claiming the airdrop. This shows a strong, immediate interest in this Farcaster-specific token distribution.",
+      "estimated_percentage": "5%",
+      "key_terms": [
+        {
+          "term": "$DEGEN",
+          "frequency": 4
+        },
+        {
+          "term": "Airdrop",
+          "frequency": 1
+        },
+        {
+          "term": "Season 14",
+          "frequency": 1
+        },
+        {
+          "term": "claim",
+          "frequency": 1
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Degen",
+          "type": "Project",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "High"
+    },
+    {
+      "name": "Jam Airdrop Unlocking Process",
+      "explanation": "The $JAM airdrop unlocking process is a trending topic due to adjustments being made, sparking community discussion. The post outlines changes to the unlocking process, including options to reduce stake amount and adjust unlocking duration. The conversation metrics [\ud83d\udde8\ufe0f21|\ud83d\udc6519|\u23f1\ufe0f19h] indicate users are actively engaging with the changes and seeking clarification.",
+      "estimated_percentage": "4%",
+      "key_terms": [
+        {
+          "term": "$JAM",
+          "frequency": 7
+        },
+        {
+          "term": "airdrop",
+          "frequency": 2
+        },
+        {
+          "term": "unlocking",
+          "frequency": 2
+        },
+        {
+          "term": "stake",
+          "frequency": 2
+        }
+      ],
+      "key_entities": [
+        {
+          "name": "Jam",
+          "type": "Project",
+          "relevance": "High"
+        }
+      ],
+      "engagement_level": "Medium"
+    }
+  ],
+  "analysis_period": "2025-03-28 to 2025-04-01",
+  "total_posts_analyzed": 14000
+}
