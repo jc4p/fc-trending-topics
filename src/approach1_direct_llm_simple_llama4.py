@@ -341,5 +341,66 @@ def find_exemplar_posts_for_topic(topic, posts_df, n=3):
     return [post for _, post in scores[:n]]
 
 if __name__ == "__main__":
-    # This module is imported and run from the main.py file
-    pass
+    import duckdb
+    import os
+    import pandas as pd
+    from datetime import datetime, timedelta
+    
+    print("Running direct LLM analysis with Llama 4 via Groq...")
+    
+    # Setup DuckDB connection
+    conn = duckdb.connect(database=':memory:')
+    conn.execute("SET memory_limit='4GB'")
+    
+    # Load example data for testing
+    # This assumes there's a parquet file in output/interim_data directory
+    # If not, it creates a minimal test DataFrame
+    try:
+        parquet_path = 'output/interim_data/cleaned_data.parquet'
+        if os.path.exists(parquet_path):
+            print(f"Loading test data from {parquet_path}...")
+            test_df = pd.read_parquet(parquet_path)
+            conn.register('cleaned_casts', test_df)
+        else:
+            print("No test data found, creating minimal test data...")
+            # Create minimal test dataframe
+            test_data = [
+                {"Text": "This is a test post about AI and crypto", "datetime": datetime.now(), 
+                 "likes_count": 10, "recasts_count": 5, "engagement_score": 50},
+                {"Text": "Farcaster is growing quickly this month", "datetime": datetime.now() - timedelta(hours=1), 
+                 "likes_count": 15, "recasts_count": 8, "engagement_score": 75},
+                {"Text": "New NFT collection dropping next week", "datetime": datetime.now() - timedelta(hours=2), 
+                 "likes_count": 20, "recasts_count": 10, "engagement_score": 100}
+            ]
+            test_df = pd.DataFrame(test_data)
+            test_df['datetime'] = pd.to_datetime(test_df['datetime'])
+            test_df['Hash'] = [f"hash{i}" for i in range(len(test_df))]
+            test_df['Fid'] = [f"user{i}" for i in range(len(test_df))]
+            test_df['ParentCastId'] = None
+            conn.register('cleaned_casts', test_df)
+        
+        # Run the analysis
+        print(f"Analyzing {len(test_df)} posts with Llama 4...")
+        results = direct_llm_analysis(conn, test_df)
+        
+        print("\n===== ANALYSIS RESULTS =====\n")
+        if 'topics' in results:
+            for i, topic in enumerate(results['topics']):
+                print(f"Topic {i+1}: {topic['name']}")
+                print(f"  Explanation: {topic['explanation']}")
+                print(f"  Estimated percentage: {topic['estimated_percentage']}")
+                print(f"  Engagement level: {topic['engagement_level']}")
+                print(f"  Key terms: {', '.join([t['term'] for t in topic['key_terms'][:3]])}")
+                print(f"  Key entities: {', '.join([e['name'] for e in topic['key_entities'][:3]])}")
+                print()
+            
+            print(f"Total topics identified: {len(results['topics'])}")
+            print(f"Analysis period: {results['analysis_period']}")
+            print(f"Total posts analyzed: {results['total_posts_analyzed']}")
+        else:
+            print("No topics found in the results.")
+    
+    except Exception as e:
+        print(f"Error running the analysis: {e}")
+        import traceback
+        traceback.print_exc()
