@@ -342,16 +342,26 @@ def main():
     # Process data for the specified period
     print(f"Processing data from {start_date} to {end_date}")
     
-    # Check if we already have the processed data
-    if os.path.exists('output/ghibli_analysis/period_data.parquet'):
-        print("Loading existing processed data...")
-        period_df = pd.read_parquet('output/ghibli_analysis/period_data.parquet')
+    # Use the preprocessed data from the main preprocessing flow
+    if os.path.exists('output/interim_data/cleaned_data.parquet'):
+        print("Loading preprocessed data from main workflow...")
+        period_df = pd.read_parquet('output/interim_data/cleaned_data.parquet')
+        
+        # Filter to the relevant date range
+        start_dt = pd.to_datetime(start_date)
+        end_dt = pd.to_datetime(end_date)
+        period_df = period_df[(period_df['datetime'] >= start_dt) & (period_df['datetime'] <= end_dt)]
+        
+        # Setup DuckDB connection
         conn = duckdb.connect(database=':memory:')
+        conn.execute("SET memory_limit='4GB'")
+        conn.register('period_data', period_df)
     else:
-        # Process data for the period
-        period_df, conn = process_data_period(start_date, end_date)
+        print("Error: Preprocessed data not found. Please run main.py first.")
+        print("The main.py script has been configured to process data from March 19, 2025.")
+        sys.exit(1)
     
-    print(f"Loaded {len(period_df):,} posts for the period")
+    print(f"Loaded {len(period_df):,} posts for the period {start_date} to {end_date}")
     
     # Create output directory
     os.makedirs('output/ghibli_analysis', exist_ok=True)

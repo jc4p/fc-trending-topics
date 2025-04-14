@@ -868,11 +868,11 @@ def main(save_interim_data=True):
     SELECT MAX(datetime) FROM casts_with_datetime
     """).fetchone()[0]
     
-    # Calculate time threshold (48 hours before latest timestamp)
-    time_threshold = max_timestamp - timedelta(hours=96)  # Extended to 96 hours to capture more conversation history
+    # Set specific date range from March 19 to the end
+    time_threshold = datetime(2025, 3, 19, 0, 0, 0)
     
     print(f"Most recent data timestamp: {max_timestamp}")
-    print(f"Analyzing data from {time_threshold} to {max_timestamp} (96-hour window)")
+    print(f"Analyzing data from {time_threshold} to {max_timestamp} (extended window for Ghibli analysis)")
     
     # Also check timestamp distribution
     timestamp_stats = conn.execute("""

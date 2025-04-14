@@ -12,8 +12,14 @@ output/debug/
 output/checkpoints/
 output/cache/
 
+# Generated analysis files
 ghibli_tokens_analysis.*
 ghibli_tokens_analysis_*.csv
+ghibli_tokens_performance.csv
+
+# Debug logs
+*.log
+ghibli_token_analysis_debug.log
 
 # Python
 __pycache__/

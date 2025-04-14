@@ -9,11 +9,28 @@ import json
 import asyncio
 import datetime
 import requests
+import logging
 from typing import Dict, List, Any, Optional, Tuple
 from decimal import Decimal
 import pandas as pd
 from web3 import Web3, AsyncWeb3
 from dotenv import load_dotenv
+
+# Configure logging
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler("ghibli_token_analysis_debug.log"),
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger("ghibli_analyzer")
+
+# Set third-party loggers to a higher level to reduce noise
+logging.getLogger("web3").setLevel(logging.INFO)
+logging.getLogger("urllib3").setLevel(logging.INFO)
+logging.getLogger("requests").setLevel(logging.INFO)
 
 # Load environment variables
 load_dotenv()
@@ -70,6 +87,11 @@ PLATFORM_TO_CHAIN = {
     "Base (Bankr)": "base",
     "Bankr": "base",  # Assuming Bankr is on Base
     "Clankr": "base",  # Assuming Clankr is on Base
+    # Map platform names to looser translations to allow flexibility in matching
+    "Zora Network": "zora",
+    "Base Chain": "base",
+    "Bankr": "base",
+    "Clankr": "base",
 }
 
 # Initialize web3 connections for each chain
@@ -92,12 +114,144 @@ def initialize_web3_connections():
         except Exception as e:
             print(f"Failed to connect to {chain}: {e}")
 
+async def search_all_networks_for_token(token_data: Dict[str, Any]) -> Dict[str, Any]:
+    """Search for a token across all networks if not found on the specified platform."""
+    logger.info(f"Searching all networks for {token_data['name']} with ticker {token_data['ticker']}")
+    
+    # If no ticker, we can't easily search across networks
+    if not token_data["ticker"]:
+        logger.info(f"No ticker for {token_data['name']}, skipping cross-network search")
+        return None, None
+    
+    # Try to find on all networks
+    for network_key, rpc_url in CHAIN_RPC.items():
+        # Skip the original platform's network (already searched)
+        original_platform = token_data["platform"]
+        original_network = PLATFORM_TO_CHAIN.get(original_platform)
+        if network_key == original_network:
+            continue
+            
+        if not rpc_url:
+            continue
+            
+        # Determine base URL for this network
+        if network_key == "ethereum":
+            base_url = f"https://eth-mainnet.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
+        elif network_key == "base":
+            base_url = f"https://base-mainnet.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
+        elif network_key == "optimism":
+            base_url = f"https://opt-mainnet.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
+        elif network_key == "zora":
+            base_url = f"https://zora-mainnet.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
+        else:
+            continue
+            
+        logger.debug(f"Cross-network search: Looking for {token_data['name']} with ticker {token_data['ticker']} on {network_key}")
+        
+        # Use Alchemy's Token API for symbol search
+        try:
+            url = f"https://api.g.alchemy.com/prices/v1/{ALCHEMY_API_KEY}/tokens"
+            headers = {"accept": "application/json"}
+            params = {"symbols": token_data["ticker"]}
+            
+            response = requests.get(url, headers=headers, params=params)
+            if response.status_code == 200:
+                result = response.json()
+                if "data" in result and token_data["ticker"] in result["data"]:
+                    token_info = result["data"][token_data["ticker"]]
+                    contract_address = token_info.get("contractAddress")
+                    
+                    if contract_address:
+                        # Check creation date match if we can get it
+                        contract_creation_near_expected = await check_token_creation_date_match(
+                            network_key, contract_address, token_data["launch_date"])
+                        
+                        if contract_creation_near_expected:
+                            logger.info(f"CROSS-NETWORK MATCH! Found {token_data['name']} ({token_data['ticker']}) on {network_key} at {contract_address}")
+                            return network_key, contract_address
+                        else:
+                            logger.debug(f"Found token {token_data['ticker']} on {network_key} but creation date doesn't match")
+        except Exception as e:
+            logger.error(f"Error in cross-network search for {token_data['ticker']} on {network_key}: {e}")
+    
+    logger.info(f"No matches found for {token_data['name']} ({token_data['ticker']}) on any network")
+    return None, None
+
+async def check_token_creation_date_match(network_key, contract_address, expected_date):
+    """Check if token creation date approximately matches expected date."""
+    try:
+        web3 = async_web3_clients.get(network_key)
+        if not web3:
+            return False
+            
+        # Get the base URL for this network
+        if network_key == "ethereum":
+            base_url = f"https://eth-mainnet.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
+        elif network_key == "base":
+            base_url = f"https://base-mainnet.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
+        elif network_key == "optimism":
+            base_url = f"https://opt-mainnet.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
+        elif network_key == "zora":
+            base_url = f"https://zora-mainnet.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
+        else:
+            return False
+            
+        # Try to find first transaction to/from this contract
+        headers = {"accept": "application/json", "content-type": "application/json"}
+        payload = {
+            "id": 1,
+            "jsonrpc": "2.0",
+            "method": "alchemy_getAssetTransfers",
+            "params": [
+                {
+                    "fromBlock": "0x0",
+                    "toBlock": "latest",
+                    "toAddress": contract_address,
+                    "excludeZeroValue": False,
+                    "category": ["external", "erc20", "erc721", "erc1155"]
+                }
+            ]
+        }
+        
+        response = requests.post(base_url, json=payload, headers=headers)
+        if response.status_code == 200 and "result" in response.json():
+            result = response.json()
+            
+            if "result" in result and "transfers" in result["result"] and result["result"]["transfers"]:
+                transfers = result["result"]["transfers"]
+                # Find the earliest transaction
+                earliest_tx = min(transfers, key=lambda x: int(x["blockNum"], 16))
+                creation_block = int(earliest_tx["blockNum"], 16)
+                
+                # Get block timestamp
+                block_data = await web3.eth.get_block(creation_block)
+                creation_timestamp = block_data["timestamp"]
+                creation_date = datetime.datetime.fromtimestamp(creation_timestamp).strftime("%Y-%m-%d")
+                
+                # Parse expected date
+                expected_date_obj = datetime.datetime.strptime(expected_date, "%Y-%m-%d")
+                actual_date_obj = datetime.datetime.strptime(creation_date, "%Y-%m-%d")
+                
+                # Allow a 3-day window for matching
+                diff = abs((actual_date_obj - expected_date_obj).days)
+                logger.debug(f"Token creation date: expected {expected_date}, actual {creation_date}, diff {diff} days")
+                
+                return diff <= 3  # Match if within 3 days of expected date
+                
+        logger.debug(f"Could not determine creation date for {contract_address} on {network_key}")
+        return False  # No creation date found
+        
+    except Exception as e:
+        logger.error(f"Error checking token creation date for {contract_address} on {network_key}: {e}")
+        return False
+
 async def fetch_token_contract_details(token_data: Dict[str, Any]) -> Dict[str, Any]:
     """Fetch contract details for a token using Alchemy API."""
     platform = token_data["platform"]
     chain_key = PLATFORM_TO_CHAIN.get(platform)
     
     if not chain_key or chain_key not in async_web3_clients:
+        logger.warning(f"Chain {platform} not supported or RPC not configured")
         return token_data
     
     web3 = async_web3_clients[chain_key]
@@ -105,8 +259,10 @@ async def fetch_token_contract_details(token_data: Dict[str, Any]) -> Dict[str, 
     # If we already have the contract address, use it directly
     if token_data.get("contract"):
         contract_address = token_data["contract"]
+        logger.info(f"Using provided contract address {contract_address} for {token_data['name']}")
     else:
         # Use Alchemy's token API to search for the token
+        logger.info(f"Searching for {token_data['name']} on {platform}...")
         print(f"Searching for {token_data['name']} on {platform}...")
         
         # Determine Alchemy base URL based on chain
@@ -119,6 +275,7 @@ async def fetch_token_contract_details(token_data: Dict[str, Any]) -> Dict[str, 
         elif chain_key == "zora":
             base_url = f"https://zora-mainnet.g.alchemy.com/v2/{ALCHEMY_API_KEY}"
         else:
+            logger.warning(f"Unsupported chain: {chain_key}")
             print(f"Unsupported chain: {chain_key}")
             return token_data
             
@@ -133,9 +290,12 @@ async def fetch_token_contract_details(token_data: Dict[str, Any]) -> Dict[str, 
                 headers = {"accept": "application/json"}
                 params = {"symbols": token_data["ticker"]}
                 
+                logger.debug(f"Searching for ticker {token_data['ticker']} using Alchemy Tokens API")
                 response = requests.get(url, headers=headers, params=params)
                 if response.status_code == 200:
                     result = response.json()
+                    logger.debug(f"Ticker search result: {json.dumps(result)[:1000]}...")
+                    
                     if "data" in result and token_data["ticker"] in result["data"]:
                         token_info = result["data"][token_data["ticker"]]
                         contract_address = token_info.get("contractAddress")
@@ -144,8 +304,11 @@ async def fetch_token_contract_details(token_data: Dict[str, Any]) -> Dict[str, 
                             token_data["decimals"] = token_info.get("decimals", 18)
                             token_data["contract_name"] = token_info.get("name", token_data["name"])
                             token_data["contract_symbol"] = token_info.get("symbol", token_data["ticker"])
+                            token_data["found_network"] = chain_key
+                            logger.info(f"Found token via ticker: {token_data['contract_name']} ({token_data['contract_symbol']}) at {contract_address}")
                             print(f"Found token via ticker: {token_data['contract_name']} ({token_data['contract_symbol']}) at {contract_address}")
             except Exception as e:
+                logger.error(f"Error searching by ticker {token_data['ticker']}: {e}")
                 print(f"Error searching by ticker {token_data['ticker']}: {e}")
         
         # If ticker search failed, try searching for ERC20 tokens by name
@@ -171,25 +334,38 @@ async def fetch_token_contract_details(token_data: Dict[str, Any]) -> Dict[str, 
                     "content-type": "application/json"
                 }
                 
+                logger.debug(f"Searching for token by name: {token_data['name']}")
                 response = requests.post(base_url, json=payload, headers=headers)
                 if response.status_code == 200:
                     result = response.json()
+                    logger.debug(f"Name search result: {json.dumps(result)[:1000]}...")
                     
                     if "result" in result and result["result"] and len(result["result"]["tokens"]) > 0:
                         # Find the most likely match
                         for token in result["result"]["tokens"]:
                             # Check for "ghibli" in name or symbol, or match ticker
-                            if "ghibli" in token["name"].lower() or "ghibli" in token["symbol"].lower() or (
-                               token_data["ticker"] and token_data["ticker"].lower() == token["symbol"].lower()):
+                            token_name_lower = token["name"].lower()
+                            token_symbol_lower = token["symbol"].lower()
+                            
+                            # Looser matching criteria - check for partial matches with 'ghibli'
+                            if ("ghibli" in token_name_lower or 
+                                "ghibl" in token_name_lower or 
+                                "ghibli" in token_symbol_lower or
+                                (token_data["ticker"] and token_data["ticker"].lower() in token_symbol_lower) or
+                                (token_data["ticker"] and token_symbol_lower in token_data["ticker"].lower())):
+                                
                                 contract_address = token["address"]
                                 token_data["found_type"] = "ERC20"
                                 token_data["decimals"] = token.get("decimals", 18)
                                 token_data["contract_name"] = token["name"]
                                 token_data["contract_symbol"] = token["symbol"]
+                                token_data["found_network"] = chain_key
+                                logger.info(f"Found ERC20 token: {token['name']} ({token['symbol']}) at {contract_address}")
                                 print(f"Found ERC20 token: {token['name']} ({token['symbol']}) at {contract_address}")
                                 break
             
             except Exception as e:
+                logger.error(f"Error searching for ERC20 token {token_data['name']}: {e}")
                 print(f"Error searching for ERC20 token {token_data['name']}: {e}")
         
         # If still no match, try searching for NFTs (ERC721/ERC1155)
@@ -211,32 +387,50 @@ async def fetch_token_contract_details(token_data: Dict[str, Any]) -> Dict[str, 
                     "content-type": "application/json"
                 }
                 
+                logger.debug(f"Searching for NFT collection: {token_data['name']}")
                 response = requests.post(base_url, json=payload, headers=headers)
                 if response.status_code == 200:
                     result = response.json()
+                    logger.debug(f"NFT search result: {json.dumps(result)[:1000]}...")
                     
                     if "result" in result and result["result"] and len(result["result"]["contracts"]) > 0:
-                        # Find the most likely match
+                        # Find the most likely match with looser criteria
                         for nft in result["result"]["contracts"]:
-                            if "ghibli" in nft["name"].lower():
+                            nft_name_lower = nft["name"].lower()
+                            if "ghibli" in nft_name_lower or "ghibl" in nft_name_lower:
                                 contract_address = nft["address"]
                                 token_data["found_type"] = "NFT"
                                 token_data["contract_name"] = nft["name"]
                                 token_data["token_type"] = nft.get("tokenType", "Unknown")
+                                token_data["found_network"] = chain_key
+                                logger.info(f"Found NFT collection: {nft['name']} at {contract_address}")
                                 print(f"Found NFT collection: {nft['name']} at {contract_address}")
                                 break
             
             except Exception as e:
+                logger.error(f"Error searching for NFT collection {token_data['name']}: {e}")
                 print(f"Error searching for NFT collection {token_data['name']}: {e}")
                 
         # If we're on Base, try a more focused search for new/recent tokens
         if not contract_address and chain_key == "base" and "base" in token_data["platform"].lower():
             # For Base-specific tokens, we might need to use a more targeted approach
-            # Could try fetching recent token creations or known Base DEXes for these tokens
+            logger.info(f"Performing focused Base chain search for {token_data['name']}...")
             print(f"Performing focused Base chain search for {token_data['name']}...")
-            
-            # This would need chain-specific logic for newly created tokens
-            # For now, we'll leave this as a placeholder for future implementation
+        
+        # If we still didn't find anything on the specified network,
+        # try searching on other networks
+        if not contract_address:
+            cross_network, cross_network_address = await search_all_networks_for_token(token_data)
+            if cross_network and cross_network_address:
+                contract_address = cross_network_address
+                token_data["found_network"] = cross_network
+                token_data["found_type"] = "ERC20"  # Assuming ERC20 for cross-network matches
+                token_data["cross_network_match"] = True
+                logger.info(f"Found {token_data['name']} on {cross_network} instead of {platform}")
+                print(f"CROSS-NETWORK MATCH: Found {token_data['name']} on {cross_network} network instead of {platform}")
+            else:
+                logger.info(f"No cross-network matches found for {token_data['name']}")
+                print(f"No cross-network matches found for {token_data['name']}")
     
     if not contract_address:
         print(f"Could not find contract address for {token_data['name']}")
@@ -247,7 +441,14 @@ async def fetch_token_contract_details(token_data: Dict[str, Any]) -> Dict[str, 
     
     # Fetch token info based on token type
     try:
-        chain_key = PLATFORM_TO_CHAIN.get(token_data["platform"])
+        # Use the network where token was found, which might be different from the original platform
+        chain_key = token_data.get("found_network", PLATFORM_TO_CHAIN.get(token_data["platform"]))
+        web3 = async_web3_clients.get(chain_key)
+        
+        if not web3:
+            logger.warning(f"No web3 client for {chain_key}, using default chain")
+            chain_key = PLATFORM_TO_CHAIN.get(token_data["platform"])
+            web3 = async_web3_clients.get(chain_key)
         
         # Get creation timestamp
         creation_block = await find_token_creation_block(web3, contract_address, chain_key)
@@ -255,6 +456,7 @@ async def fetch_token_contract_details(token_data: Dict[str, Any]) -> Dict[str, 
             block_data = await web3.eth.get_block(creation_block)
             token_data["creation_timestamp"] = block_data["timestamp"]
             token_data["creation_date"] = datetime.datetime.fromtimestamp(block_data["timestamp"]).strftime("%Y-%m-%d")
+            logger.info(f"Token {token_data['name']} created on {token_data['creation_date']}")
         
         if token_data.get("found_type") == "ERC20":
             # Create ERC20 contract interface
@@ -857,7 +1059,7 @@ def generate_report(tokens):
     
     # Select and reorder columns for display based on token type
     token_columns = [
-        "name", "ticker", "platform", "launch_date", "contract", "found_type",
+        "name", "ticker", "platform", "found_network", "cross_network_match", "launch_date", "contract", "found_type",
         "contract_name", "contract_symbol", "creation_date", 
         "start_price", "peak_price", "actual_peak_price", "end_price", "current_price", "days_to_peak",
         "price_5days_after_launch", "price_10days_after_launch",
@@ -866,7 +1068,7 @@ def generate_report(tokens):
     ]
     
     nft_columns = [
-        "name", "platform", "launch_date", "contract", "found_type", 
+        "name", "platform", "found_network", "cross_network_match", "launch_date", "contract", "found_type", 
         "contract_name", "token_type", "creation_date", 
         "total_supply", "unique_owners", "sales_count", "total_volume", "avg_price",
         "opensea_floor_price", "days_since_launch"
@@ -876,6 +1078,12 @@ def generate_report(tokens):
     erc20_tokens = df[df["found_type"] == "ERC20"] if "found_type" in df.columns else pd.DataFrame()
     nfts = df[df["found_type"] == "NFT"] if "found_type" in df.columns else pd.DataFrame()
     not_found = df[~df["contract"].notna()] if "contract" in df.columns else df
+    
+    # Count cross-network matches
+    cross_network_matches = df[df.get("cross_network_match") == True] if "cross_network_match" in df.columns else pd.DataFrame()
+    logger.info(f"Found {len(cross_network_matches)} tokens on different networks than originally specified")
+    if not cross_network_matches.empty:
+        logger.info(f"Cross-network matches: {', '.join(cross_network_matches['name'])}")
     
     # Filter columns that exist in each DataFrame
     token_display_columns = [col for col in token_columns if col in df.columns]
