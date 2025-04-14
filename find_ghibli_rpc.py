@@ -19,11 +19,11 @@ load_dotenv()
 
 # Get RPC URLs and API keys from environment variables
 BASE_RPC_URL = os.getenv("BASE_RPC_URL")
-ETH_RPC_URL = os.getenv("ETH_RPC_URL", "https://eth-mainnet.g.alchemy.com/v2/" + os.getenv("ALCHEMY_API_KEY", ""))
-SOLANA_RPC_URL = os.getenv("SOLANA_RPC_URL", "https://api.mainnet-beta.solana.com")
+ETH_RPC_URL = os.getenv("ETH_RPC_URL")
+SOLANA_RPC_URL = os.getenv("SOLANA_RPC_URL")
 ALCHEMY_API_KEY = os.getenv("ALCHEMY_API_KEY")
-COINGECKO_API_KEY = os.getenv("COINGECKO_API_KEY", "")
-BIRDEYE_API_KEY = os.getenv("BIRDEYE_API_KEY", "")
+COINGECKO_API_KEY = os.getenv("COINGECKO_API_KEY")
+BIRDEYE_API_KEY = os.getenv("BIRDEYE_API_KEY")
 DEXSCREENER_URL = "https://api.dexscreener.com/latest/dex/tokens"
 
 # Initialize connections
@@ -321,8 +321,11 @@ def get_token_price_history(token_address, chain="solana", start_date=None, end_
         # Default to now
         end_date = datetime.datetime.now().strftime("%Y-%m-%dT23:59:59Z")
     
-    # Alchemy API key - use the one from environment or the demo key
-    api_key = ALCHEMY_API_KEY if ALCHEMY_API_KEY else "docs-demo"
+    # Alchemy API key - must be provided in environment variables
+    if not ALCHEMY_API_KEY:
+        print("Error: ALCHEMY_API_KEY environment variable is required")
+        return None
+    api_key = ALCHEMY_API_KEY
     
     # Alchemy Price API URL
     url = f"https://api.g.alchemy.com/prices/v1/{api_key}/tokens/historical"
@@ -431,8 +434,14 @@ def analyze_price_data(price_data):
         # Convert to pandas DataFrame for analysis
         df = pd.DataFrame(prices_list)
         
-        # Convert timestamp to datetime
-        df["timestamp"] = pd.to_datetime(df["timestamp"])
+        # Make sure value column is numeric
+        df["value"] = pd.to_numeric(df["value"], errors='coerce')
+        
+        # Convert timestamp to datetime with flexible parsing
+        df["timestamp"] = pd.to_datetime(df["timestamp"], format='ISO8601', errors='coerce')
+        
+        # Remove rows with NaN values
+        df = df.dropna(subset=["value", "timestamp"])
         
         # Sort by timestamp
         df = df.sort_values("timestamp")
@@ -702,6 +711,30 @@ def check_solana_token(token_address, debug=False):
                     price_analysis = analyze_price_data(price_history)
                     if price_analysis["success"]:
                         token_result["price_analysis"] = price_analysis
+                        
+                        # Export the price data to a file for further analysis
+                        try:
+                            # Create output directory if it doesn't exist
+                            os.makedirs("output/price_data", exist_ok=True)
+                            
+                            # Save raw price data for ROI analysis
+                            timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+                            filename = f"output/price_data/{token_address[-6:]}_price_history.json"
+                            
+                            # Save price data along with token info
+                            with open(filename, 'w') as f:
+                                json.dump({
+                                    "token_address": token_address,
+                                    "token_name": token_result.get("name", "Unknown"),
+                                    "token_symbol": token_result.get("symbol", "Unknown"),
+                                    "current_price": token_result.get("current_price", 0),
+                                    "chain": "solana",
+                                    "prices": price_history,
+                                    "exported_at": datetime.datetime.now().isoformat()
+                                }, f, indent=2)
+                            print(f"Price data exported to {filename} for ROI analysis")
+                        except Exception as e:
+                            print(f"Error exporting price data: {e}")
             except Exception as e:
                 print(f"Error getting price history: {e}")
             

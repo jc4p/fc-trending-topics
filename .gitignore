@@ -12,6 +12,11 @@ output/debug/
 output/checkpoints/
 output/cache/
 
+output/price_data/
+output/roi_reports/
+
+get_ghibli_price_history.sh
+
 # Generated analysis files
 ghibli_tokens_analysis.*
 ghibli_tokens_analysis_*.csv
