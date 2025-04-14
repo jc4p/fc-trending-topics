@@ -676,13 +676,13 @@ def filter_with_embeddings(df, embeddings, sample_size=10000, similarity_thresho
     
     return filtered_df
 
-def funnel_filter_posts(conn, df, target_sample_size=50000, min_replies=10, detect_repetitive=True):
+def funnel_filter_posts(conn, df, target_sample_size=50000, min_replies=10, detect_repetitive=False):
     """
     Apply GPU-accelerated funnel filtering to get a diverse sample of posts
     
     1. Remove exact duplicates
     2. Generate embeddings using SentenceTransformer on GPU
-    3. Detect and downsample repetitive content patterns
+    3. Detect and downsample repetitive content patterns (if detect_repetitive=True)
     4. Iteratively filter with high precision using GPU-accelerated similarity search
     5. Include replies to the selected posts
     
@@ -692,6 +692,7 @@ def funnel_filter_posts(conn, df, target_sample_size=50000, min_replies=10, dete
         target_sample_size: Target number of top-level posts to keep
         min_replies: Minimum number of replies to collect per top post
         detect_repetitive: Whether to detect and downsample repetitive content patterns
+                          (Default: False to skip for large datasets)
         
     Returns:
         DataFrame with filtered posts and their replies

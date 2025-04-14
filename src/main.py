@@ -54,7 +54,7 @@ def main():
             user_metrics = pd.read_parquet('output/interim_data/user_metrics.parquet')
             print(f"  - Unique users: {len(user_metrics):,}")
     else:
-        # Run preprocessing with parquet saving enabled
+        # Run preprocessing with parquet saving enabled and repetitive content detection disabled
         conn, recent_df = preprocess_data(save_interim_data=True)
     
     # Step 2: Run approach 1 - Direct LLM Analysis
