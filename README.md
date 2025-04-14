@@ -1,6 +1,6 @@
 # Farcaster Trending Topics Analysis
 
-This project identifies trending topics on the Farcaster social protocol by analyzing a 48-hour window of conversations using multiple methodologies.
+This project identifies trending topics on the Farcaster social protocol by analyzing a 48-hour window of conversations using multiple methodologies. It also includes tools for analyzing related blockchain tokens and trends.
 
 ## Problem Statement
 
@@ -40,9 +40,14 @@ The analysis uses engagement metrics to identify truly trending topics rather th
    pip install -r requirements.txt
    ```
 
-3. Set up your Google API key for Gemini access:
+3. Set up your API keys:
    ```
+   # For Gemini LLM access
    export GOOGLE_API_KEY=your_api_key_here  # On Windows: set GOOGLE_API_KEY=your_api_key_here
+   
+   # For blockchain analysis (optional)
+   cp .env.example .env
+   # Edit .env with your Alchemy API keys
    ```
 
 4. Prepare your data:
@@ -50,6 +55,8 @@ The analysis uses engagement metrics to identify truly trending topics rather th
    - Place your `farcaster_reactions.parquet` file in the root directory
 
 ## Usage
+
+### Main Trending Topics Analysis
 
 Run the main script to execute the full pipeline:
 
@@ -63,6 +70,19 @@ This will:
 3. Generate visualizations and comparison reports
 4. Save results to the `output` directory
 
+### Ghibli Token Analysis
+
+To analyze the Ghibli-related ERC20 tokens across multiple blockchains:
+
+```
+python analyze_ghibli_tokens.py
+```
+
+This will:
+1. Connect to various blockchain networks via Alchemy
+2. Retrieve token data including creation dates, liquidity, and price history
+3. Generate CSV and JSON reports with detailed analysis
+
 ## Project Structure
 
 ```
@@ -73,9 +93,11 @@ fc-trending-topics/
 │   ├── data_preprocessing.py   # Data preprocessing with DuckDB
 │   ├── approach1_direct_llm.py # Direct LLM analysis
 │   ├── approach2_lda_kmeans.py # LDA + K-Means clustering
-│   └── approach3_embeddings.py # Embeddings + clustering
+│   ├── approach3_embeddings.py # Embeddings + clustering
+│   └── approach4_generator_critic.py # Generator-critic pattern
 ├── output/              # Generated output files and figures
 │   └── figures/         # Visualizations
+├── analyze_ghibli_tokens.py # Analysis of Ghibli-related ERC20 tokens
 ├── requirements.txt     # Dependencies
 └── README.md            # Project documentation
 ```
@@ -92,6 +114,7 @@ For GPU acceleration, ensure you have:
 - NVIDIA GPU with CUDA support
 - CUDA Toolkit 12.x installed
 - cuML (RAPIDS) libraries installed
+- Web3 for blockchain analysis
 
 The codebase will automatically use CUDA acceleration if available for:
 

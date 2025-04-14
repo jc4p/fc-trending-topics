@@ -12,6 +12,9 @@ output/debug/
 output/checkpoints/
 output/cache/
 
+ghibli_tokens_analysis.*
+ghibli_tokens_analysis_*.csv
+
 # Python
 __pycache__/
 *.py[cod]

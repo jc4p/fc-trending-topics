@@ -13,6 +13,7 @@ from tqdm import tqdm
 import google.generativeai as genai
 from google.generativeai import GenerativeModel, types
 from dotenv import load_dotenv
+import sys
 
 # Load environment variables
 load_dotenv()
@@ -21,7 +22,53 @@ if not api_key:
     raise ValueError("GOOGLE_API_KEY environment variable not set")
 genai.configure(api_key=api_key)
 
-def create_rolling_windows(df, start_date, end_date, window_size=48):
+def process_data_period(start_date, end_date):
+    """
+    Process data for a specific date range
+    """
+    # Initialize DuckDB connection
+    conn = duckdb.connect(database=':memory:')
+    conn.execute("SET memory_limit='4GB'")
+    
+    # Register parquet files with DuckDB
+    conn.execute("CREATE VIEW casts AS SELECT * FROM read_parquet('casts.parquet')")
+    conn.execute("CREATE VIEW reactions AS SELECT * FROM read_parquet('farcaster_reactions.parquet')")
+    
+    # Convert timestamp to datetime
+    conn.execute("""
+    CREATE VIEW casts_with_datetime AS 
+    SELECT *, 
+           TIMESTAMP '2021-01-01 00:00:00' + (CAST("Timestamp" AS BIGINT) * INTERVAL '1 second') AS datetime
+    FROM casts
+    """)
+    
+    # Parse input dates
+    start_date = pd.to_datetime(start_date)
+    end_date = pd.to_datetime(end_date)
+    
+    print(f"Processing data from {start_date} to {end_date}")
+    
+    # Filter casts for the specified date range
+    conn.execute(f"""
+    CREATE VIEW period_casts AS
+    SELECT * FROM casts_with_datetime
+    WHERE datetime >= '{start_date}' AND datetime <= '{end_date}'
+    """)
+    
+    # Count posts in the specified period
+    post_count = conn.execute("SELECT COUNT(*) FROM period_casts").fetchone()[0]
+    print(f"Found {post_count:,} posts in the specified period")
+    
+    # Convert to DataFrame for further processing
+    period_df = conn.execute("SELECT * FROM period_casts").df()
+    
+    # Save intermediate data
+    os.makedirs('output/ghibli_analysis', exist_ok=True)
+    period_df.to_parquet('output/ghibli_analysis/period_data.parquet', index=False)
+    
+    return period_df, conn
+
+def create_rolling_windows(df, start_date, end_date, window_size=48, step_size=24):
     """
     Create rolling windows of data for analysis.
     
@@ -30,6 +77,7 @@ def create_rolling_windows(df, start_date, end_date, window_size=48):
         start_date: Start date for analysis
         end_date: End date for analysis
         window_size: Window size in hours (default: 48)
+        step_size: Hours to advance window each step (default: 24)
         
     Returns:
         List of DataFrames, each representing a window
@@ -55,8 +103,8 @@ def create_rolling_windows(df, start_date, end_date, window_size=48):
             'data': window_df
         })
         
-        # Move forward by 24 hours
-        current_date += timedelta(hours=24)
+        # Move forward by step_size hours
+        current_date += timedelta(hours=step_size)
     
     return windows
 
@@ -283,29 +331,39 @@ def analyze_window(window, window_index, conn, model_name='gemini-2.0-flash-lite
         }
 
 def main():
-    # Setup DuckDB connection
-    conn = duckdb.connect(database=':memory:')
-    conn.execute("SET memory_limit='4GB'")
+    # Set up date range from command line arguments or use defaults
+    if len(sys.argv) > 2:
+        start_date = sys.argv[1]
+        end_date = sys.argv[2]
+    else:
+        start_date = '2025-03-19'
+        end_date = '2025-03-31'
     
-    # Load data
-    parquet_path = 'output/interim_data/cleaned_data.parquet'
-    if not os.path.exists(parquet_path):
-        raise FileNotFoundError(f"Data file not found: {parquet_path}")
+    # Process data for the specified period
+    print(f"Processing data from {start_date} to {end_date}")
     
-    print(f"Loading data from {parquet_path}...")
-    df = pd.read_parquet(parquet_path)
-    print(f"Loaded {len(df)} posts")
+    # Check if we already have the processed data
+    if os.path.exists('output/ghibli_analysis/period_data.parquet'):
+        print("Loading existing processed data...")
+        period_df = pd.read_parquet('output/ghibli_analysis/period_data.parquet')
+        conn = duckdb.connect(database=':memory:')
+    else:
+        # Process data for the period
+        period_df, conn = process_data_period(start_date, end_date)
+    
+    print(f"Loaded {len(period_df):,} posts for the period")
     
     # Create output directory
     os.makedirs('output/ghibli_analysis', exist_ok=True)
     
-    # Create rolling windows from March 21 to March 31, 2025
+    # Create rolling windows
     print("Creating 48-hour rolling windows...")
     windows = create_rolling_windows(
-        df, 
-        start_date='2025-03-21', 
-        end_date='2025-03-31',
-        window_size=48  # 48-hour windows
+        period_df, 
+        start_date=start_date, 
+        end_date=end_date,
+        window_size=48,  # 48-hour windows
+        step_size=24     # Move forward 24 hours each step
     )
     print(f"Created {len(windows)} windows")
     
