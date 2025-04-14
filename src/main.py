@@ -55,7 +55,7 @@ def main():
             print(f"  - Unique users: {len(user_metrics):,}")
     else:
         # Run preprocessing with parquet saving enabled and repetitive content detection disabled
-        conn, recent_df = preprocess_data(save_interim_data=True)
+        conn, recent_df = preprocess_data(save_interim_data=True, detect_repetitive=False)
     
     # Step 2: Run approach 1 - Direct LLM Analysis
     print("\n=== STEP 2: APPROACH 1 - DIRECT LLM ANALYSIS ===")

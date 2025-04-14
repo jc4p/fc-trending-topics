@@ -22,6 +22,11 @@ if not api_key:
     raise ValueError("GOOGLE_API_KEY environment variable not set")
 genai.configure(api_key=api_key)
 
+# Load Base RPC URL from environment
+base_rpc_url = os.environ.get('BASE_RPC_URL')
+if not base_rpc_url:
+    print("Warning: BASE_RPC_URL environment variable not set")
+
 def process_data_period(start_date, end_date):
     """
     Process data for a specific date range

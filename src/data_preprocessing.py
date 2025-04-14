@@ -1095,7 +1095,7 @@ def funnel_filter_posts(conn, df, target_sample_size=50000, min_replies=10, dete
     
     return final_dataset
 
-def main(save_interim_data=True):
+def main(save_interim_data=True, detect_repetitive=False):
     # Initialize DuckDB connection with appropriate memory settings
     conn = duckdb.connect(database=':memory:')
     conn.execute("SET memory_limit='180GB'")  # Reserve some memory for other processes
@@ -1363,15 +1363,15 @@ def main(save_interim_data=True):
     # Clean text data
     recent_df = clean_text_data(conn, recent_df)
     
-    # Apply the new funnel filtering approach with enhanced repetitive content detection
+    # Apply the funnel filtering approach with optional repetitive content detection
     # Target: 30,000 top level posts with their replies
-    print("\nApplying funnel filtering approach with aggressive repetitive content detection...")
+    print(f"\nApplying funnel filtering approach with repetitive content detection {'enabled' if detect_repetitive else 'disabled'}...")
     filtered_df = funnel_filter_posts(
         conn, 
         recent_df, 
         target_sample_size=30000, 
         min_replies=10, 
-        detect_repetitive=True  # Explicitly enable repetitive content detection
+        detect_repetitive=detect_repetitive  # Pass through parameter value
     )
     
     # Create initial metrics
