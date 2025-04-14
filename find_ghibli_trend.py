@@ -29,7 +29,7 @@ if not base_rpc_url:
 
 def process_data_period(start_date, end_date):
     """
-    Process data for a specific date range
+    Process data for a specific date range with hourly precision
     """
     # Initialize DuckDB connection
     conn = duckdb.connect(database=':memory:')
@@ -73,7 +73,7 @@ def process_data_period(start_date, end_date):
     
     return period_df, conn
 
-def create_rolling_windows(df, start_date, end_date, window_size=48, step_size=24):
+def create_rolling_windows(df, start_date, end_date, window_size=12, step_size=6):
     """
     Create rolling windows of data for analysis.
     
@@ -81,8 +81,8 @@ def create_rolling_windows(df, start_date, end_date, window_size=48, step_size=2
         df: DataFrame with 'datetime' column
         start_date: Start date for analysis
         end_date: End date for analysis
-        window_size: Window size in hours (default: 48)
-        step_size: Hours to advance window each step (default: 24)
+        window_size: Window size in hours (default: 12)
+        step_size: Hours to advance window each step (default: 6)
         
     Returns:
         List of DataFrames, each representing a window
@@ -372,13 +372,13 @@ def main():
     os.makedirs('output/ghibli_analysis', exist_ok=True)
     
     # Create rolling windows
-    print("Creating 48-hour rolling windows...")
+    print("Creating 12-hour rolling windows...")
     windows = create_rolling_windows(
         period_df, 
         start_date=start_date, 
         end_date=end_date,
-        window_size=48,  # 48-hour windows
-        step_size=24     # Move forward 24 hours each step
+        window_size=12,  # 12-hour windows
+        step_size=6      # Move forward 6 hours each step
     )
     print(f"Created {len(windows)} windows")
     
@@ -401,6 +401,7 @@ def main():
     print("\nGhibli trend findings summary:")
     earliest_ghibli = None
     earliest_window = None
+    significant_ghibli_windows = []
     
     for i, result in enumerate(results):
         if result.get('has_ghibli_content', False):
@@ -408,11 +409,33 @@ def main():
             if timestamp and (earliest_ghibli is None or timestamp < earliest_ghibli):
                 earliest_ghibli = timestamp
                 earliest_window = i
+            
+            # Track windows with Ghibli topics and their engagement levels
+            ghibli_topics = [t for t in result.get('topics', []) if t.get('contains_ghibli', False)]
+            if ghibli_topics:
+                high_engagement_topics = [t for t in ghibli_topics if t.get('engagement_level', '').lower() == 'high']
+                significant_ghibli_windows.append({
+                    'window': i,
+                    'period': result['period'],
+                    'ghibli_topics': len(ghibli_topics),
+                    'high_engagement_topics': len(high_engagement_topics),
+                    'timestamp': timestamp
+                })
     
     if earliest_ghibli:
         print(f"Earliest Ghibli content found in window {earliest_window}")
         print(f"Timestamp: {earliest_ghibli}")
         print(f"Window period: {results[earliest_window]['period']}")
+        
+        # Find when Ghibli became significantly trending (multiple high-engagement topics)
+        significant_windows = [w for w in significant_ghibli_windows if w['high_engagement_topics'] >= 1]
+        if significant_windows:
+            first_significant = min(significant_windows, key=lambda x: x['timestamp'])
+            print("\nGhibli became a significant trend:")
+            print(f"Window: {first_significant['window']}")
+            print(f"Period: {first_significant['period']}")
+            print(f"Timestamp: {first_significant['timestamp']}")
+            print(f"High engagement Ghibli topics: {first_significant['high_engagement_topics']}")
     else:
         print("No Ghibli content found in any window")
     
@@ -422,16 +445,33 @@ def main():
         'windows_with_ghibli': sum(1 for r in results if r.get('has_ghibli_content', False)),
         'earliest_ghibli_window': earliest_window,
         'earliest_ghibli_timestamp': earliest_ghibli,
+        'significant_trend_windows': significant_ghibli_windows,
+        'first_significant_trend': None,
         'window_details': [
             {
                 'window': i,
                 'period': r['period'],
                 'has_ghibli': r.get('has_ghibli_content', False),
-                'ghibli_topics': [t['name'] for t in r.get('topics', []) if t.get('contains_ghibli', False)]
+                'ghibli_topics': [t['name'] for t in r.get('topics', []) if t.get('contains_ghibli', False)],
+                'high_engagement_ghibli_topics': [
+                    t['name'] for t in r.get('topics', []) 
+                    if t.get('contains_ghibli', False) and t.get('engagement_level', '').lower() == 'high'
+                ]
             }
             for i, r in enumerate(results)
         ]
     }
+    
+    # Add first significant trend data if available
+    significant_windows = [w for w in significant_ghibli_windows if w['high_engagement_topics'] >= 1]
+    if significant_windows:
+        first_significant = min(significant_windows, key=lambda x: x['timestamp'])
+        summary_report['first_significant_trend'] = {
+            'window': first_significant['window'],
+            'period': first_significant['period'],
+            'timestamp': first_significant['timestamp'],
+            'high_engagement_topics': first_significant['high_engagement_topics']
+        }
     
     # Save summary report
     with open('output/ghibli_analysis/ghibli_trend_summary.json', 'w') as f:
