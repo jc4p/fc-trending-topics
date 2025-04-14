@@ -16,6 +16,7 @@ output/cache/
 ghibli_tokens_analysis.*
 ghibli_tokens_analysis_*.csv
 ghibli_tokens_performance.csv
+ghibli_tokens_investment_roi.csv
 
 # Debug logs
 *.log

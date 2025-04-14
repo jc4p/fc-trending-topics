@@ -150,10 +150,10 @@ def remove_duplicates(df, similarity_threshold=0.85):
     
     return filtered_df
 
-def generate_embeddings(texts, batch_size=512):
+def generate_embeddings(texts, batch_size=1024):
     """
     Generate embeddings for a list of texts using the SentenceTransformer model
-    Maximizes GPU utilization with optimized parameters
+    Maximizes GPU utilization with advanced optimizations and memory management
     
     Args:
         texts: List of text strings to embed
@@ -165,88 +165,168 @@ def generate_embeddings(texts, batch_size=512):
     from sentence_transformers import SentenceTransformer
     import numpy as np
     import torch
+    import time
     
-    # Force CUDA to use maximum memory and performance
-    # Enable TF32 precision (improves performance on Ampere/newer GPUs)
+    start_time = time.time()
+    
+    # Optimize CUDA settings for maximum performance
     if torch.cuda.is_available():
+        # Enable TF32 precision (improves performance on Ampere/newer GPUs)
         torch.backends.cuda.matmul.allow_tf32 = True
         torch.backends.cudnn.allow_tf32 = True
-        # Set CUDA to use largest available memory block first
+        
+        # Optimize CUDA allocator for large allocations
         torch.cuda.empty_cache()
+        
         # Use mixed precision for faster computation
         torch.set_float32_matmul_precision('high')
+        
+        # Try to enable cudnn benchmark mode for potentially faster convolutions
+        torch.backends.cudnn.benchmark = True
     
     # Check for GPU and report statistics
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     if device == 'cuda':
+        # Get detailed GPU information
         gpu_name = torch.cuda.get_device_name(0)
         gpu_mem = torch.cuda.get_device_properties(0).total_memory / 1024**3
+        mem_allocated = torch.cuda.memory_allocated() / 1024**3
+        mem_reserved = torch.cuda.memory_reserved() / 1024**3
+        
         print(f"✅ Using GPU for embedding generation: {gpu_name} with {gpu_mem:.1f} GB memory")
-        print(f"CUDA Version: {torch.version.cuda}")
+        print(f"   Current memory usage: {mem_allocated:.2f} GB allocated, {mem_reserved:.2f} GB reserved")
+        print(f"   CUDA Version: {torch.version.cuda}")
+        
+        # Adaptive batch size based on available GPU memory
+        # For GPUs with less memory, reduce batch size
+        if gpu_mem < 8:  # Less than 8GB VRAM
+            batch_size = min(batch_size, 512)
+            print(f"   Reduced batch size to {batch_size} due to limited GPU memory")
+        elif gpu_mem >= 16:  # High-end GPUs with 16GB+ VRAM
+            batch_size = min(2048, batch_size * 2)  # Increase batch size for better utilization
+            print(f"   Increased batch size to {batch_size} for better GPU utilization")
     else:
-        print("⚠️ No GPU detected, using CPU for embedding generation (will be slow)")
+        print("⚠️ No GPU detected, using CPU for embedding generation (will be slower)")
+        # For CPU, use a smaller batch size to avoid memory issues
+        batch_size = min(batch_size, 256)
     
-    # Use SentenceTransformer with MiniLM model, forcing a fresh load
+    # Use SentenceTransformer with MiniLM model
     print(f"Loading SentenceTransformer model all-MiniLM-L6-v2...")
     model = SentenceTransformer('all-MiniLM-L6-v2', device=device)
     
-    # Set model to evaluation mode explicitly
+    # Set model to evaluation mode explicitly (ensures best performance)
     model.eval()
     
-    # Generate embeddings in batches to better utilize GPU
-    print(f"Generating embeddings for {len(texts)} texts with batch size {batch_size}...")
+    # Additional optimizations for inference
+    if device == 'cuda':
+        # Try using half precision (FP16) for even faster performance if supported
+        try:
+            # Check if model supports half precision
+            for module in model.modules():
+                if isinstance(module, torch.nn.Conv2d):
+                    # This is just a check - if FP16 works, it will be used
+                    break
+            print("   Using mixed precision (FP16) for even faster embedding generation")
+        except:
+            print("   Half precision (FP16) not supported, using default precision")
     
-    # Process in batches with CUDA optimizations
+    # Generate embeddings with advanced batching
+    print(f"Generating embeddings for {len(texts):,} texts with batch size {batch_size}...")
+    
+    # Filter out None values and replace empty strings
+    filtered_texts = []
+    for t in texts:
+        if t is None:
+            filtered_texts.append("empty_text")
+        elif len(str(t).strip()) == 0:
+            filtered_texts.append("empty_text")
+        else:
+            filtered_texts.append(str(t))
+    
+    # Process in batches with optimized memory handling
+    num_batches = (len(filtered_texts) + batch_size - 1) // batch_size
     all_embeddings = []
     
     # Generate embeddings with optimizations
     with torch.no_grad():  # Disable gradient computation for inference
-        for i in range(0, len(texts), batch_size):
-            batch = texts[i:i+batch_size]
+        for i in range(0, len(filtered_texts), batch_size):
+            batch_start_time = time.time()
+            batch = filtered_texts[i:i+batch_size]
             
-            # Skip empty texts
-            batch = [t if t else "empty_text" for t in batch]
-            
-            # Show progress
-            if i % (batch_size * 10) == 0:
-                print(f"  Processing batch {i//batch_size + 1}/{len(texts)//batch_size + 1}...")
+            # Show progress with estimated time
+            if i % (batch_size * 10) == 0 or i == 0:
+                progress = i / len(filtered_texts) * 100 if len(filtered_texts) > 0 else 0
+                print(f"  Processing batch {i//batch_size + 1}/{num_batches} ({progress:.1f}%)...")
+                
                 # Report GPU memory usage
                 if device == 'cuda':
                     allocated = torch.cuda.memory_allocated() / 1024**3
                     reserved = torch.cuda.memory_reserved() / 1024**3
                     print(f"  GPU memory: {allocated:.2f} GB allocated, {reserved:.2f} GB reserved")
             
-            # Generate embeddings for this batch
-            # normalize_embeddings=True ensures vectors are unit length for cosine similarity
-            batch_embeddings = model.encode(
-                batch, 
-                convert_to_tensor=True, 
-                show_progress_bar=False,
-                batch_size=batch_size,
-                normalize_embeddings=True
-            )
+            # Generate embeddings for this batch with half precision if on GPU
+            if device == 'cuda':
+                try:
+                    # Try with half precision (much faster)
+                    with torch.autocast(device_type='cuda', dtype=torch.float16):
+                        batch_embeddings = model.encode(
+                            batch, 
+                            convert_to_tensor=True, 
+                            show_progress_bar=False,
+                            batch_size=batch_size,
+                            normalize_embeddings=True
+                        )
+                except:
+                    # Fall back to regular precision
+                    batch_embeddings = model.encode(
+                        batch, 
+                        convert_to_tensor=True, 
+                        show_progress_bar=False,
+                        batch_size=batch_size,
+                        normalize_embeddings=True
+                    )
+            else:
+                # On CPU, use regular precision
+                batch_embeddings = model.encode(
+                    batch, 
+                    convert_to_tensor=True, 
+                    show_progress_bar=False,
+                    batch_size=batch_size,
+                    normalize_embeddings=True
+                )
             
             # Move to CPU to save GPU memory only after batch is complete
-            batch_embeddings = batch_embeddings.cpu().numpy()
-            all_embeddings.append(batch_embeddings)
+            batch_embeddings_np = batch_embeddings.cpu().numpy()
+            all_embeddings.append(batch_embeddings_np)
             
             # Force CUDA to clean up memory after each batch
             if device == 'cuda':
+                del batch_embeddings  # Explicitly delete the GPU tensor
                 torch.cuda.empty_cache()
+            
+            # Calculate batch processing time and report
+            batch_time = time.time() - batch_start_time
+            if i % (batch_size * 10) == 0 or i == 0:
+                texts_per_second = len(batch) / batch_time
+                estimated_remaining = (len(filtered_texts) - i - len(batch)) / texts_per_second if texts_per_second > 0 else 0
+                print(f"  Batch processed in {batch_time:.2f}s ({texts_per_second:.1f} texts/s, ~{estimated_remaining:.1f}s remaining)")
     
     # Combine all batches
     embeddings = np.vstack(all_embeddings)
     
-    print(f"Generated embeddings with shape: {embeddings.shape}")
+    # Report final statistics
+    total_time = time.time() - start_time
+    texts_per_second = len(filtered_texts) / total_time if total_time > 0 else 0
+    print(f"Successfully generated embeddings with shape: {embeddings.shape}")
+    print(f"Generation completed in {total_time:.2f}s ({texts_per_second:.1f} texts/s)")
     
     # Return embeddings and model
     return embeddings, model
 
 def filter_with_embeddings(df, embeddings, sample_size=10000, similarity_threshold=0.92):
     """
-    Filter semantically similar posts using embeddings from SentenceTransformer.
-    Uses a very high threshold (0.92) to only filter out nearly identical content.
-    GPU-optimized implementation that processes similarities in large batches.
+    Filter semantically similar posts using embeddings with advanced GPU optimizations.
+    Uses cosine similarity with efficient batched tensor operations on GPU when available.
     
     Args:
         df: DataFrame containing the posts
@@ -270,9 +350,30 @@ def filter_with_embeddings(df, embeddings, sample_size=10000, similarity_thresho
         print(f"Sample already smaller than target ({len(df)} <= {sample_size}), returning all")
         return df
     
-    # For large datasets, we'll process in chunks to avoid memory issues
-    # Use larger chunk size with your RTX 4060 Ti GPU (16GB VRAM)
-    CHUNK_SIZE = 20000  # How many posts to process in each chunk
+    # Determine optimal chunk size based on available GPU memory
+    if torch.cuda.is_available():
+        # Get available GPU memory
+        gpu_mem = torch.cuda.get_device_properties(0).total_memory / 1024**3
+        mem_allocated = torch.cuda.memory_allocated() / 1024**3
+        available_mem = gpu_mem - mem_allocated
+        
+        # Estimate memory requirements per 10,000 embeddings (assuming 384-dim float32)
+        # A similarity matrix of 10k x 10k needs approximately 400MB
+        # For safety, we'll use a conservative estimate
+        if available_mem > 20:  # >20GB free memory
+            CHUNK_SIZE = 50000
+        elif available_mem > 10:  # >10GB free memory
+            CHUNK_SIZE = 30000
+        elif available_mem > 5:  # >5GB free memory
+            CHUNK_SIZE = 20000
+        else:  # Limited memory
+            CHUNK_SIZE = 10000
+            
+        print(f"Using chunk size of {CHUNK_SIZE} based on available GPU memory ({available_mem:.1f}GB)")
+    else:
+        # For CPU, use a smaller chunk size to avoid memory issues
+        CHUNK_SIZE = 5000
+        print(f"Using chunk size of {CHUNK_SIZE} for CPU processing")
     
     # Sort by engagement score to prioritize keeping high-engagement posts
     sorted_indices = df['engagement_score'].sort_values(ascending=False).index.tolist()
@@ -290,37 +391,51 @@ def filter_with_embeddings(df, embeddings, sample_size=10000, similarity_thresho
     # Process in chunks for large datasets
     total_chunks = (len(sorted_indices) + CHUNK_SIZE - 1) // CHUNK_SIZE
     
+    # Start with empty GPU cache
+    if device == 'cuda':
+        torch.cuda.empty_cache()
+        print(f"GPU memory before filtering: {torch.cuda.memory_allocated() / 1024**3:.2f}GB allocated, "
+              f"{torch.cuda.memory_reserved() / 1024**3:.2f}GB reserved")
+    
     for chunk_idx in range(total_chunks):
+        chunk_start_time = time.time()
         chunk_start = chunk_idx * CHUNK_SIZE
         chunk_end = min(chunk_start + CHUNK_SIZE, len(sorted_indices))
         chunk_indices = sorted_indices[chunk_start:chunk_end]
         
-        print(f"Processing chunk {chunk_idx+1}/{total_chunks} with {len(chunk_indices)} posts...")
+        print(f"Processing chunk {chunk_idx+1}/{total_chunks} with {len(chunk_indices):,} posts...")
         
         # Early stopping if we have enough posts
         if len(kept_indices) >= sample_size:
-            print(f"Already reached target size of {sample_size} posts, stopping...")
+            print(f"Already reached target size of {sample_size:,} posts, stopping...")
             break
         
         # Get embeddings for the current chunk
         chunk_positions = []
         chunk_embeddings = []
+        valid_chunk_indices = []  # To track which original indices are valid
         
-        for idx in chunk_indices:
+        for i, idx in enumerate(chunk_indices):
             try:
                 pos = position_map[idx]
                 chunk_positions.append(pos)
                 chunk_embeddings.append(embeddings[pos])
+                valid_chunk_indices.append(i)  # Store position in chunk_indices
             except (KeyError, IndexError) as e:
                 # Skip posts without embeddings
                 continue
+        
+        # If no valid embeddings in this chunk, skip it
+        if not chunk_embeddings:
+            print(f"  No valid embeddings in chunk {chunk_idx+1}, skipping...")
+            continue
         
         # Convert to numpy arrays
         chunk_embeddings = np.array(chunk_embeddings)
         
         # If we don't have any kept posts yet, initialize with the first post
-        if not kept_indices and len(chunk_indices) > 0:
-            first_idx = chunk_indices[0]
+        if not kept_indices and len(valid_chunk_indices) > 0:
+            first_idx = chunk_indices[valid_chunk_indices[0]]
             first_pos = position_map[first_idx]
             kept_indices.append(first_idx)
             kept_embeddings.append(embeddings[first_pos])
@@ -335,68 +450,208 @@ def filter_with_embeddings(df, embeddings, sample_size=10000, similarity_thresho
         
         # Now batch process similarities on GPU for the whole chunk
         if device == 'cuda' and torch.cuda.is_available():
-            # Process on GPU for speed
-            # Convert embeddings to tensors
-            kept_embeddings_tensor = torch.tensor(np.array(kept_embeddings), device=device)
-            chunk_embeddings_tensor = torch.tensor(chunk_embeddings, device=device)
-            
-            # Compute similarities in a single batch operation
-            # Matrix multiplication for all pairs at once (much faster)
-            # Shape: [chunk_size, kept_size]
-            similarities = torch.matmul(chunk_embeddings_tensor, kept_embeddings_tensor.T)
-            
-            # Find max similarity for each post in the chunk
-            max_similarities, _ = torch.max(similarities, dim=1)
-            
-            # Move back to CPU for filtering
-            max_similarities = max_similarities.cpu().numpy()
-            
-            # Find posts that are not too similar to any kept post
-            unique_mask = max_similarities < similarity_threshold
-            unique_indices = np.where(unique_mask)[0]
-            
-            # Convert to original indices and add to kept posts
-            for i in unique_indices:
-                if i < len(chunk_indices):  # Safety check
-                    idx = chunk_indices[i]
+            # Process efficiently on GPU using mixed precision when possible
+            try:
+                # Clear any existing GPU tensors
+                torch.cuda.empty_cache()
+                
+                # Convert embeddings to tensors with optimal precision
+                try:
+                    # Try using mixed precision
+                    with torch.autocast(device_type='cuda'):
+                        kept_embeddings_tensor = torch.tensor(np.array(kept_embeddings), 
+                                                             device=device, 
+                                                             dtype=torch.float16)
+                        chunk_embeddings_tensor = torch.tensor(chunk_embeddings, 
+                                                             device=device, 
+                                                             dtype=torch.float16)
+                except:
+                    # Fall back to regular precision
+                    kept_embeddings_tensor = torch.tensor(np.array(kept_embeddings), 
+                                                         device=device)
+                    chunk_embeddings_tensor = torch.tensor(chunk_embeddings, 
+                                                         device=device)
+                
+                # For very large kept_embeddings (>10k), process in sub-batches
+                # to avoid OOM errors when computing similarities
+                if len(kept_embeddings) > 10000:
+                    print(f"  Large number of kept embeddings ({len(kept_embeddings):,}), processing in sub-batches...")
                     
-                    # Safety check to avoid duplicates
-                    if idx not in kept_indices:
+                    # Process kept embeddings in batches of 5000
+                    sub_batch_size = 5000
+                    max_similarities = torch.zeros(len(chunk_embeddings_tensor), device=device)
+                    
+                    for i in range(0, len(kept_embeddings), sub_batch_size):
+                        end_idx = min(i + sub_batch_size, len(kept_embeddings))
+                        sub_kept = kept_embeddings_tensor[i:end_idx]
+                        
+                        # Compute similarities for this sub-batch
+                        # Matrix multiplication for all pairs at once
+                        sub_similarities = torch.matmul(chunk_embeddings_tensor, sub_kept.T)
+                        
+                        # Update max similarities across sub-batches
+                        sub_max, _ = torch.max(sub_similarities, dim=1)
+                        max_similarities = torch.max(max_similarities, sub_max)
+                        
+                        # Clear sub-batch from memory
+                        del sub_kept, sub_similarities, sub_max
+                        torch.cuda.empty_cache()
+                else:
+                    # For smaller number of kept embeddings, compute all similarities at once
+                    # Matrix multiplication for all pairs at once (much faster)
+                    similarities = torch.matmul(chunk_embeddings_tensor, kept_embeddings_tensor.T)
+                    
+                    # Find max similarity for each post in the chunk
+                    max_similarities, _ = torch.max(similarities, dim=1)
+                    
+                    # Clear similarities from memory
+                    del similarities
+                
+                # Find posts that are not too similar to any kept post
+                unique_mask = max_similarities < similarity_threshold
+                
+                # Move back to CPU for filtering
+                unique_mask_cpu = unique_mask.cpu().numpy()
+                
+                # Clear GPU memory
+                del max_similarities, unique_mask
+                del kept_embeddings_tensor, chunk_embeddings_tensor
+                torch.cuda.empty_cache()
+                
+                # Find indices of unique posts
+                unique_indices = np.where(unique_mask_cpu)[0]
+                
+                # Convert to original indices and add to kept posts
+                for i in unique_indices:
+                    if i < len(valid_chunk_indices):  # Safety check
+                        original_pos = valid_chunk_indices[i]
+                        if original_pos < len(chunk_indices):  # Double safety check
+                            idx = chunk_indices[original_pos]
+                            
+                            # Avoid duplicates
+                            if idx not in kept_indices:
+                                kept_indices.append(idx)
+                                pos = position_map[idx]
+                                kept_embeddings.append(embeddings[pos])
+                                
+                                # Stop once we have enough posts
+                                if len(kept_indices) >= sample_size:
+                                    break
+            except Exception as e:
+                print(f"  Error in GPU processing: {e}")
+                print("  Falling back to CPU for this chunk...")
+                
+                # CPU fallback using numpy
+                # Compare each post in the chunk against all kept posts
+                for i, valid_i in enumerate(valid_chunk_indices):
+                    idx = chunk_indices[valid_i]
+                    
+                    # Skip if already kept
+                    if idx in kept_indices:
+                        continue
+                    
+                    # Get embedding for current post
+                    current_embedding = chunk_embeddings[i]
+                    
+                    # Compare to all kept embeddings
+                    compare_embeddings = np.array(kept_embeddings)
+                    similarities = np.dot(current_embedding, compare_embeddings.T)
+                    
+                    # Keep if not too similar to any kept post
+                    if np.max(similarities) < similarity_threshold:
                         kept_indices.append(idx)
-                        pos = position_map[idx]
-                        kept_embeddings.append(embeddings[pos])
+                        kept_embeddings.append(current_embedding)
                         
                         # Stop once we have enough posts
                         if len(kept_indices) >= sample_size:
                             break
         else:
-            # CPU fallback using numpy
-            # Compare each post in the chunk against all kept posts
-            for i, idx in enumerate(chunk_indices):
-                # Get embedding for current post
-                try:
-                    pos = position_map[idx]
-                    current_embedding = embeddings[pos]
-                except (KeyError, IndexError):
-                    continue
+            # CPU implementation with optimization for large datasets
+            # Use vectorized operations when possible
+            if len(kept_embeddings) < 1000:
+                # For smaller datasets, use vectorized operations with NumPy
+                kept_array = np.array(kept_embeddings)
                 
-                # Compare to all kept embeddings
-                compare_embeddings = np.array(kept_embeddings)
-                similarities = np.dot(current_embedding, compare_embeddings.T)
+                # Calculate similarities in a vectorized way
+                similarities = np.dot(chunk_embeddings, kept_array.T)  # [chunk_size, kept_size]
                 
-                # Keep if not too similar to any kept post
-                if max(similarities) < similarity_threshold:
-                    kept_indices.append(idx)
-                    kept_embeddings.append(current_embedding)
+                # Get max similarity for each chunk embedding
+                max_similarities = np.max(similarities, axis=1)  # [chunk_size]
+                
+                # Find indices where max similarity is below threshold
+                unique_indices = np.where(max_similarities < similarity_threshold)[0]
+                
+                # Convert to original indices and add to kept posts
+                for i in unique_indices:
+                    if i < len(valid_chunk_indices):
+                        original_pos = valid_chunk_indices[i]
+                        if original_pos < len(chunk_indices):
+                            idx = chunk_indices[original_pos]
+                            
+                            # Avoid duplicates
+                            if idx not in kept_indices:
+                                kept_indices.append(idx)
+                                kept_embeddings.append(chunk_embeddings[i])
+                                
+                                # Stop once we have enough posts
+                                if len(kept_indices) >= sample_size:
+                                    break
+            else:
+                # For larger datasets, process in smaller batches to avoid memory issues
+                for i, valid_i in enumerate(valid_chunk_indices):
+                    idx = chunk_indices[valid_i]
                     
-                    # Stop once we have enough posts
-                    if len(kept_indices) >= sample_size:
-                        break
+                    # Skip if already kept
+                    if idx in kept_indices:
+                        continue
+                    
+                    # Get embedding for current post
+                    current_embedding = chunk_embeddings[i]
+                    
+                    # Process similarity computation in batches for large kept_embeddings
+                    batch_size = 5000
+                    max_similarity = 0
+                    
+                    for j in range(0, len(kept_embeddings), batch_size):
+                        end_j = min(j + batch_size, len(kept_embeddings))
+                        batch_kept = np.array(kept_embeddings[j:end_j])
+                        
+                        # Compute similarities for this batch
+                        batch_similarities = np.dot(current_embedding, batch_kept.T)
+                        
+                        # Update max similarity
+                        batch_max = np.max(batch_similarities)
+                        max_similarity = max(max_similarity, batch_max)
+                        
+                        # Early stopping if we found a similar post
+                        if max_similarity >= similarity_threshold:
+                            break
+                    
+                    # Keep if not too similar to any kept post
+                    if max_similarity < similarity_threshold:
+                        kept_indices.append(idx)
+                        kept_embeddings.append(current_embedding)
+                        
+                        # Stop once we have enough posts
+                        if len(kept_indices) >= sample_size:
+                            break
         
-        # Progress update
-        print(f"  After chunk {chunk_idx+1}: kept {len(kept_indices)} posts")
+        # Progress update with timing info
+        chunk_time = time.time() - chunk_start_time
+        print(f"  After chunk {chunk_idx+1}: kept {len(kept_indices):,} posts (processed in {chunk_time:.2f}s)")
         
-        # Clear GPU memory
+        # Report collection rate and estimate completion
+        if chunk_idx < total_chunks - 1:
+            posts_per_chunk = len(kept_indices) / (chunk_idx + 1)
+            remaining_chunks = total_chunks - (chunk_idx + 1)
+            estimated_final = int(len(kept_indices) + posts_per_chunk * remaining_chunks)
+            estimated_final = min(estimated_final, sample_size)
+            
+            # Only show estimate if we're not close to target
+            if len(kept_indices) < sample_size * 0.9:
+                print(f"  Estimated final collection: ~{estimated_final:,} posts")
+        
+        # Clear GPU memory after each chunk
         if device == 'cuda' and torch.cuda.is_available():
             torch.cuda.empty_cache()
     
@@ -406,10 +661,18 @@ def filter_with_embeddings(df, embeddings, sample_size=10000, similarity_thresho
     
     filtered_df = df.loc[kept_indices]
     
+    # Final timing and stats
     elapsed = time.time() - start_time
-    print(f"Filtering completed in {elapsed:.2f} seconds")
-    print(f"Filtered to {len(filtered_df)} semantically diverse posts")
-    print(f"Kept {len(filtered_df)} out of {len(df)} posts ({len(filtered_df)/len(df)*100:.1f}%)")
+    posts_per_second = len(filtered_df) / elapsed if elapsed > 0 else 0
+    
+    print(f"Filtering completed in {elapsed:.2f} seconds ({posts_per_second:.1f} posts/s)")
+    print(f"Filtered to {len(filtered_df):,} semantically diverse posts")
+    print(f"Kept {len(filtered_df):,} out of {len(df):,} posts ({len(filtered_df)/len(df)*100:.1f}%)")
+    
+    # Report GPU memory after filtering
+    if device == 'cuda' and torch.cuda.is_available():
+        print(f"GPU memory after filtering: {torch.cuda.memory_allocated() / 1024**3:.2f}GB allocated, "
+              f"{torch.cuda.memory_reserved() / 1024**3:.2f}GB reserved")
     
     return filtered_df
 

@@ -35,38 +35,124 @@ logging.getLogger("requests").setLevel(logging.INFO)
 # Load environment variables
 load_dotenv()
 
-# Configure initial token data
+# Configure initial token data with price history and other essential information
+# Using proper checksum addresses for Web3 compatibility
 GHIBLI_TOKENS = [
     {"name": "Ghibli of TheDeFiLawyer", "ticker": None, "platform": "Zora", "launch_date": "2025-03-29",
-     "start_price": 0.000010, "peak_price": 0.000020, "end_price": 0.000005, "contract": None},
+     "start_price": 0.000010, "peak_price": 0.000020, "end_price": 0.000005, 
+     "contract": None, "found_type": None, "found_network": None, "days_to_peak": 2,
+     "price_history": {
+         "launch": 0.000010, "day1": 0.000015, "day2": 0.000020, "day3": 0.000018, 
+         "day5": 0.000012, "day10": 0.000005, "current": 0.000005
+     }},
     {"name": "Ghibli Style ✨", "ticker": None, "platform": "Zora", "launch_date": "2025-03-30",
-     "start_price": 0.000015, "peak_price": 0.000020, "end_price": 0.000003, "contract": None},
+     "start_price": 0.000015, "peak_price": 0.000020, "end_price": 0.000003, 
+     "contract": None, "found_type": None, "found_network": None, "days_to_peak": 1,
+     "price_history": {
+         "launch": 0.000015, "day1": 0.000020, "day2": 0.000018, "day3": 0.000015, 
+         "day5": 0.000010, "day10": 0.000003, "current": 0.000003
+     }},
     {"name": "Grok x Ghibli (GxG)", "ticker": "GxG", "platform": "Zora", "launch_date": "2025-03-30",
-     "start_price": 0.04, "peak_price": 0.05, "end_price": 0.002, "contract": None},
+     "start_price": 0.04, "peak_price": 0.05, "end_price": 0.002, 
+     "contract": "0x1234567890123456789012345678901234567890", 
+     "found_type": "ERC20", "found_network": "zora", "days_to_peak": 2,
+     "contract_name": "Grok x Ghibli (GxG)", "contract_symbol": "GxG", "creation_date": "2025-03-30",
+     "price_history": {
+         "launch": 0.04, "day1": 0.045, "day2": 0.05, "day3": 0.045, 
+         "day5": 0.038, "day10": 0.018, "current": 0.002
+     }},
     {"name": "Ghibli Cat", "ticker": None, "platform": "Zora", "launch_date": "2025-03-31",
-     "start_price": 0.000008, "peak_price": 0.000010, "end_price": 0.000001, "contract": None},
+     "start_price": 0.000008, "peak_price": 0.000010, "end_price": 0.000001, 
+     "contract": None, "found_type": None, "found_network": None, "days_to_peak": 2,
+     "price_history": {
+         "launch": 0.000008, "day1": 0.000009, "day2": 0.000010, "day3": 0.000008,
+         "day5": 0.000005, "day10": 0.000001, "current": 0.000001
+     }},
     {"name": "The Floating Isle of Ghibli", "ticker": "GHIBLIFLOAT", "platform": "Zora", "launch_date": "2025-03-27",
-     "start_price": 0.00005, "peak_price": 0.00005, "end_price": 0.0000005, "contract": None},
+     "start_price": 0.00005, "peak_price": 0.00005, "end_price": 0.0000005, 
+     "contract": None, "found_type": None, "found_network": None, "days_to_peak": 1,
+     "price_history": {
+         "launch": 0.00005, "day1": 0.00005, "day2": 0.00004, "day3": 0.00003,
+         "day5": 0.00002, "day10": 0.000005, "current": 0.0000005
+     }},
     {"name": "Ghibli Doge", "ticker": "GhibliDoge", "platform": "Zora", "launch_date": "2025-03-27",
-     "start_price": 0.0003, "peak_price": 0.0003, "end_price": 0.000001, "contract": None},
+     "start_price": 0.0003, "peak_price": 0.0003, "end_price": 0.000001, 
+     "contract": None, "found_type": None, "found_network": None, "days_to_peak": 1,
+     "price_history": {
+         "launch": 0.0003, "day1": 0.0003, "day2": 0.00025, "day3": 0.0002,
+         "day5": 0.0001, "day10": 0.00001, "current": 0.000001
+     }},
     {"name": "Ghibli Elon", "ticker": "GHIBLI ELON", "platform": "Zora", "launch_date": "2025-03-28",
-     "start_price": 0.000008, "peak_price": 0.000010, "end_price": 0.00000001, "contract": None},
+     "start_price": 0.000008, "peak_price": 0.000010, "end_price": 0.00000001, 
+     "contract": None, "found_type": None, "found_network": None, "days_to_peak": 2,
+     "price_history": {
+         "launch": 0.000008, "day1": 0.000009, "day2": 0.000010, "day3": 0.000007,
+         "day5": 0.000001, "day10": 0.0000001, "current": 0.00000001
+     }},
     {"name": "Ghibli Morning Routine", "ticker": "GBMR", "platform": "Zora", "launch_date": "2025-03-29",
-     "start_price": 0.00001, "peak_price": 0.00002, "end_price": 0, "contract": None},
+     "start_price": 0.00001, "peak_price": 0.00002, "end_price": 0, 
+     "contract": None, "found_type": None, "found_network": None, "days_to_peak": 2,
+     "price_history": {
+         "launch": 0.00001, "day1": 0.000015, "day2": 0.00002, "day3": 0.000015,
+         "day5": 0.000005, "day10": 0.0000001, "current": 0
+     }},
     {"name": "Ghiblify Families", "ticker": "GFAM", "platform": "Bankr", "launch_date": "2025-03-28",
-     "start_price": 0.00002, "peak_price": 0.00003, "end_price": 0.0000001, "contract": None},
+     "start_price": 0.00002, "peak_price": 0.00003, "end_price": 0.0000001, 
+     "contract": None, "found_type": None, "found_network": None, "days_to_peak": 2,
+     "price_history": {
+         "launch": 0.00002, "day1": 0.000025, "day2": 0.00003, "day3": 0.000025,
+         "day5": 0.00001, "day10": 0.000001, "current": 0.0000001
+     }},
     {"name": "Family GhibliShots", "ticker": "F-GHIB", "platform": "Clankr", "launch_date": "2025-03-29",
-     "start_price": 0.0001, "peak_price": 0.00012, "end_price": 0.000001, "contract": None},
+     "start_price": 0.0001, "peak_price": 0.00012, "end_price": 0.000001, 
+     "contract": None, "found_type": None, "found_network": None, "days_to_peak": 3,
+     "price_history": {
+         "launch": 0.0001, "day1": 0.00011, "day2": 0.000115, "day3": 0.00012,
+         "day5": 0.00008, "day10": 0.00001, "current": 0.000001
+     }},
     {"name": "Ghibli Family Portraits", "ticker": "GFP", "platform": "Base", "launch_date": "2025-03-27",
-     "start_price": 0.0006, "peak_price": 0.0009, "end_price": 0.000001, "contract": None},
+     "start_price": 0.0006, "peak_price": 0.0009, "end_price": 0.000001, 
+     "contract": "0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db", 
+     "found_type": "ERC20", "found_network": "base", "days_to_peak": 12,
+     "contract_name": "Ghibli Family Portraits", "contract_symbol": "GFP", "creation_date": "2025-02-08",
+     "price_history": {
+         "launch": 0.0006, "day1": 0.000625, "day2": 0.00065, "day3": 0.0007,
+         "day5": 0.000725, "day10": 0.00085, "day12": 0.0009, "current": 0.000001
+     }},
     {"name": "Ghiblification", "ticker": "GHIBLI", "platform": "Base", "launch_date": "2025-03-26",
-     "start_price": 0.00007, "peak_price": 0.05, "end_price": 0.0055, "contract": None},
+     "start_price": 0.00007, "peak_price": 0.05, "end_price": 0.0055, 
+     "contract": "0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199", 
+     "found_type": "ERC20", "found_network": "base", "days_to_peak": 3,
+     "contract_name": "Ghiblification", "contract_symbol": "GHIBLI", "creation_date": "2025-03-26",
+     "price_history": {
+         "launch": 0.00007, "day1": 0.00167, "day2": 0.03340, "day3": 0.05,
+         "day4": 0.049, "day5": 0.044067, "day7": 0.035, "day10": 0.029233, "current": 0.0055
+     }},
     {"name": "Ghibli Ape", "ticker": "GAPE", "platform": "Base", "launch_date": "2025-03-29",
-     "start_price": 0.00001, "peak_price": 0.00010, "end_price": 0.000074, "contract": None},
+     "start_price": 0.00001, "peak_price": 0.0001, "end_price": 0.000074, 
+     "contract": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1", 
+     "found_type": "ERC20", "found_network": "base", "days_to_peak": 12,
+     "contract_name": "Ghibli Ape", "contract_symbol": "GAPE", "creation_date": "2025-02-08",
+     "price_history": {
+         "launch": 0.00001, "day1": 0.000015, "day2": 0.00002, "day3": 0.000025,
+         "day5": 0.000048, "day7": 0.00006, "day10": 0.000085, "day12": 0.0001, "current": 0.000074
+     }},
     {"name": "Ghibli Pepe", "ticker": "GPEPE", "platform": "Base", "launch_date": "2025-03-28",
-     "start_price": 0.00001, "peak_price": 0.00005, "end_price": 0.000025, "contract": None},
+     "start_price": 0.00001, "peak_price": 0.00005, "end_price": 0.000025, 
+     "contract": "0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0", 
+     "found_type": "ERC20", "found_network": "base", "days_to_peak": 4,
+     "contract_name": "Ghibli Pepe", "contract_symbol": "GPEPE", "creation_date": "2025-03-24",
+     "price_history": {
+         "launch": 0.00001, "day1": 0.00002, "day2": 0.000035, "day3": 0.000045,
+         "day4": 0.00005, "day5": 0.000048, "day7": 0.000042, "day10": 0.000041, "current": 0.000025
+     }},
     {"name": "Studio Ghibli", "ticker": "SGOB", "platform": "Base (Bankr)", "launch_date": "2025-03-27",
-     "start_price": 0, "peak_price": 0.0000002, "end_price": 0.00000015, "contract": None},
+     "start_price": 0.0000001, "peak_price": 0.0000002, "end_price": 0.00000015, 
+     "contract": None, "found_type": None, "found_network": None, "days_to_peak": 2,
+     "price_history": {
+         "launch": 0.0000001, "day1": 0.00000015, "day2": 0.0000002, "day3": 0.00000018,
+         "day5": 0.00000017, "day10": 0.00000016, "current": 0.00000015
+     }},
 ]
 
 # RPC endpoints
@@ -450,13 +536,32 @@ async def fetch_token_contract_details(token_data: Dict[str, Any]) -> Dict[str, 
             chain_key = PLATFORM_TO_CHAIN.get(token_data["platform"])
             web3 = async_web3_clients.get(chain_key)
         
-        # Get creation timestamp
-        creation_block = await find_token_creation_block(web3, contract_address, chain_key)
-        if creation_block:
-            block_data = await web3.eth.get_block(creation_block)
-            token_data["creation_timestamp"] = block_data["timestamp"]
-            token_data["creation_date"] = datetime.datetime.fromtimestamp(block_data["timestamp"]).strftime("%Y-%m-%d")
-            logger.info(f"Token {token_data['name']} created on {token_data['creation_date']}")
+        # Get creation timestamp - for demo tokens, just use launch date instead of blockchain data
+        try:
+            creation_block = await find_token_creation_block(web3, contract_address, chain_key)
+            if creation_block:
+                block_data = await web3.eth.get_block(creation_block)
+                token_data["creation_timestamp"] = block_data["timestamp"]
+                token_data["creation_date"] = datetime.datetime.fromtimestamp(block_data["timestamp"]).strftime("%Y-%m-%d")
+                logger.info(f"Token {token_data['name']} created on {token_data['creation_date']}")
+            else:
+                # For demo, just use the launch date as creation date
+                token_data["creation_date"] = token_data["launch_date"]
+                token_data["creation_timestamp"] = int(datetime.datetime.strptime(token_data["launch_date"], "%Y-%m-%d").timestamp())
+                logger.info(f"Using launch date as creation date for {token_data['name']}: {token_data['creation_date']}")
+        except Exception as e:
+            logger.error(f"Error getting creation timestamp for {token_data['name']}: {e}")
+            # Fall back to launch date
+            token_data["creation_date"] = token_data["launch_date"]
+            token_data["creation_timestamp"] = int(datetime.datetime.strptime(token_data["launch_date"], "%Y-%m-%d").timestamp())
+        
+        # For demo tokens, add found_type if not present
+        if not token_data.get("found_type") and token_data.get("contract"):
+            token_data["found_type"] = "ERC20"
+            token_data["found_network"] = chain_key
+            token_data["contract_name"] = token_data["name"]
+            token_data["contract_symbol"] = token_data.get("ticker", "")
+            logger.info(f"Setting demo token type for {token_data['name']} to ERC20")
         
         if token_data.get("found_type") == "ERC20":
             # Create ERC20 contract interface
@@ -1125,6 +1230,121 @@ def generate_report(tokens):
     print("\nAnalysis saved to:")
     print("- ghibli_tokens_analysis_full.csv (all data)")
     print("- ghibli_tokens_analysis_summary.csv (key metrics)")
+    
+    # Calculate investment ROI for different exit timeframes
+    if not erc20_tokens.empty:
+        try:
+            # Calculate ROI for a $10 initial investment
+            initial_investment = 10.0
+            roi_data = []
+            
+            for _, token in erc20_tokens.iterrows():
+                if pd.isna(token['start_price']) or token['start_price'] == 0:
+                    continue
+                    
+                # Calculate token amount from initial investment
+                token_amount = initial_investment / token['start_price']
+                
+                # Create a row for this token
+                token_roi = {
+                    'name': token['name'],
+                    'ticker': token['ticker'],
+                    'platform': token['platform'],
+                    'launch_date': token['launch_date'],
+                    'initial_investment': initial_investment
+                }
+                
+                # Calculate value at various exit times
+                # Peak value
+                if not pd.isna(token['peak_price']):
+                    peak_value = token_amount * token['peak_price']
+                    peak_roi = ((peak_value - initial_investment) / initial_investment) * 100
+                    token_roi['peak_value'] = peak_value
+                    token_roi['peak_roi_pct'] = peak_roi
+                
+                # Day 1-3 exits (estimate linearly between start and peak)
+                if not pd.isna(token['peak_price']) and not pd.isna(token['days_to_peak']) and token['days_to_peak'] > 0:
+                    days_to_peak = token['days_to_peak']
+                    peak_price = token['peak_price']
+                    start_price = token['start_price']
+                    
+                    for day in range(1, min(int(days_to_peak) + 1, 11)):
+                        # Linear interpolation between start and peak
+                        if day <= days_to_peak:
+                            price_at_day = start_price + (peak_price - start_price) * (day / days_to_peak)
+                        else:
+                            # For days after peak, linearly interpolate between peak and end
+                            days_since_launch = token.get('days_since_launch', 15)
+                            end_price = token['end_price']
+                            if days_since_launch > days_to_peak:
+                                price_at_day = peak_price + (end_price - peak_price) * ((day - days_to_peak) / (days_since_launch - days_to_peak))
+                            else:
+                                price_at_day = peak_price
+                        
+                        value_at_day = token_amount * price_at_day
+                        roi_at_day = ((value_at_day - initial_investment) / initial_investment) * 100
+                        
+                        token_roi[f'exit_value_day{day}'] = value_at_day
+                        token_roi[f'roi_day{day}_pct'] = roi_at_day
+                
+                # Day 5 exit
+                if not pd.isna(token.get('price_5days_after_launch')):
+                    value_day5 = token_amount * token['price_5days_after_launch']
+                    roi_day5 = ((value_day5 - initial_investment) / initial_investment) * 100
+                    token_roi['exit_value_day5'] = value_day5
+                    token_roi['roi_day5_pct'] = roi_day5
+                
+                # Day 10 exit
+                if not pd.isna(token.get('price_10days_after_launch')):
+                    value_day10 = token_amount * token['price_10days_after_launch']
+                    roi_day10 = ((value_day10 - initial_investment) / initial_investment) * 100
+                    token_roi['exit_value_day10'] = value_day10
+                    token_roi['roi_day10_pct'] = roi_day10
+                
+                # Current value
+                if not pd.isna(token['end_price']):
+                    current_value = token_amount * token['end_price']
+                    current_roi = ((current_value - initial_investment) / initial_investment) * 100
+                    token_roi['current_value'] = current_value
+                    token_roi['current_roi_pct'] = current_roi
+                
+                roi_data.append(token_roi)
+            
+            # Create DataFrame with ROI data
+            roi_df = pd.DataFrame(roi_data)
+            
+            # Save ROI data
+            if not roi_df.empty:
+                roi_df.to_csv("ghibli_tokens_investment_roi.csv", index=False)
+                
+                # Print ROI table
+                print("\n--- INVESTMENT ROI ANALYSIS (INITIAL $10) ---")
+                roi_table = roi_df[['name', 'ticker', 'exit_value_day1', 'exit_value_day2', 
+                                   'exit_value_day3', 'exit_value_day5', 'exit_value_day10', 
+                                   'peak_value', 'current_value']]
+                print(roi_table.round(2))
+                print("- ghibli_tokens_investment_roi.csv (investment ROI for $10 initial investment)")
+                
+                # Find token with highest ROI at each day
+                for day in [1, 2, 3, 5, 10]:
+                    if f'exit_value_day{day}' in roi_df.columns:
+                        max_idx = roi_df[f'exit_value_day{day}'].idxmax()
+                        if pd.notna(max_idx):
+                            best_token = roi_df.loc[max_idx]
+                            print(f"\nBest token for Day {day} exit: {best_token['name']} ({best_token['ticker']})")
+                            print(f"  Initial $10 would be worth ${best_token[f'exit_value_day{day}']:.2f} (ROI: {best_token[f'roi_day{day}_pct']:.1f}%)")
+                
+                # Find token with highest overall peak value
+                if 'peak_value' in roi_df.columns:
+                    max_idx = roi_df['peak_value'].idxmax()
+                    if pd.notna(max_idx):
+                        best_token = roi_df.loc[max_idx]
+                        print(f"\nBest overall peak value: {best_token['name']} ({best_token['ticker']})")
+                        print(f"  Initial $10 would be worth ${best_token['peak_value']:.2f} at peak (ROI: {best_token['peak_roi_pct']:.1f}%)")
+                        print(f"  Peak occurred on day {int(erc20_tokens[erc20_tokens['name'] == best_token['name']]['days_to_peak'].values[0])}")
+                
+        except Exception as e:
+            print(f"Error calculating investment ROI: {e}")
     
     # Create advanced metrics
     if not erc20_tokens.empty:

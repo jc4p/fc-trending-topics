@@ -381,7 +381,20 @@ def embeddings_clustering(recent_df):
     # Try cuML KMeans first (GPU-accelerated)
     try:
         if torch.cuda.is_available():
+            # Ensure we have an empty GPU cache before starting
+            torch.cuda.empty_cache()
+            
+            # For better memory management, import cuML only when needed
             from cuml.cluster import KMeans as cuKMeans
+            
+            # Set memory limits for cuML operations (helps prevent OOM errors)
+            import cuml
+            try:
+                # This will limit cuML to use only a portion of available GPU memory
+                cuml.common.memory_utils.set_global_gpu_alloc_limit(0.8)  # Use 80% of available memory
+                print("Set cuML memory limit to 80% of available GPU memory")
+            except:
+                print("Unable to set cuML memory limit, continuing without limit")
             
             print("Using RAPIDS cuML KMeans on GPU (fastest option)")
             
@@ -390,21 +403,26 @@ def embeddings_clustering(recent_df):
             
             # Determine number of clusters based on dataset size
             # Use a higher minimum and smaller divisor to create more balanced clusters
-            # Increase the divisor significantly to create more clusters initially
-            n_clusters = max(40, min(100, len(embeddings_for_clustering) // 400))
+            n_clusters = max(40, min(100, len(embeddings_for_clustering) // 500))
             
-            # Create and configure the KMeans object
+            # Create and configure the KMeans object with optimized parameters
             kmeans = cuKMeans(
                 n_clusters=n_clusters,
-                max_iter=300,
-                tol=1e-4,
+                max_iter=200,  # Reduce number of iterations for faster convergence
+                tol=1e-3,      # Slightly more permissive tolerance
                 verbose=2,
                 random_state=42,
-                n_init=10
+                n_init=5       # Reduce number of initializations for faster execution
             )
             
             # Train KMeans
             print(f"Running k-means on GPU with {n_clusters} clusters...")
+            
+            # Get current GPU stats
+            print(f"GPU memory before clustering: {torch.cuda.memory_allocated() / 1024**2:.2f} MB allocated, "
+                  f"{torch.cuda.memory_reserved() / 1024**2:.2f} MB reserved")
+            
+            # Run the actual clustering
             cluster_labels = kmeans.fit_predict(embeddings_for_clustering)
             
             # Set the clusters
@@ -415,8 +433,12 @@ def embeddings_clustering(recent_df):
                 embedding_df['cluster'] = embedding_df['cluster'].to_numpy()
             
             # Print some stats about GPU usage after clustering
-            print(f"GPU memory after cuML KMeans: {torch.cuda.memory_allocated() / 1024**2:.2f} MB")
-            print(f"GPU max memory: {torch.cuda.max_memory_allocated() / 1024**2:.2f} MB")
+            print(f"GPU memory after cuML KMeans: {torch.cuda.memory_allocated() / 1024**2:.2f} MB allocated, "
+                  f"{torch.cuda.memory_reserved() / 1024**2:.2f} MB reserved")
+            
+            # Clear GPU memory as soon as possible
+            del kmeans, cluster_labels, embeddings_for_clustering
+            torch.cuda.empty_cache()
             
             # Make sure we have clusters numbered from 0 to n_clusters-1 (no -1 noise points)
             # Renumber any -1 values to new cluster numbers
@@ -427,33 +449,117 @@ def embeddings_clustering(recent_df):
                     np.max(embedding_df['cluster']) + 1 + np.sum(embedding_df['cluster'] == -1)
                 )
             
+            print("Successfully completed cuML KMeans clustering")
+            # Successfully completed, so no need to try other methods
             raise Exception("Bypassing other methods - cuML KMeans completed successfully")
     except Exception as e:
         print(f"cuML KMeans clustering not available or failed: {e}")
+        torch.cuda.empty_cache()  # Ensure GPU memory is cleared after failure
         
-        # Try to use RAPIDS cuML for GPU-accelerated clustering
+        # Try to use RAPIDS cuML for GPU-accelerated DBSCAN
         try:
-            # Import RAPIDS libraries
+            # Clear GPU memory first
+            torch.cuda.empty_cache()
+            
+            # Import cuML DBSCAN
             from cuml.cluster import DBSCAN as cuDBSCAN
             
+            # Try to set memory limits again
+            try:
+                import cuml
+                cuml.common.memory_utils.set_global_gpu_alloc_limit(0.8)
+            except:
+                pass
+                
             # Check if CUDA is available
             if torch.cuda.is_available():
                 print("Using GPU-accelerated DBSCAN from RAPIDS cuML")
-                # DBSCAN parameters need to be tuned differently than HDBSCAN
-                # eps is the most critical parameter - distance threshold for forming clusters
-                clusterer = cuDBSCAN(
-                    eps=0.5,  # Adjust based on your embedding distances
-                    min_samples=5,
-                    metric='euclidean'
-                )
-                embedding_df['cluster'] = clusterer.fit_predict(reduced_embeddings)
-                # Convert from cuDF series to numpy if needed
-                if hasattr(embedding_df['cluster'], 'to_numpy'):
-                    embedding_df['cluster'] = embedding_df['cluster'].to_numpy()
+                
+                # Convert data to float32 for CUDA compatibility
+                reduced_embeddings_f32 = reduced_embeddings.astype(np.float32)
+                
+                # Print current GPU status
+                print(f"GPU memory before DBSCAN: {torch.cuda.memory_allocated() / 1024**2:.2f} MB allocated, "
+                      f"{torch.cuda.memory_reserved() / 1024**2:.2f} MB reserved")
+                
+                # For large datasets, implement batch processing with DBSCAN
+                n_samples = len(reduced_embeddings_f32)
+                if n_samples > 200000:
+                    print(f"Large dataset detected ({n_samples} samples) - using batch processing for DBSCAN")
+                    
+                    # Process in batches of 150,000 samples
+                    batch_size = 150000
+                    n_batches = (n_samples // batch_size) + (1 if n_samples % batch_size > 0 else 0)
+                    
+                    # Initialize labels array
+                    all_labels = np.full(n_samples, -1)
+                    
+                    # Keep track of the next cluster ID to use
+                    next_cluster_id = 0
+                    
+                    for i in range(n_batches):
+                        start_idx = i * batch_size
+                        end_idx = min((i + 1) * batch_size, n_samples)
+                        
+                        print(f"Processing batch {i+1}/{n_batches} ({start_idx} to {end_idx})")
+                        
+                        # Process this batch
+                        batch_data = reduced_embeddings_f32[start_idx:end_idx]
+                        
+                        # Create DBSCAN instance with optimized parameters
+                        batch_clusterer = cuDBSCAN(
+                            eps=0.4,           # Reduced eps for more precise clusters
+                            min_samples=max(5, len(batch_data) // 10000),  # Adaptive min samples
+                            metric='euclidean',
+                            output_type='numpy'  # Directly output numpy array
+                        )
+                        
+                        # Run clustering on this batch
+                        batch_labels = batch_clusterer.fit_predict(batch_data)
+                        
+                        # Relabel clusters to avoid overlap between batches
+                        # Only update non-noise points (-1)
+                        mask = batch_labels != -1
+                        if np.any(mask):
+                            batch_labels[mask] = batch_labels[mask] + next_cluster_id
+                            next_cluster_id = np.max(batch_labels) + 1
+                        
+                        # Update the full labels array
+                        all_labels[start_idx:end_idx] = batch_labels
+                        
+                        # Clear GPU memory
+                        del batch_clusterer, batch_labels, batch_data
+                        torch.cuda.empty_cache()
+                    
+                    # Set the labels on the dataframe
+                    embedding_df['cluster'] = all_labels
+                    
+                else:
+                    # For smaller datasets, process all at once
+                    # Create and run DBSCAN with optimized parameters
+                    clusterer = cuDBSCAN(
+                        eps=0.4,  # Adjust based on embedding distances - lower for more clusters
+                        min_samples=max(5, len(reduced_embeddings_f32) // 20000),  # Adaptive based on dataset size
+                        metric='euclidean',
+                        output_type='numpy'  # Directly output numpy array
+                    )
+                    
+                    # Run clustering
+                    embedding_df['cluster'] = clusterer.fit_predict(reduced_embeddings_f32)
+                    
+                    # Clear GPU memory
+                    del clusterer, reduced_embeddings_f32
+                    torch.cuda.empty_cache()
+                
+                # Print GPU status after DBSCAN
+                print(f"GPU memory after DBSCAN: {torch.cuda.memory_allocated() / 1024**2:.2f} MB allocated, "
+                      f"{torch.cuda.memory_reserved() / 1024**2:.2f} MB reserved")
             else:
                 raise ImportError("CUDA not available for cuML")
+                
         except (ImportError, Exception) as e:
             print(f"RAPIDS cuML not available or CUDA not detected: {e}")
+            torch.cuda.empty_cache()  # Ensure GPU memory is cleared after failure
             
             # Try Scikit-learn's KMeans with multiple cores
             try:
@@ -461,42 +567,74 @@ def embeddings_clustering(recent_df):
                 from sklearn.cluster import KMeans
                 
                 # Determine n_clusters based on dataset size
-                # Use a higher minimum and smaller divisor to create more balanced clusters
-                # Increase the divisor significantly to create more clusters initially
-                n_clusters = max(40, min(100, len(reduced_embeddings) // 400))
+                n_clusters = max(40, min(100, len(reduced_embeddings) // 500))
                 
-                kmeans = KMeans(
-                    n_clusters=n_clusters,
-                    n_init=10,
-                    max_iter=300,
-                    tol=1e-4,
-                    verbose=1,
-                    random_state=42,
-                    n_jobs=-1  # Use all cores
-                )
+                # Use batch processing for large datasets
+                if len(reduced_embeddings) > 200000:
+                    print(f"Using mini-batch KMeans for large dataset ({len(reduced_embeddings)} samples)")
+                    from sklearn.cluster import MiniBatchKMeans
+                    
+                    kmeans = MiniBatchKMeans(
+                        n_clusters=n_clusters,
+                        batch_size=10000,
+                        n_init=5,
+                        max_iter=200,
+                        tol=1e-3,
+                        verbose=1,
+                        random_state=42
+                    )
+                else:
+                    kmeans = KMeans(
+                        n_clusters=n_clusters,
+                        n_init=5,
+                        max_iter=200,
+                        tol=1e-3,
+                        verbose=1,
+                        random_state=42,
+                        n_jobs=-1  # Use all cores
+                    )
                 
                 # Perform clustering
                 embedding_df['cluster'] = kmeans.fit_predict(reduced_embeddings)
                 
-                raise Exception("KMeans completed successfully")
+                print("KMeans completed successfully")
+                
             except Exception as e:
                 print(f"KMeans failed: {e}")
                 print("Falling back to CPU version of HDBSCAN")
                 
                 # Try to use HDBSCAN with faster backend
                 try:
-                    # Try using FAISS as backend for nearest neighbors
+                    # Try with FAISS backend
                     print("Attempting to use HDBSCAN with optimized backend")
-                    clusterer = hdbscan.HDBSCAN(
-                        min_cluster_size=50,
-                        min_samples=5,
-                        metric='euclidean',
-                        cluster_selection_method='eom',
-                        algorithm='best',  # Let it choose best algorithm
-                        core_dist_n_jobs=-1,  # Use all CPU cores
-                        approx_min_span_tree=True  # Use approximate MST for speed
-                    )
+                    
+                    # For large datasets, use more aggressive parameters
+                    if len(reduced_embeddings) > 100000:
+                        print(f"Large dataset detected ({len(reduced_embeddings)} samples) - using optimized HDBSCAN parameters")
+                        clusterer = hdbscan.HDBSCAN(
+                            min_cluster_size=100,  # Larger minimum to reduce noise
+                            min_samples=10,        # More conservative min_samples
+                            metric='euclidean',
+                            cluster_selection_method='eom',
+                            algorithm='best',      # Let it choose best algorithm
+                            core_dist_n_jobs=-1,   # Use all CPU cores
+                            approx_min_span_tree=True,  # Use approximate MST for speed
+                            gen_min_span_tree=True,     # Generate MST for better quality
+                            leaf_size=100               # Larger leaf size for speed
+                        )
+                    else:
+                        clusterer = hdbscan.HDBSCAN(
+                            min_cluster_size=50,
+                            min_samples=5,
+                            metric='euclidean',
+                            cluster_selection_method='eom',
+                            algorithm='best',  
+                            core_dist_n_jobs=-1,  
+                            approx_min_span_tree=True  
+                        )
+                        
                     embedding_df['cluster'] = clusterer.fit_predict(reduced_embeddings)
+                    
                 except Exception as e:
                     print(f"Optimized HDBSCAN failed: {e}")
                     print("Using standard HDBSCAN configuration")
