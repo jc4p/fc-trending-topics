@@ -854,15 +854,20 @@ def embeddings_clustering(recent_df):
         plt.figure(figsize=(12, 7))
         sns.set_theme(style="whitegrid", context="notebook", font_scale=1.2)
         
-        # Create a more visually appealing plot
-        ax = sns.lineplot(
-            x=thresholds, 
-            y=merged_cluster_counts, 
+        # Create a more visually appealing plot using direct matplotlib for compatibility
+        # Convert to numpy arrays to avoid pandas indexing issues with newer versions
+        thresholds_array = np.array(thresholds)
+        merged_cluster_counts_array = np.array(merged_cluster_counts)
+        
+        plt.plot(
+            thresholds_array, 
+            merged_cluster_counts_array, 
             marker='o', 
             markersize=10,
             linewidth=2.5,
             color='royalblue'
         )
+        ax = plt.gca()
         
         # Add value annotations
         for i, count in enumerate(merged_cluster_counts):
