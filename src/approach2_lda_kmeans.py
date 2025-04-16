@@ -736,7 +736,10 @@ def lda_kmeans_clustering(recent_df):
     # Plot silhouette scores
     plt.figure(figsize=(10, 6))
     sns.set_style("whitegrid")
-    sns.lineplot(x=list(K_range), y=silhouette_scores, marker='o', color='royalblue', linewidth=2.5)
+    # Convert to numpy arrays to avoid pandas indexing issues with newer versions
+    k_range_list = np.array(list(K_range))
+    silhouette_scores_array = np.array(silhouette_scores)
+    plt.plot(k_range_list, silhouette_scores_array, marker='o', color='royalblue', linewidth=2.5)
     plt.xlabel('Number of Clusters (K)', fontsize=12)
     plt.ylabel('Silhouette Score', fontsize=12)
     plt.title('Optimal Number of Clusters', fontsize=14, fontweight='bold')
