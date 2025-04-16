@@ -794,14 +794,30 @@ def embeddings_clustering(recent_df):
         # Create a custom color palette
         sns.set_palette("viridis", n_colors=len(cluster_ids))
         
-        # Plot with more styling options (updated for newer matplotlib)
-        with plt.style.context('seaborn-v0_8-white'):
-            dendrogram(
-                cluster_linkage,
-                labels=cluster_ids,
-                leaf_font_size=11,
-                orientation='right',
-                leaf_rotation=0,  # Rotate labels for better readability
+        # Plot with better compatibility for different matplotlib versions
+        try:
+            # Try newer style naming first
+            style_name = 'seaborn-v0_8-white'
+            if style_name in plt.style.available:
+                plt.style.use(style_name)
+            else:
+                # Try older naming convention
+                alternate_style = 'seaborn-white'
+                if alternate_style in plt.style.available:
+                    plt.style.use(alternate_style)
+                else:
+                    # Fallback to a built-in style that's likely to exist
+                    plt.style.use('classic')
+        except Exception as e:
+            print(f"Warning: Could not apply style: {e}")
+            
+        # Use the dendrogram function directly without style context
+        dendrogram(
+            cluster_linkage,
+            labels=cluster_ids,
+            leaf_font_size=11,
+            orientation='right',
+            leaf_rotation=0,  # Rotate labels for better readability
                 color_threshold=0.7,  # Color threshold for visual grouping
                 above_threshold_color='grey'
             )
