@@ -358,7 +358,14 @@ def lda_kmeans_clustering(recent_df):
     print(f"Processing {len(modeling_df['cleaned_text'])} documents with {max_features} features...")
     print(f"Using top-level posts only for topic modeling, as in Approach 3's methodology")
     X = vectorizer.fit_transform(modeling_df['cleaned_text'])
-    feature_names = vectorizer.get_feature_names_out()
+    
+    # Handle both old and new scikit-learn versions
+    try:
+        # Try new scikit-learn method first
+        feature_names = vectorizer.get_feature_names_out()
+    except AttributeError:
+        # Fall back to old method for older scikit-learn versions
+        feature_names = vectorizer.get_feature_names()
     
     print(f"Created document-term matrix with {X.shape[0]} documents and {X.shape[1]} features")
     
