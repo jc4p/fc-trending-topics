@@ -1132,8 +1132,8 @@ def main(save_interim_data=True, detect_repetitive=False):
     SELECT MAX(datetime) FROM casts_with_datetime
     """).fetchone()[0]
     
-    # Set specific date range from March 19 to the end
-    time_threshold = datetime(2025, 3, 19, 0, 0, 0)
+    # Set specific date range from April 13 to the end
+    time_threshold = datetime(2025, 4, 13, 0, 0, 0)
     
     print(f"Most recent data timestamp: {max_timestamp}")
     print(f"Analyzing data from {time_threshold} to {max_timestamp} (extended window for Ghibli analysis)")
